@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="sq">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LazyTV</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#0b0d12;color:#fff;font-family:Arial,sans-serif}
+header{padding:18px 16px;background:#121621;position:sticky;top:0;z-index:5}
+h1{margin:0;font-size:28px}.sub{color:#aeb7c8;margin-top:5px}
+nav{display:flex;gap:9px;overflow:auto;padding:12px 14px;background:#0f131c}
+button{border:0;border-radius:18px;padding:10px 14px;background:#20283a;color:white;font-weight:700}
+button.on{background:#fff;color:#111}.wrap{padding:15px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(145px,1fr));gap:12px}
+.card{background:#151a25;border-radius:16px;padding:14px;min-height:105px;display:flex;flex-direction:column;justify-content:center}
+.flag{font-size:28px}.name{font-weight:800;margin-top:8px}.small{font-size:12px;color:#aeb7c8;margin-top:5px}
+#playerBox{display:none;margin-bottom:15px;background:#000;border-radius:16px;overflow:hidden}
+video{width:100%;max-height:55vh;background:#000}
+input{width:100%;padding:13px;border-radius:14px;border:1px solid #30384b;background:#111722;color:#fff;margin-bottom:14px}
+.note{padding:13px;border-radius:14px;background:#151a25;color:#bdc7d8;margin-bottom:14px}
+</style></head>
+<body>
+<header><h1>📺 LazyTV</h1><div class="sub">Live TV • Sport • Filma • Seriale</div></header>
+<nav>
+<button class="on" onclick="showHome(this)">Live TV</button>
+<button onclick="message(this,'Sport')">Sport</button>
+<button onclick="message(this,'Filma')">Filma</button>
+<button onclick="message(this,'Seriale')">Seriale</button>
+<button onclick="message(this,'Favoritet')">⭐</button>
+</nav>
+<div class="wrap">
+<input id="q" placeholder="🔎 Kërko..." oninput="filterCards()">
+<div id="playerBox"><video id="player" controls playsinline></video></div>
+<div id="note" class="note">Versioni 1: motori dhe kategoritë bazë. Burimet publike M3U janë në <b>data/sources.json</b>.</div>
+<div id="grid" class="grid"></div>
+</div>
+<script>
+const countries=[
+["🇦🇱","Shqipëri","AL"],["🇽🇰","Kosovë","XK"],["🇲🇰","Maqedoni e Veriut","MK"],
+["🇩🇪","Gjermani","DE"],["🇮🇹","Itali","IT"],["🇹🇷","Turqi","TR"],["🌙","Arabisht","ARA"]
+];
+function active(b){document.querySelectorAll("nav button").forEach(x=>x.classList.remove("on"));b.classList.add("on")}
+function render(){grid.innerHTML=countries.map(x=>`<div class="card" data-name="${x[1].toLowerCase()}"><div class="flag">${x[0]}</div><div class="name">${x[1]}</div><div class="small">Playlist dinamike • ${x[2]}</div></div>`).join("")}
+function showHome(b){active(b);note.innerHTML="Zgjidh shtetin. Në versionin pasues kartat do të lexojnë kanalet e gjeneruara nga engine.";render()}
+function message(b,t){active(b);grid.innerHTML="";note.innerHTML="<b>"+t+"</b> — struktura është gati për katalogun dinamik nga burimet e autorizuara/publike."}
+function filterCards(){let v=q.value.toLowerCase();document.querySelectorAll(".card").forEach(c=>c.style.display=c.dataset.name.includes(v)?"":"none")}
+render();
+</script></body></html>
