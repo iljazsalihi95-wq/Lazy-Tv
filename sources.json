@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "iptv-org-al",
+      "name": "Albania Public IPTV",
+      "type": "m3u",
+      "url": "https://iptv-org.github.io/iptv/countries/al.m3u",
+      "country": "AL",
+      "enabled": true
+    },
+    {
+      "id": "iptv-org-xk",
+      "name": "Kosovo Public IPTV",
+      "type": "m3u",
+      "url": "https://iptv-org.github.io/iptv/countries/xk.m3u",
+      "country": "XK",
+      "enabled": true
+    },
+    {
+      "id": "iptv-org-mk",
+      "name": "North Macedonia Public IPTV",
+      "type": "m3u",
+      "url": "https://iptv-org.github.io/iptv/countries/mk.m3u",
+      "country": "MK",
+      "enabled": true
+    },
+    {
+      "id": "iptv-org-de",
+      "name": "Germany Public IPTV",
+      "type": "m3u",
+      "url": "https://iptv-org.github.io/iptv/countries/de.m3u",
+      "country": "DE",
+      "enabled": true
+    },
+    {
+      "id": "iptv-org-it",
+      "name": "Italy Public IPTV",
+      "type": "m3u",
+      "url": "https://iptv-org.github.io/iptv/countries/it.m3u",
+      "country": "IT",
+      "enabled": true
+    },
+    {
+      "id": "iptv-org-tr",
+      "name": "Turkey Public IPTV",
+      "type": "m3u",
+      "url": "https://iptv-org.github.io/iptv/countries/tr.m3u",
+      "country": "TR",
+      "enabled": true
+    },
+    {
+      "id": "iptv-org-ar",
+      "name": "Arabic Public IPTV",
+      "type": "m3u",
+      "url": "https://iptv-org.github.io/iptv/languages/ara.m3u",
+      "language": "ara",
+      "enabled": true
+    }
+  ]
+}
