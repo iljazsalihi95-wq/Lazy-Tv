@@ -1,18 +1,8 @@
 {
-  "version": 3,
+  "version": 4,
   "sources": [
     {
-      "id": "it-tundrak",
-      "name": "IPTV Italia Plus",
-      "type": "m3u",
-      "url": "https://github.com/Tundrak/IPTV-Italia/raw/main/iptvitaplus.m3u",
-      "country": "IT",
-      "language": "ita",
-      "enabled": true
-    },
-
-    {
-      "id": "al",
+      "id": "al-country",
       "name": "Albania",
       "type": "m3u",
       "url": "https://iptv-org.github.io/iptv/countries/al.m3u",
@@ -20,9 +10,8 @@
       "language": "sqi",
       "enabled": true
     },
-
     {
-      "id": "xk",
+      "id": "xk-country",
       "name": "Kosovo",
       "type": "m3u",
       "url": "https://iptv-org.github.io/iptv/countries/xk.m3u",
@@ -30,31 +19,85 @@
       "language": "sqi",
       "enabled": true
     },
-
     {
-      "id": "mk",
+      "id": "mk-country",
       "name": "North Macedonia",
       "type": "m3u",
       "url": "https://iptv-org.github.io/iptv/countries/mk.m3u",
       "country": "MK",
       "enabled": true
     },
-
     {
-      "id": "de",
-      "name": "Germany",
+      "id": "me-country",
+      "name": "Montenegro",
       "type": "m3u",
-      "url": "https://iptv-org.github.io/iptv/countries/de.m3u",
-      "country": "DE",
+      "url": "https://iptv-org.github.io/iptv/countries/me.m3u",
+      "country": "ME",
+      "enabled": true
+    },
+    {
+      "id": "rs-country",
+      "name": "Serbia",
+      "type": "m3u",
+      "url": "https://iptv-org.github.io/iptv/countries/rs.m3u",
+      "country": "RS",
+      "enabled": true
+    },
+    {
+      "id": "sq-language",
+      "name": "Albanian Language",
+      "type": "m3u",
+      "url": "https://iptv-org.github.io/iptv/languages/sqi.m3u",
+      "country": "SHQIP",
+      "language": "sqi",
       "enabled": true
     },
 
     {
-      "id": "tr",
-      "name": "Turkey",
+      "id": "it-tundrak",
+      "name": "IPTV Italia Plus",
+      "type": "m3u",
+      "url": "https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u",
+      "country": "IT",
+      "language": "ita",
+      "enabled": true
+    },
+    {
+      "id": "it-country",
+      "name": "Italy Backup",
+      "type": "m3u",
+      "url": "https://iptv-org.github.io/iptv/countries/it.m3u",
+      "country": "IT",
+      "language": "ita",
+      "enabled": true
+    },
+
+    {
+      "id": "tr-dearbulut",
+      "name": "Turkey Working",
+      "type": "m3u",
+      "url": "https://dearbulut.github.io/iptv/playlists/country/tr.m3u",
+      "country": "TR",
+      "language": "tur",
+      "enabled": true
+    },
+    {
+      "id": "tr-country",
+      "name": "Turkey Backup",
       "type": "m3u",
       "url": "https://iptv-org.github.io/iptv/countries/tr.m3u",
       "country": "TR",
+      "language": "tur",
+      "enabled": true
+    },
+
+    {
+      "id": "de-country",
+      "name": "Germany",
+      "type": "m3u",
+      "url": "https://iptv-org.github.io/iptv/countries/de.m3u",
+      "country": "DE",
+      "language": "deu",
       "enabled": true
     }
   ]
