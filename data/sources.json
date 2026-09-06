@@ -1,60 +1,60 @@
 {
-  "version": 1,
+  "version": 3,
   "sources": [
     {
-      "id": "iptv-org-al",
-      "name": "Albania Public IPTV",
+      "id": "it-tundrak",
+      "name": "IPTV Italia Plus",
+      "type": "m3u",
+      "url": "https://github.com/Tundrak/IPTV-Italia/raw/main/iptvitaplus.m3u",
+      "country": "IT",
+      "language": "ita",
+      "enabled": true
+    },
+
+    {
+      "id": "al",
+      "name": "Albania",
       "type": "m3u",
       "url": "https://iptv-org.github.io/iptv/countries/al.m3u",
       "country": "AL",
+      "language": "sqi",
       "enabled": true
     },
+
     {
-      "id": "iptv-org-xk",
-      "name": "Kosovo Public IPTV",
+      "id": "xk",
+      "name": "Kosovo",
       "type": "m3u",
       "url": "https://iptv-org.github.io/iptv/countries/xk.m3u",
       "country": "XK",
+      "language": "sqi",
       "enabled": true
     },
+
     {
-      "id": "iptv-org-mk",
-      "name": "North Macedonia Public IPTV",
+      "id": "mk",
+      "name": "North Macedonia",
       "type": "m3u",
       "url": "https://iptv-org.github.io/iptv/countries/mk.m3u",
       "country": "MK",
       "enabled": true
     },
+
     {
-      "id": "iptv-org-de",
-      "name": "Germany Public IPTV",
+      "id": "de",
+      "name": "Germany",
       "type": "m3u",
       "url": "https://iptv-org.github.io/iptv/countries/de.m3u",
       "country": "DE",
       "enabled": true
     },
+
     {
-      "id": "iptv-org-it",
-      "name": "Italy Public IPTV",
-      "type": "m3u",
-      "url": "https://iptv-org.github.io/iptv/countries/it.m3u",
-      "country": "IT",
-      "enabled": true
-    },
-    {
-      "id": "iptv-org-tr",
-      "name": "Turkey Public IPTV",
+      "id": "tr",
+      "name": "Turkey",
       "type": "m3u",
       "url": "https://iptv-org.github.io/iptv/countries/tr.m3u",
       "country": "TR",
-      "enabled": true
-    },
-    {
-      "id": "iptv-org-ar",
-      "name": "Arabic Public IPTV",
-      "type": "m3u",
-      "url": "https://iptv-org.github.io/iptv/languages/ara.m3u",
-      "language": "ara",
       "enabled": true
     }
   ]
