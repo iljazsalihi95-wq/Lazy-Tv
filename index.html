@@ -2,1764 +2,1258 @@
 <html lang="sq">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta name="theme-color" content="#071426">
+<meta name="viewport"
+content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 
 <title>LazyTV</title>
 
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
 <style>
-*{
-  box-sizing:border-box;
-}
-
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{
-  margin:0;
-  min-height:100%;
-  background:#050b15;
-  color:#fff;
-  font-family:Arial,Helvetica,sans-serif;
+ margin:0;
+ min-height:100%;
+ font-family:Arial,sans-serif;
+ background:#030914;
+ color:#fff
 }
+body{padding-bottom:85px}
 
-body{
-  overflow-x:hidden;
-}
-
-button,
-select,
-input{
-  font:inherit;
-}
-
-button{
-  cursor:pointer;
-}
-
-.app{
-  max-width:1500px;
-  margin:auto;
-  min-height:100vh;
+.wrap{
+ max-width:1100px;
+ margin:auto;
+ padding:15px
 }
 
 /* HEADER */
 
 .header{
-  position:sticky;
-  top:0;
-  z-index:50;
-  background:rgba(5,11,21,.96);
-  border-bottom:1px solid #26374d;
-  backdrop-filter:blur(12px);
-}
-
-.header-inner{
-  padding:12px;
-}
-
-.logo-row{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:10px;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ gap:12px;
+ margin-bottom:18px
 }
 
 .brand{
-  display:flex;
-  align-items:center;
-  gap:10px;
+ display:flex;
+ align-items:center;
+ gap:12px
 }
 
-.brand-logo{
-  width:46px;
-  height:46px;
-  border-radius:14px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:linear-gradient(135deg,#155eef,#00a6ff);
-  font-size:25px;
-  box-shadow:0 8px 24px #005eff55;
+.appicon{
+ width:58px;
+ height:58px;
+ border-radius:18px;
+ background:linear-gradient(135deg,#168dff,#03b7ff);
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ font-size:28px;
+ box-shadow:0 0 25px #009cff55
 }
 
-.brand-title{
-  font-size:22px;
-  font-weight:900;
+.brand h1{
+ margin:0;
+ font-size:28px
 }
 
-.brand-sub{
-  font-size:12px;
-  color:#9ab0ca;
-  margin-top:2px;
-}
-
-.total{
-  padding:8px 11px;
-  border-radius:12px;
-  background:#101b2b;
-  border:1px solid #26374d;
-  font-size:13px;
-  color:#bdd0e7;
+.liveCount{
+ padding:10px 14px;
+ background:#0c192c;
+ border:1px solid #233b5b;
+ border-radius:15px;
+ font-size:12px;
+ color:#c9d8ed
 }
 
 /* SEARCH */
 
-.search-row{
-  display:flex;
-  gap:8px;
-  margin-top:12px;
-}
-
 .search{
-  flex:1;
-  height:46px;
-  border-radius:14px;
-  border:1px solid #30445d;
-  background:#0c1726;
-  color:#fff;
-  padding:0 15px;
-  outline:none;
+ position:relative;
+ margin-bottom:15px
 }
 
-.search:focus{
-  border-color:#3a8cff;
+.search input{
+ width:100%;
+ height:50px;
+ border-radius:17px;
+ border:1px solid #28415e;
+ background:#071222;
+ color:#fff;
+ outline:none;
+ padding:0 48px 0 16px;
+ font-size:15px
 }
 
-.country-select{
-  width:145px;
-  height:46px;
-  border-radius:14px;
-  border:1px solid #30445d;
-  background:#0c1726;
-  color:#fff;
-  padding:0 9px;
+.search span{
+ position:absolute;
+ right:17px;
+ top:14px;
+ font-size:20px
 }
 
-/* TABS */
+/* HERO */
 
-.tabs{
-  display:flex;
-  gap:7px;
-  overflow-x:auto;
-  padding-top:11px;
-  scrollbar-width:none;
+.hero{
+ background:
+ linear-gradient(135deg,#0d67cf,#061b3d);
+ border:1px solid #2478d6;
+ border-radius:25px;
+ padding:19px;
+ margin-bottom:20px;
+ box-shadow:0 12px 30px #0006
 }
 
-.tabs::-webkit-scrollbar{
-  display:none;
+.hero b{
+ font-size:22px
 }
 
-.tab{
-  flex:0 0 auto;
-  border:1px solid #2c4058;
-  background:#0c1726;
-  color:#cad7e8;
-  border-radius:999px;
-  padding:9px 14px;
-  font-weight:800;
-  font-size:13px;
-}
-
-.tab.active{
-  background:linear-gradient(135deg,#1769ff,#00a2ff);
-  border-color:transparent;
-  color:white;
-}
-
-/* MAIN */
-
-.main{
-  padding:12px;
-}
-
-/* PLAYER */
-
-.player-box{
-  background:#090f18;
-  border-radius:20px;
-  overflow:hidden;
-  border:1px solid #24364c;
-  box-shadow:0 12px 35px #0008;
-  margin-bottom:16px;
-}
-
-.video-wrap{
-  position:relative;
-  background:#000;
-  aspect-ratio:16/9;
-}
-
-video{
-  width:100%;
-  height:100%;
-  display:block;
-  background:#000;
-  object-fit:contain;
-}
-
-.video-placeholder{
-  position:absolute;
-  inset:0;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  gap:10px;
-  text-align:center;
-  padding:30px;
-  pointer-events:none;
-  background:radial-gradient(circle at center,#102548,#02060d 70%);
-}
-
-.video-placeholder.hidden{
-  display:none;
-}
-
-.placeholder-icon{
-  font-size:54px;
-}
-
-.placeholder-title{
-  font-size:19px;
-  font-weight:900;
-}
-
-.placeholder-text{
-  color:#9eb1c7;
-  font-size:13px;
-  max-width:500px;
-}
-
-.loading{
-  position:absolute;
-  inset:0;
-  background:#000b;
-  display:none;
-  align-items:center;
-  justify-content:center;
-  z-index:5;
-}
-
-.loading.show{
-  display:flex;
-}
-
-.spinner{
-  width:48px;
-  height:48px;
-  border:5px solid #ffffff30;
-  border-top-color:white;
-  border-radius:50%;
-  animation:spin .8s linear infinite;
-}
-
-@keyframes spin{
-  to{transform:rotate(360deg)}
-}
-
-.player-info{
-  padding:13px;
-}
-
-.playing-row{
-  display:flex;
-  align-items:center;
-  gap:12px;
-}
-
-.now-logo{
-  width:50px;
-  height:50px;
-  border-radius:12px;
-  background:#fff;
-  object-fit:contain;
-  display:none;
-}
-
-.now-title{
-  font-size:17px;
-  font-weight:900;
-}
-
-.now-meta{
-  color:#9cb1ca;
-  margin-top:3px;
-  font-size:12px;
-}
-
-.status{
-  margin-top:9px;
-  padding:9px 11px;
-  border-radius:10px;
-  font-size:12px;
-  background:#0c1726;
-  color:#aebfd3;
-  border:1px solid #223850;
-}
-
-.status.ok{
-  color:#8ef3ad;
-  border-color:#1a6436;
-  background:#0c2415;
-}
-
-.status.error{
-  color:#ff9d9d;
-  border-color:#753232;
-  background:#2b1111;
-}
-
-.controls{
-  display:flex;
-  gap:7px;
-  margin-top:10px;
-  flex-wrap:wrap;
-}
-
-.control-btn,
-.quality{
-  min-height:38px;
-  border:1px solid #30455f;
-  background:#101e30;
-  color:white;
-  border-radius:10px;
-  padding:8px 12px;
-  font-size:12px;
-  font-weight:800;
-}
-
-.control-btn:active{
-  transform:scale(.98);
-}
-
-.quality{
-  max-width:150px;
+.hero p{
+ margin:7px 0 0;
+ color:#a9c6e8;
+ font-size:12px
 }
 
 /* TITLE */
 
-.section-title{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:10px;
-  margin:15px 2px 10px;
+.title{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ margin:22px 2px 11px
 }
 
-.section-title h2{
-  margin:0;
-  font-size:18px;
+.title b{
+ font-size:18px
 }
 
-.section-info{
-  font-size:12px;
-  color:#9db0c6;
+.title span{
+ font-size:10px;
+ color:#6f89a8
+}
+
+/* COUNTRIES */
+
+.countryGrid{
+ display:grid;
+ grid-template-columns:repeat(2,1fr);
+ gap:10px
+}
+
+.country{
+ text-decoration:none;
+ color:#fff;
+ background:linear-gradient(145deg,#101d30,#07101d);
+ border:1px solid #203a5c;
+ border-radius:18px;
+ padding:15px;
+ display:flex;
+ align-items:center;
+ gap:11px;
+ min-height:70px
+}
+
+.country:active{
+ transform:scale(.97)
+}
+
+.flag{
+ font-size:29px
+}
+
+.country b{
+ display:block;
+ font-size:13px
+}
+
+.country small{
+ display:block;
+ color:#718ba9;
+ font-size:9px;
+ margin-top:4px
+}
+
+/* CATEGORY */
+
+.catGrid{
+ display:grid;
+ grid-template-columns:repeat(2,1fr);
+ gap:10px
+}
+
+.cat{
+ background:linear-gradient(145deg,#101d30,#07101d);
+ border:1px solid #203a5c;
+ border-radius:18px;
+ padding:16px;
+ cursor:pointer
+}
+
+.cat strong{
+ display:block;
+ font-size:14px
+}
+
+.cat small{
+ color:#7790ad;
+ font-size:9px
 }
 
 /* CHANNELS */
 
-.grid{
-  display:grid;
-  grid-template-columns:repeat(5,1fr);
-  gap:10px;
+.channelGrid{
+ display:grid;
+ grid-template-columns:repeat(2,minmax(0,1fr));
+ gap:10px
 }
 
 .channel{
-  background:linear-gradient(180deg,#101d2d,#09121d);
-  border:1px solid #263951;
-  border-radius:16px;
-  overflow:hidden;
-  min-width:0;
-  transition:.15s;
+ background:linear-gradient(145deg,#111d2d,#060d17);
+ border:1px solid #1c3553;
+ border-radius:18px;
+ padding:10px;
+ min-height:78px;
+ display:flex;
+ align-items:center;
+ gap:10px;
+ cursor:pointer
 }
 
 .channel:active{
-  transform:scale(.98);
+ transform:scale(.97)
 }
 
-.channel.selected{
-  border-color:#368cff;
-  box-shadow:0 0 0 2px #368cff55;
+.logo{
+ width:48px;
+ height:48px;
+ flex:0 0 48px;
+ border-radius:12px;
+ background:#fff;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ overflow:hidden;
+ color:#111;
+ font-size:9px;
+ font-weight:bold
 }
 
-.logo-box{
-  height:105px;
-  background:#e9edf3;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:10px;
-  position:relative;
+.logo img{
+ width:100%;
+ height:100%;
+ object-fit:contain
 }
 
-.logo-box img{
-  max-width:100%;
-  max-height:100%;
-  object-fit:contain;
+.ctxt{
+ min-width:0;
+ flex:1
 }
 
-.logo-fallback{
-  font-size:30px;
-  color:#1b3048;
-  font-weight:900;
+.ctxt b{
+ display:block;
+ font-size:11px;
+ overflow:hidden;
+ white-space:nowrap;
+ text-overflow:ellipsis
 }
 
-.live-badge{
-  position:absolute;
-  top:7px;
-  right:7px;
-  background:#df2437;
-  color:white;
-  font-size:9px;
-  font-weight:900;
-  border-radius:6px;
-  padding:4px 6px;
+.ctxt small{
+ display:block;
+ color:#6f88a7;
+ font-size:8px;
+ margin-top:4px
 }
 
-.channel-info{
-  padding:9px;
+.play{
+ color:#23a9ff;
+ font-size:17px
 }
 
-.channel-name{
-  font-weight:900;
-  font-size:13px;
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
+/* PLAYER */
+
+.player{
+ display:none;
+ position:fixed;
+ inset:0;
+ z-index:1000;
+ background:#000
 }
 
-.channel-meta{
-  display:flex;
-  gap:5px;
-  flex-wrap:wrap;
-  margin-top:6px;
+.player.show{
+ display:flex;
+ flex-direction:column
 }
 
-.badge{
-  padding:3px 6px;
-  border-radius:6px;
-  background:#17283b;
-  color:#a9c0da;
-  font-size:9px;
-  white-space:nowrap;
+.playerTop{
+ height:55px;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ padding:0 15px;
+ background:#07101d
 }
+
+.playerTop b{
+ overflow:hidden;
+ white-space:nowrap;
+ text-overflow:ellipsis
+}
+
+.close{
+ border:0;
+ border-radius:10px;
+ background:#d5222b;
+ color:#fff;
+ padding:9px 13px;
+ font-weight:bold
+}
+
+.videoWrap{
+ flex:1;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ background:#000
+}
+
+video{
+ width:100%;
+ max-height:calc(100vh - 55px);
+ background:#000
+}
+
+/* EMPTY */
 
 .empty{
-  padding:40px 15px;
-  border:1px dashed #33465c;
-  border-radius:16px;
-  text-align:center;
-  color:#9eb0c6;
-  grid-column:1/-1;
+ grid-column:1/-1;
+ padding:25px;
+ text-align:center;
+ color:#71839b;
+ background:#08111f;
+ border-radius:16px
 }
 
-.footer{
-  text-align:center;
-  color:#657b94;
-  padding:30px 10px 45px;
-  font-size:11px;
+/* NAV */
+
+.nav{
+ position:fixed;
+ left:0;
+ right:0;
+ bottom:0;
+ z-index:100;
+ height:67px;
+ background:#06101e;
+ border-top:1px solid #203752;
+ display:flex;
+ justify-content:space-around;
+ align-items:center
 }
 
-/* MOBILE */
-
-@media(max-width:1100px){
-  .grid{
-    grid-template-columns:repeat(4,1fr);
-  }
+.nav button{
+ border:0;
+ background:none;
+ color:#8094ae;
+ font-weight:bold;
+ font-size:10px
 }
 
-@media(max-width:800px){
-  .grid{
-    grid-template-columns:repeat(3,1fr);
-  }
-
-  .logo-box{
-    height:90px;
-  }
+.nav button span{
+ display:block;
+ font-size:21px;
+ margin-bottom:3px
 }
 
-@media(max-width:560px){
-  .header-inner{
-    padding:10px;
-  }
-
-  .main{
-    padding:10px;
-  }
-
-  .brand-title{
-    font-size:20px;
-  }
-
-  .brand-sub{
-    display:none;
-  }
-
-  .total{
-    font-size:11px;
-  }
-
-  .search-row{
-    flex-direction:column;
-  }
-
-  .country-select{
-    width:100%;
-  }
-
-  .grid{
-    grid-template-columns:repeat(2,1fr);
-    gap:8px;
-  }
-
-  .logo-box{
-    height:86px;
-  }
-
-  .channel-name{
-    font-size:12px;
-  }
+@media(min-width:700px){
+ .countryGrid{grid-template-columns:repeat(4,1fr)}
+ .catGrid{grid-template-columns:repeat(4,1fr)}
+ .channelGrid{grid-template-columns:repeat(4,1fr)}
 }
 </style>
 </head>
 
 <body>
 
-<div class="app">
+<div class="wrap">
 
-  <header class="header">
-    <div class="header-inner">
+<div class="header">
 
-      <div class="logo-row">
-        <div class="brand">
-          <div class="brand-logo">▶</div>
-          <div>
-            <div class="brand-title">LazyTV</div>
-            <div class="brand-sub">Live TV • Shqip • Botë</div>
-          </div>
-        </div>
+ <div class="brand">
+  <div class="appicon">▶</div>
+  <h1>LazyTV</h1>
+ </div>
 
-        <div class="total" id="total">
-          Duke lexuar...
-        </div>
-      </div>
+ <div class="liveCount" id="liveCount">
+  Duke lexuar...
+ </div>
 
-      <div class="search-row">
-        <input
-          id="search"
-          class="search"
-          type="search"
-          placeholder="🔎 Kërko kanal..."
-          autocomplete="off"
-        >
+</div>
 
-        <select id="country" class="country-select">
-          <option value="">🌍 Të gjitha shtetet</option>
-        </select>
-      </div>
+<div class="search">
+ <input id="search"
+ placeholder="Kërko kanal, film, serial..."
+ oninput="searchEverything()">
+ <span>🔎</span>
+</div>
 
-      <div class="tabs">
-        <button class="tab active" data-filter="all">📺 Të gjitha</button>
-        <button class="tab" data-filter="shqip">🇦🇱 Shqip</button>
-        <button class="tab" data-filter="sports">⚽ Sport</button>
-        <button class="tab" data-filter="movies">🎬 Filma</button>
-        <button class="tab" data-filter="news">📰 Lajme</button>
-        <button class="tab" data-filter="kids">🧒 Fëmijë</button>
-        <button class="tab" data-filter="music">🎵 Muzikë</button>
-        <button class="tab" data-filter="religious">☪️ Islame</button>
-      </div>
-
-    </div>
-  </header>
+<div class="hero">
+ <b>📡 LazyTV</b>
+ <p>
+ Live TV • Filma • Seriale • Sport • Kids • Muzikë
+ </p>
+</div>
 
 
-  <main class="main">
+<div id="home">
 
-    <section class="player-box">
+<div class="title">
+ <b>🌍 Shtetet</b>
+ <span>TV Live</span>
+</div>
 
-      <div class="video-wrap">
+<div class="countryGrid">
 
-        <video
-          id="video"
-          controls
-          playsinline
-          webkit-playsinline
-          preload="metadata"
-        ></video>
+ <a class="country" href="go:ALBANIA_TV">
+  <div class="flag">🇦🇱</div>
+  <div><b>Shqipëri</b><small id="cAL">TV Live</small></div>
+ </a>
 
-        <div id="placeholder" class="video-placeholder">
-          <div class="placeholder-icon">📺</div>
-          <div class="placeholder-title">LazyTV Player</div>
-          <div class="placeholder-text">
-            Zgjidh një kanal nga lista poshtë për të filluar transmetimin.
-          </div>
-        </div>
+ <a class="country" href="go:KOSOVO_TV">
+  <div class="flag">🇽🇰</div>
+  <div><b>Kosovë</b><small id="cXK">TV Live</small></div>
+ </a>
 
-        <div id="loading" class="loading">
-          <div class="spinner"></div>
-        </div>
+ <a class="country" href="go:MACEDONIA_TV">
+  <div class="flag">🇲🇰</div>
+  <div><b>Maqedoni</b><small id="cMK">TV Live</small></div>
+ </a>
 
-      </div>
+ <a class="country" href="go:MONTENEGRO_TV">
+  <div class="flag">🇲🇪</div>
+  <div><b>Mali i Zi</b><small id="cME">TV Live</small></div>
+ </a>
 
-      <div class="player-info">
+ <a class="country" href="go:BOSNIA_TV">
+  <div class="flag">🇧🇦</div>
+  <div><b>Bosna</b><small id="cBA">TV Live</small></div>
+ </a>
 
-        <div class="playing-row">
-          <img id="nowLogo" class="now-logo" alt="">
-          <div>
-            <div id="nowTitle" class="now-title">
-              Asnjë kanal i zgjedhur
-            </div>
-            <div id="nowMeta" class="now-meta">
-              LazyTV
-            </div>
-          </div>
-        </div>
+ <a class="country" href="go:CROATIA_TV">
+  <div class="flag">🇭🇷</div>
+  <div><b>Kroacia</b><small id="cHR">TV Live</small></div>
+ </a>
 
-        <div id="status" class="status">
-          Player gati.
-        </div>
+ <a class="country" href="go:SERBIA_TV">
+  <div class="flag">🇷🇸</div>
+  <div><b>Serbia</b><small id="cRS">TV Live</small></div>
+ </a>
 
-        <div class="controls">
+ <a class="country" href="go:TURKEY_TV">
+  <div class="flag">🇹🇷</div>
+  <div><b>Turqia</b><small id="cTR">TV Live</small></div>
+ </a>
 
-          <button class="control-btn" onclick="retryCurrent()">
-            🔄 Provo përsëri
-          </button>
+ <a class="country" href="go:ITALY_TV">
+  <div class="flag">🇮🇹</div>
+  <div><b>Italia</b><small id="cIT">TV Live</small></div>
+ </a>
 
-          <button class="control-btn" onclick="toggleMute()">
-            🔊 Zëri
-          </button>
+ <a class="country" href="go:GERMANY_TV">
+  <div class="flag">🇩🇪</div>
+  <div><b>Gjermania</b><small id="cDE">TV Live</small></div>
+ </a>
 
-          <button class="control-btn" onclick="fullscreenVideo()">
-            ⛶ Fullscreen
-          </button>
+ <a class="country" href="go:ARAB_TV">
+  <div class="flag">🌙</div>
+  <div><b>Arab TV</b><small>Vendet arabe</small></div>
+ </a>
 
-          <select id="quality" class="quality" onchange="changeQuality()">
-            <option value="-1">⚙️ Auto Quality</option>
-          </select>
-
-        </div>
-
-      </div>
-
-    </section>
+</div>
 
 
-    <div class="section-title">
-      <h2 id="listTitle">📺 Kanalet</h2>
-      <div class="section-info" id="resultCount"></div>
-    </div>
+<div class="title">
+ <b>📺 Kategoritë</b>
+ <span>Automatike</span>
+</div>
 
-    <div id="grid" class="grid"></div>
+<div class="catGrid">
 
-  </main>
+ <div class="cat" onclick="showCategory('shqip')">
+  <strong>🇦🇱 Shqip</strong>
+  <small>Kanale shqiptare</small>
+ </div>
+
+ <div class="cat" onclick="showCategory('sport')">
+  <strong>⚽ Sport</strong>
+  <small>Kanale sportive</small>
+ </div>
+
+ <div class="cat" onclick="showCategory('news')">
+  <strong>📰 Lajme</strong>
+  <small>News</small>
+ </div>
+
+ <div class="cat" onclick="showCategory('kids')">
+  <strong>🧸 Kids</strong>
+  <small>Fëmijë</small>
+ </div>
+
+ <div class="cat" onclick="showCategory('music')">
+  <strong>🎵 Muzikë</strong>
+  <small>Music TV</small>
+ </div>
+
+ <div class="cat" onclick="showCategory('islam')">
+  <strong>🕌 Islame</strong>
+  <small>Islamic TV</small>
+ </div>
+
+ <div class="cat" onclick="showVod('movie')">
+  <strong>🎬 Filma</strong>
+  <small>VOD Movies</small>
+ </div>
+
+ <div class="cat" onclick="showVod('series')">
+  <strong>🍿 Seriale</strong>
+  <small>VOD Series</small>
+ </div>
+
+ <div class="cat" onclick="showVod('documentary')">
+  <strong>🌍 Dokumentarë</strong>
+  <small>VOD</small>
+ </div>
+
+ <div class="cat" onclick="showVod('kids')">
+  <strong>🎞 Kids VOD</strong>
+  <small>Video për fëmijë</small>
+ </div>
+
+</div>
+
+<div class="title">
+ <b>🔥 Kanale</b>
+ <span id="resultTitle">Online</span>
+</div>
+
+<div class="channelGrid" id="results"></div>
+
+</div>
+
+</div>
 
 
-  <footer class="footer">
-    LazyTV • Kanale publike dhe burime të konfiguruara në sistem
-  </footer>
+<div class="player" id="player">
+
+ <div class="playerTop">
+
+  <b id="playingName">
+   LazyTV
+  </b>
+
+  <button class="close"
+  onclick="closePlayer()">
+   ✕ Mbyll
+  </button>
+
+ </div>
+
+ <div class="videoWrap">
+
+  <video
+   id="video"
+   controls
+   playsinline
+   preload="none">
+  </video>
+
+ </div>
+
+</div>
+
+
+<div class="nav">
+
+ <button onclick="showHome()">
+  <span>🏠</span>
+  Ballina
+ </button>
+
+ <button onclick="showCategory('sport')">
+  <span>⚽</span>
+  Sport
+ </button>
+
+ <button onclick="showVod('movie')">
+  <span>🎬</span>
+  VOD
+ </button>
+
+ <button onclick="showCategory('islam')">
+  <span>🕌</span>
+  Islame
+ </button>
 
 </div>
 
 
 <script>
 
-/* ======================================================
-   LAZYTV
-   ====================================================== */
+const CHANNELS_URL =
+"https://iljazsalihi95-wq.github.io/Lazy-Tv/data/channels.json";
 
-const DATA_URL = "data/channels.json";
-
-let allChannels = [];
-let currentFilter = "all";
-let currentChannel = null;
-let selectedCard = null;
-
-let hls = null;
-let retryCount = 0;
-
-const MAX_RETRIES = 3;
-
-const video       = document.getElementById("video");
-const grid        = document.getElementById("grid");
-const searchInput = document.getElementById("search");
-const country     = document.getElementById("country");
-const total       = document.getElementById("total");
-const resultCount = document.getElementById("resultCount");
-const listTitle   = document.getElementById("listTitle");
-const statusBox   = document.getElementById("status");
-const loading     = document.getElementById("loading");
-const placeholder = document.getElementById("placeholder");
-const quality     = document.getElementById("quality");
-
-const nowLogo     = document.getElementById("nowLogo");
-const nowTitle    = document.getElementById("nowTitle");
-const nowMeta     = document.getElementById("nowMeta");
+const VOD_URL =
+"https://iljazsalihi95-wq.github.io/Lazy-Tv/data/vod.json";
 
 
-/* ======================================================
-   CATEGORY WORDS
-   ====================================================== */
+let channels=[];
+let vod=[];
+let currentList=[];
+let hls=null;
 
-const aliases = {
 
-  sports:[
-    "sport",
-    "sports",
-    "football",
-    "soccer",
-    "basketball",
-    "tennis",
-    "racing",
-    "motorsport",
-    "futboll"
-  ],
+/* LOAD */
 
-  movies:[
-    "movie",
-    "movies",
-    "film",
-    "films",
-    "cinema",
-    "action",
-    "thriller"
+async function loadData(){
+
+ try{
+
+  const [cr,vr] =
+   await Promise.allSettled([
+
+    fetch(
+     CHANNELS_URL+"?v="+Date.now(),
+     {cache:"no-store"}
+    ),
+
+    fetch(
+     VOD_URL+"?v="+Date.now(),
+     {cache:"no-store"}
+    )
+
+   ]);
+
+
+  if(cr.status==="fulfilled"){
+
+   const d=await cr.value.json();
+
+   channels=
+    Array.isArray(d)
+    ?d
+    :(d.channels||[]);
+
+  }
+
+
+  if(vr.status==="fulfilled"){
+
+   try{
+
+    const d=await vr.value.json();
+
+    vod=
+     Array.isArray(d)
+     ?d
+     :(d.vod||d.items||[]);
+
+   }catch(e){
+    vod=[];
+   }
+
+  }
+
+
+  document.getElementById("liveCount")
+   .textContent=
+   "📡 "+channels.length+" kanale";
+
+
+  updateCountryCounts();
+
+  showHome();
+
+ }
+ catch(e){
+
+  document.getElementById("liveCount")
+   .textContent="Gabim";
+
+ }
+
+}
+
+
+/* COUNTRY COUNTS */
+
+function updateCountryCounts(){
+
+ const codes=[
+  "AL","XK","MK","ME","BA",
+  "HR","RS","TR","IT","DE"
+ ];
+
+ codes.forEach(code=>{
+
+  const el=
+   document.getElementById("c"+code);
+
+  if(!el)return;
+
+  const n=
+   channels.filter(c=>
+    String(c.country||"")
+    .toUpperCase()===code
+   ).length;
+
+  el.textContent=n+" kanale";
+
+ });
+
+}
+
+
+/* CATEGORY */
+
+function showCategory(type){
+
+ const words={
+
+  sport:[
+   "sport","football","futboll",
+   "soccer","tennis","basket",
+   "racing","arena"
   ],
 
   news:[
-    "news",
-    "lajme",
-    "haber",
-    "notizie",
-    "information"
+   "news","lajme","info",
+   "haber","notizie","nachrichten"
   ],
 
   kids:[
-    "kids",
-    "children",
-    "cartoon",
-    "animation",
-    "junior",
-    "baby"
+   "kids","child","junior",
+   "cartoon","çocuk","cocuk",
+   "kinder"
   ],
 
   music:[
-    "music",
-    "muzik",
-    "radio",
-    "hits"
+   "music","muzik","radio",
+   "hits","pop"
   ],
 
-  religious:[
-    "religious",
-    "religion",
-    "islam",
-    "islamic",
-    "muslim",
-    "quran",
-    "kuran",
-    "pendimi"
+  islam:[
+   "islam","quran","kuran",
+   "mekke","makkah","madinah",
+   "medina","religion",
+   "diyanet","pendimi"
   ]
 
-};
+ };
 
 
-/* ======================================================
-   LOAD CHANNELS
-   ====================================================== */
+ if(type==="shqip"){
 
-async function loadChannels(){
+  currentList=
+   channels.filter(c=>{
 
-  setStatus("Duke lexuar listën e kanaleve...");
+    const country=
+     String(c.country||"")
+     .toUpperCase();
 
-  try{
+    const lang=
+     String(c.language||"")
+     .toLowerCase();
 
-    const response = await fetch(
-      DATA_URL + "?v=" + Date.now(),
-      {
-        cache:"no-store"
-      }
+    return (
+     country==="AL" ||
+     country==="XK" ||
+     country==="SHQIP" ||
+     lang.includes("sqi") ||
+     lang.includes("alb")
     );
 
-    if(!response.ok){
-      throw new Error("HTTP " + response.status);
-    }
+   });
 
-    const data = await response.json();
+ }
+ else{
 
-    allChannels = Array.isArray(data.channels)
-      ? data.channels
-      : [];
+  const keys=words[type]||[];
 
-    total.textContent =
-      "📡 " + allChannels.length + " kanale";
+  currentList=
+   channels.filter(c=>{
 
-    populateCountries();
+    const text=
+     (
+      String(c.name||"")+" "+
+      String(c.group||"")
+     ).toLowerCase();
 
-    renderChannels();
-
-    setStatus(
-      "Lista u ngarkua: " +
-      allChannels.length +
-      " kanale.",
-      "ok"
+    return keys.some(k=>
+     text.includes(k)
     );
 
-  }catch(err){
+   });
 
-    console.error(err);
+ }
 
-    setStatus(
-      "Gabim gjatë leximit të channels.json: " +
-      err.message,
-      "error"
-    );
 
-    grid.innerHTML =
-      '<div class="empty">Nuk mund të lexohet lista e kanaleve.</div>';
+ document.getElementById("resultTitle")
+  .textContent=
+  type.toUpperCase();
 
-  }
+
+ render(currentList,false);
 
 }
 
 
-/* ======================================================
-   COUNTRIES
-   ====================================================== */
+/* VOD */
 
-function populateCountries(){
+function showVod(type){
 
-  const map = {
-    "AL":"🇦🇱 Shqipëri",
-    "XK":"🇽🇰 Kosovë",
-    "MK":"🇲🇰 Maqedoni",
-    "ME":"🇲🇪 Mali i Zi",
-    "RS":"🇷🇸 Serbi",
-    "IT":"🇮🇹 Itali",
-    "TR":"🇹🇷 Turqi",
-    "DE":"🇩🇪 Gjermani",
-    "SHQIP":"🇦🇱 Shqip"
-  };
+ const aliases={
 
-  const countries = [
-    ...new Set(
-      allChannels
-        .map(c => String(c.country || "").trim())
-        .filter(Boolean)
-    )
-  ].sort();
+  movie:[
+   "movie","movies","film","films",
+   "cinema"
+  ],
 
-  country.innerHTML =
-    '<option value="">🌍 Të gjitha shtetet</option>';
+  series:[
+   "series","serial","seriale",
+   "tv series"
+  ],
 
-  countries.forEach(code=>{
+  documentary:[
+   "documentary","documentary",
+   "dokumentar","doc"
+  ],
 
-    const option = document.createElement("option");
+  kids:[
+   "kids","children","cartoon",
+   "family"
+  ]
 
-    option.value = code;
+ };
 
-    option.textContent =
-      map[code] || "🌐 " + code;
 
-    country.appendChild(option);
+ const keys=
+  aliases[type]||[];
+
+
+ currentList=
+  vod.filter(v=>{
+
+   const text=
+    (
+     String(v.type||"")+" "+
+     String(v.category||"")+" "+
+     String(v.group||"")+" "+
+     String(v.name||v.title||"")
+    ).toLowerCase();
+
+   return keys.some(k=>
+    text.includes(k)
+   );
 
   });
 
+
+ document.getElementById("resultTitle")
+  .textContent=
+  "VOD • "+type.toUpperCase();
+
+
+ render(currentList,true);
+
 }
 
 
-/* ======================================================
-   FILTERING
-   ====================================================== */
+/* HOME */
 
-function textOf(channel){
+function showHome(){
 
-  return [
-    channel.name,
-    channel.group,
-    channel.country,
-    channel.language,
-    channel.source
-  ]
-  .join(" ")
+ currentList=
+  channels.slice(0,40);
+
+ document.getElementById("resultTitle")
+  .textContent=
+  "Kanale Online";
+
+ render(currentList,false);
+
+}
+
+
+/* SEARCH */
+
+function searchEverything(){
+
+ const q=
+  document.getElementById("search")
+  .value
+  .trim()
   .toLowerCase();
 
-}
+
+ if(!q){
+
+  showHome();
+  return;
+
+ }
 
 
-function isAlbanian(channel){
+ const liveResults=
+  channels.filter(c=>
 
-  const c = String(channel.country || "").toUpperCase();
-  const l = String(channel.language || "").toLowerCase();
-  const t = textOf(channel);
+   (
+    String(c.name||"")+" "+
+    String(c.group||"")+" "+
+    String(c.country||"")
+   )
+   .toLowerCase()
+   .includes(q)
 
-  if(
-    c === "AL" ||
-    c === "XK" ||
-    c === "SHQIP"
-  ){
-    return true;
-  }
-
-  if(
-    l === "sqi" ||
-    l === "alb" ||
-    l.includes("alban")
-  ){
-    return true;
-  }
-
-  /*
-    Kap edhe kanale shqiptare të Maqedonisë,
-    Kosovës, Malit të Zi, etj. sipas emrit.
-  */
-
-  const albanianNames = [
-    "alsat",
-    "tv21",
-    "rtk",
-    "klan kosova",
-    "rtv21",
-    "dukagjini",
-    "teve1",
-    "tëvë1",
-    "ktv",
-    "kohavision",
-    "tv koha",
-    "top estrada",
-    "tv era",
-    "rtv pendimi",
-    "radio pendimi",
-    "rtv islam"
-  ];
-
-  return albanianNames.some(x => t.includes(x));
-
-}
+  );
 
 
-function matchesCategory(channel, filter){
+ const vodResults=
+  vod.filter(v=>
 
-  if(filter === "all"){
-    return true;
-  }
+   (
+    String(v.name||v.title||"")+" "+
+    String(v.category||"")+" "+
+    String(v.type||"")
+   )
+   .toLowerCase()
+   .includes(q)
 
-  if(filter === "shqip"){
-    return isAlbanian(channel);
-  }
+  );
 
-  const words = aliases[filter] || [];
-  const txt = textOf(channel);
 
-  return words.some(word => txt.includes(word));
+ currentList=[
+  ...liveResults,
+  ...vodResults
+ ];
+
+
+ document.getElementById("resultTitle")
+  .textContent=
+  "Kërkimi • "+currentList.length;
+
+
+ render(currentList,false);
 
 }
 
 
-/* ======================================================
-   RENDER
-   ====================================================== */
+/* RENDER */
 
-function renderChannels(){
+function render(list,isVod){
 
-  const query =
-    searchInput.value.trim().toLowerCase();
+ const box=
+  document.getElementById("results");
 
-  const countryFilter =
-    country.value;
 
-  let rows = allChannels.filter(ch=>{
+ if(!list.length){
+
+  box.innerHTML=
+   '<div class="empty">'+
+   'Nuk u gjet përmbajtje.'+
+   '</div>';
+
+  return;
+
+ }
+
+
+ box.innerHTML=
+  list.slice(0,200)
+  .map((item,index)=>{
+
+   const name=
+    escapeHtml(
+     item.name||
+     item.title||
+     "LazyTV"
+    );
+
+
+   const group=
+    escapeHtml(
+     item.group||
+     item.category||
+     item.country||
+     ""
+    );
+
+
+   const logo=
+    item.logo||
+    item.poster||
+    item.image||
+    "";
+
+
+   let logoHtml="TV";
+
+
+   if(logo){
+
+    logoHtml=
+     '<img src="'+
+     escapeHtml(logo)+
+     '" loading="lazy" '+
+     'onerror="this.style.display=\'none\'">';
+
+   }
+
+
+   return `
+
+   <div class="channel"
+    onclick="playItem(${index})">
+
+    <div class="logo">
+     ${logoHtml}
+    </div>
+
+    <div class="ctxt">
+
+     <b>${name}</b>
+
+     <small>${group}</small>
+
+    </div>
+
+    <div class="play">
+     ▶
+    </div>
+
+   </div>
+
+   `;
+
+  }).join("");
+
+}
+
+
+/* PLAY */
+
+function playItem(index){
+
+ const item=
+  currentList[index];
+
+ if(!item)return;
+
+
+ const url=
+  String(
+   item.url||
+   item.stream||
+   item.stream_url||
+   item.video||
+   ""
+  ).trim();
+
+
+ if(!url){
+
+  alert(
+   "Ky kanal/video nuk ka URL."
+  );
+
+  return;
+
+ }
+
+
+ document.getElementById("playingName")
+  .textContent=
+  item.name||
+  item.title||
+  "LazyTV";
+
+
+ document.getElementById("player")
+  .classList.add("show");
+
+
+ startPlayer(url);
+
+}
+
+
+/* PLAYER */
+
+function startPlayer(url){
+
+ const video=
+  document.getElementById("video");
+
+
+ stopVideo();
+
+
+ const u=
+  String(url).trim();
+
+ const lower=
+  u.toLowerCase();
+
+
+ if(
+  lower.includes(".m3u8") &&
+  window.Hls &&
+  Hls.isSupported()
+ ){
+
+  hls=
+   new Hls({
+
+    enableWorker:true,
+    lowLatencyMode:true,
+    maxBufferLength:30,
+    backBufferLength:60
+
+   });
+
+
+  hls.loadSource(u);
+
+  hls.attachMedia(video);
+
+
+  hls.on(
+   Hls.Events.MANIFEST_PARSED,
+   ()=>{
+
+    video.play()
+    .catch(()=>{});
+
+   }
+  );
+
+
+  hls.on(
+   Hls.Events.ERROR,
+   (event,data)=>{
+
+    if(!data.fatal)return;
+
 
     if(
-      countryFilter &&
-      String(ch.country || "") !== countryFilter
-    ){
-      return false;
-    }
-
-    if(
-      !matchesCategory(ch,currentFilter)
-    ){
-      return false;
-    }
-
-    if(query){
-
-      const txt = textOf(ch);
-
-      if(!txt.includes(query)){
-        return false;
-      }
-
-    }
-
-    return true;
-
-  });
-
-
-  /*
-    SHQIP përpara brenda listës së përgjithshme
-  */
-
-  rows.sort((a,b)=>{
-
-    const aa = isAlbanian(a) ? 0 : 1;
-    const bb = isAlbanian(b) ? 0 : 1;
-
-    if(aa !== bb){
-      return aa - bb;
-    }
-
-    return String(a.name || "")
-      .localeCompare(String(b.name || ""));
-  });
-
-
-  resultCount.textContent =
-    rows.length + " rezultate";
-
-
-  const titles = {
-    all:"📺 Të gjitha kanalet",
-    shqip:"🇦🇱 Kanale Shqip",
-    sports:"⚽ Sport",
-    movies:"🎬 Filma",
-    news:"📰 Lajme",
-    kids:"🧒 Fëmijë",
-    music:"🎵 Muzikë",
-    religious:"☪️ Islame"
-  };
-
-  listTitle.textContent =
-    titles[currentFilter] || "📺 Kanalet";
-
-
-  grid.innerHTML = "";
-
-
-  if(!rows.length){
-
-    grid.innerHTML =
-      '<div class="empty">Nuk u gjet asnjë kanal për këtë filtër.</div>';
-
-    return;
-  }
-
-
-  rows.forEach(channel=>{
-
-    const card =
-      document.createElement("div");
-
-    card.className = "channel";
-
-    const logo =
-      String(channel.logo || "").trim();
-
-    const group =
-      channel.group || "TV";
-
-    const countryCode =
-      channel.country || "TV";
-
-
-    const logoHtml = logo
-      ? `
-        <img
-          src="${escapeHtml(logo)}"
-          loading="lazy"
-          alt=""
-          onerror="
-            this.style.display='none';
-            this.nextElementSibling.style.display='block';
-          "
-        >
-        <div
-          class="logo-fallback"
-          style="display:none"
-        >TV</div>
-      `
-      : `<div class="logo-fallback">TV</div>`;
-
-
-    card.innerHTML = `
-
-      <div class="logo-box">
-
-        ${logoHtml}
-
-        <div class="live-badge">
-          LIVE
-        </div>
-
-      </div>
-
-      <div class="channel-info">
-
-        <div class="channel-name">
-          ${escapeHtml(channel.name || "TV")}
-        </div>
-
-        <div class="channel-meta">
-
-          <span class="badge">
-            ${escapeHtml(countryCode)}
-          </span>
-
-          <span class="badge">
-            ${escapeHtml(group)}
-          </span>
-
-        </div>
-
-      </div>
-
-    `;
-
-
-    card.addEventListener(
-      "click",
-      ()=>{
-        playChannel(channel,card);
-      }
-    );
-
-
-    grid.appendChild(card);
-
-  });
-
-}
-
-
-/* ======================================================
-   PLAYER
-   ====================================================== */
-
-function destroyPlayer(){
-
-  if(hls){
-
-    try{
-      hls.destroy();
-    }catch(e){}
-
-    hls = null;
-  }
-
-  video.pause();
-
-  video.removeAttribute("src");
-
-  video.load();
-
-  quality.innerHTML =
-    '<option value="-1">⚙️ Auto Quality</option>';
-
-}
-
-
-function playChannel(channel,card){
-
-  if(
-    !channel ||
-    !channel.url
-  ){
-    setStatus(
-      "Ky kanal nuk ka URL transmetimi.",
-      "error"
-    );
-    return;
-  }
-
-  currentChannel = channel;
-
-  retryCount = 0;
-
-
-  if(selectedCard){
-    selectedCard.classList.remove("selected");
-  }
-
-  selectedCard = card;
-
-  if(card){
-    card.classList.add("selected");
-  }
-
-
-  placeholder.classList.add("hidden");
-
-  showLoading(true);
-
-
-  nowTitle.textContent =
-    channel.name || "LazyTV";
-
-  nowMeta.textContent =
-    [
-      channel.country,
-      channel.group,
-      channel.source
-    ]
-    .filter(Boolean)
-    .join(" • ");
-
-
-  if(channel.logo){
-
-    nowLogo.src = channel.logo;
-    nowLogo.style.display = "block";
-
-    nowLogo.onerror = ()=>{
-      nowLogo.style.display = "none";
-    };
-
-  }else{
-
-    nowLogo.style.display = "none";
-
-  }
-
-
-  setStatus(
-    "Duke hapur " +
-    (channel.name || "kanalin") +
-    "..."
-  );
-
-
-  startStream(channel.url);
-
-}
-
-
-function startStream(url){
-
-  destroyPlayer();
-
-  showLoading(true);
-
-  const lower =
-    String(url).toLowerCase();
-
-
-  /*
-    HLS .m3u8
-  */
-
-  if(
-    lower.includes(".m3u8") ||
-    lower.includes("m3u8")
-  ){
-
-    if(window.Hls && Hls.isSupported()){
-
-      hls = new Hls({
-
-        enableWorker:true,
-
-        lowLatencyMode:true,
-
-        backBufferLength:60,
-
-        maxBufferLength:30,
-
-        manifestLoadingTimeOut:15000,
-
-        levelLoadingTimeOut:15000,
-
-        fragLoadingTimeOut:20000
-
-      });
-
-
-      hls.loadSource(url);
-
-      hls.attachMedia(video);
-
-
-      hls.on(
-        Hls.Events.MANIFEST_PARSED,
-        function(){
-
-          buildQualityMenu();
-
-          attemptPlay();
-
-        }
-      );
-
-
-      hls.on(
-        Hls.Events.ERROR,
-        function(event,data){
-
-          console.log(
-            "HLS error",
-            data
-          );
-
-          if(!data.fatal){
-            return;
-          }
-
-
-          if(
-            data.type ===
-            Hls.ErrorTypes.NETWORK_ERROR
-          ){
-
-            retryStream(
-              "Problem rrjeti në stream."
-            );
-
-          }
-
-          else if(
-            data.type ===
-            Hls.ErrorTypes.MEDIA_ERROR
-          ){
-
-            try{
-
-              hls.recoverMediaError();
-
-              setStatus(
-                "Po rikuperoj player-in..."
-              );
-
-            }catch(e){
-
-              retryStream(
-                "Gabim media."
-              );
-
-            }
-
-          }
-
-          else{
-
-            retryStream(
-              "Stream-i nuk mund të luhet."
-            );
-
-          }
-
-        }
-      );
-
-      return;
-
-    }
-
-
-    /*
-      Safari / native HLS / disa WebView
-    */
-
-    if(
-      video.canPlayType(
-        "application/vnd.apple.mpegurl"
-      )
+     data.type===
+     Hls.ErrorTypes.NETWORK_ERROR
     ){
 
-      video.src = url;
-
-      video.load();
-
-      attemptPlay();
-
-      return;
+     hls.startLoad();
 
     }
 
-  }
+    else if(
+     data.type===
+     Hls.ErrorTypes.MEDIA_ERROR
+    ){
 
-
-  /*
-    MP4, TS ose format që browser-i
-    mund ta provojë drejtpërdrejt
-  */
-
-  video.src = url;
-
-  video.load();
-
-  attemptPlay();
-
-}
-
-
-async function attemptPlay(){
-
-  try{
-
-    await video.play();
-
-    showLoading(false);
-
-    setStatus(
-      "▶ Transmetimi është aktiv.",
-      "ok"
-    );
-
-  }catch(err){
-
-    console.log(err);
-
-    /*
-      Autoplay mund të bllokohet.
-      Video controls mbetet aktive.
-    */
-
-    showLoading(false);
-
-    setStatus(
-      "Prek ▶ Play në player për të nisur transmetimin."
-    );
-
-  }
-
-}
-
-
-/* ======================================================
-   RETRY
-   ====================================================== */
-
-function retryStream(message){
-
-  if(
-    !currentChannel ||
-    !currentChannel.url
-  ){
-    return;
-  }
-
-
-  if(retryCount < MAX_RETRIES){
-
-    retryCount++;
-
-    setStatus(
-      message +
-      " Prova " +
-      retryCount +
-      "/" +
-      MAX_RETRIES +
-      "..."
-    );
-
-    setTimeout(
-      ()=>{
-        startStream(
-          currentChannel.url
-        );
-      },
-      1500
-    );
-
-  }else{
-
-    showLoading(false);
-
-    setStatus(
-      "❌ Ky stream nuk po hapet në browser/WebView. Mund të jetë offline, geo-blocked, HTTP i bllokuar ose kërkon CORS/header të veçantë.",
-      "error"
-    );
-
-  }
-
-}
-
-
-function retryCurrent(){
-
-  if(!currentChannel){
-
-    setStatus(
-      "Zgjidh fillimisht një kanal.",
-      "error"
-    );
-
-    return;
-  }
-
-  retryCount = 0;
-
-  startStream(
-    currentChannel.url
-  );
-
-}
-
-
-/* ======================================================
-   QUALITY
-   ====================================================== */
-
-function buildQualityMenu(){
-
-  quality.innerHTML =
-    '<option value="-1">⚙️ Auto Quality</option>';
-
-  if(
-    !hls ||
-    !Array.isArray(hls.levels)
-  ){
-    return;
-  }
-
-
-  hls.levels.forEach(
-    (level,index)=>{
-
-      const option =
-        document.createElement("option");
-
-      option.value = index;
-
-      let text = "";
-
-      if(level.height){
-        text += level.height + "p";
-      }
-
-      if(level.bitrate){
-
-        const mbps =
-          (level.bitrate / 1000000)
-          .toFixed(1);
-
-        text +=
-          (text ? " • " : "") +
-          mbps +
-          " Mbps";
-      }
-
-      option.textContent =
-        text || "Quality " + (index+1);
-
-      quality.appendChild(option);
+     hls.recoverMediaError();
 
     }
-  );
 
-}
+    else{
 
+     hls.destroy();
+     hls=null;
 
-function changeQuality(){
-
-  if(!hls){
-    return;
-  }
-
-  hls.currentLevel =
-    Number(quality.value);
-
-}
-
-
-/* ======================================================
-   VIDEO EVENTS
-   ====================================================== */
-
-video.addEventListener(
-  "playing",
-  ()=>{
-
-    showLoading(false);
-
-    setStatus(
-      "▶ LIVE • Transmetimi aktiv",
-      "ok"
-    );
-
-  }
-);
-
-
-video.addEventListener(
-  "waiting",
-  ()=>{
-
-    showLoading(true);
-
-    setStatus(
-      "Duke bufferuar..."
-    );
-
-  }
-);
-
-
-video.addEventListener(
-  "canplay",
-  ()=>{
-    showLoading(false);
-  }
-);
-
-
-video.addEventListener(
-  "error",
-  ()=>{
-
-    if(!currentChannel){
-      return;
-    }
-
-    retryStream(
-      "Player-i raportoi gabim."
-    );
-
-  }
-);
-
-
-/* ======================================================
-   CONTROLS
-   ====================================================== */
-
-function toggleMute(){
-
-  video.muted =
-    !video.muted;
-
-  setStatus(
-    video.muted
-      ? "🔇 Zëri u çaktivizua."
-      : "🔊 Zëri u aktivizua."
-  );
-
-}
-
-
-function fullscreenVideo(){
-
-  const target =
-    video.parentElement;
-
-  if(target.requestFullscreen){
-
-    target.requestFullscreen();
-
-  }
-
-  else if(
-    target.webkitRequestFullscreen
-  ){
-
-    target.webkitRequestFullscreen();
-
-  }
-
-  else if(
-    video.webkitEnterFullscreen
-  ){
-
-    video.webkitEnterFullscreen();
-
-  }
-
-}
-
-
-/* ======================================================
-   UI EVENTS
-   ====================================================== */
-
-document
-.querySelectorAll(".tab")
-.forEach(btn=>{
-
-  btn.addEventListener(
-    "click",
-    ()=>{
-
-      document
-      .querySelectorAll(".tab")
-      .forEach(x=>
-        x.classList.remove("active")
-      );
-
-      btn.classList.add("active");
-
-      currentFilter =
-        btn.dataset.filter;
-
-      /*
-        Kur shtyp SHQIP,
-        mos e kufizo nga shteti i zgjedhur.
-      */
-
-      if(currentFilter === "shqip"){
-        country.value = "";
-      }
-
-      renderChannels();
+     nativePlay(u);
 
     }
+
+   }
   );
 
-});
+ }
+ else{
 
+  nativePlay(u);
 
-searchInput.addEventListener(
-  "input",
-  renderChannels
-);
-
-
-country.addEventListener(
-  "change",
-  renderChannels
-);
-
-
-/* ======================================================
-   HELPERS
-   ====================================================== */
-
-function setStatus(text,type=""){
-
-  statusBox.textContent = text;
-
-  statusBox.className =
-    "status" +
-    (type ? " " + type : "");
+ }
 
 }
 
 
-function showLoading(show){
+/* NATIVE */
 
-  loading.classList.toggle(
-    "show",
-    !!show
-  );
+function nativePlay(url){
 
-}
+ const video=
+  document.getElementById("video");
 
+ video.src=url;
 
-function escapeHtml(value){
+ video.load();
 
-  return String(value || "")
-    .replace(/&/g,"&amp;")
-    .replace(/</g,"&lt;")
-    .replace(/>/g,"&gt;")
-    .replace(/"/g,"&quot;")
-    .replace(/'/g,"&#039;");
+ video.play()
+ .catch(()=>{});
 
 }
 
 
-/* ======================================================
-   START
-   ====================================================== */
+/* STOP */
 
-loadChannels();
+function stopVideo(){
+
+ const video=
+  document.getElementById("video");
+
+
+ if(hls){
+
+  hls.destroy();
+
+  hls=null;
+
+ }
+
+
+ video.pause();
+
+ video.removeAttribute("src");
+
+ video.load();
+
+}
+
+
+/* CLOSE */
+
+function closePlayer(){
+
+ stopVideo();
+
+ document.getElementById("player")
+  .classList.remove("show");
+
+}
+
+
+/* ESCAPE */
+
+function escapeHtml(v){
+
+ return String(v)
+
+ .replace(/&/g,"&amp;")
+ .replace(/</g,"&lt;")
+ .replace(/>/g,"&gt;")
+ .replace(/"/g,"&quot;");
+
+}
+
+
+loadData();
 
 </script>
 
