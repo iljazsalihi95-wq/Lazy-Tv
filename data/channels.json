@@ -1,15 +1,15 @@
 {
   "version": 5,
-  "updated": "2026-09-07T00:13:31Z",
-  "total": 700,
+  "updated": "2026-09-07T06:12:07Z",
+  "total": 697,
   "checked": 1034,
   "countries": {
     "AL": 10,
-    "DE": 239,
+    "DE": 238,
     "IT": 253,
     "ME": 3,
     "MK": 16,
-    "RS": 16,
+    "RS": 14,
     "SHQIP": 3,
     "TR": 153,
     "XK": 7
@@ -3316,21 +3316,6 @@
       "type": "hls"
     },
     {
-      "name": "labor14 (720p)",
-      "tvg_id": "labor14.de@HD",
-      "logo": "https://www.tlm.de/assets/uploads/general/Sonstiges/LogoExt/_500xAUTO_crop_center-center_none/21labor14.jpg",
-      "group": "Undefined",
-      "language": "deu",
-      "country": "DE",
-      "source": "Germany",
-      "source_id": "de-country",
-      "url": "https://5acade5fc0c29.streamlock.net/OKGera/tmbz_live_high.stream/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "Leipzig Fernsehen (1080p)",
       "tvg_id": "SachsenFernsehenLeipzig.de@SD",
       "logo": "https://i.imgur.com/easmJUw.png",
@@ -4465,21 +4450,6 @@
       "source": "Italy Backup",
       "source_id": "it-country",
       "url": "https://64b16f23efbee.streamlock.net/calabriatv/calabriatv/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
-      "name": "Canale 2 Altamura (576p) [Not 24/7]",
-      "tvg_id": "Canale2Altamura.it@SD",
-      "logo": "https://i.imgur.com/7XXdN5T.png",
-      "group": "General",
-      "language": "ita",
-      "country": "IT",
-      "source": "Italy Backup",
-      "source_id": "it-country",
-      "url": "https://59d7d6f47d7fc.streamlock.net/canale2/canale2/playlist.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -7546,6 +7516,21 @@
       "type": "hls"
     },
     {
+      "name": "Visual Radio (576p) [Not 24/7]",
+      "tvg_id": "VisualRadio.it@SD",
+      "logo": "https://i.imgur.com/ah14ah0.png",
+      "group": "Undefined",
+      "language": "ita",
+      "country": "IT",
+      "source": "Italy Backup",
+      "source_id": "it-country",
+      "url": "http://wms.shared.streamshow.it:1935/visualradio/visualradio/live.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
       "name": "TV Teuta",
       "tvg_id": "TVTeuta.me@SD",
       "logo": "https://i.imgur.com/sWVqBuW.png",
@@ -7831,21 +7816,6 @@
       "type": "hls"
     },
     {
-      "name": "Nova (1080p)",
-      "tvg_id": "Nova.rs@SD",
-      "logo": "https://i.imgur.com/sU8UPPY.png",
-      "group": "General",
-      "language": "",
-      "country": "RS",
-      "source": "Serbia",
-      "source_id": "rs-country",
-      "url": "https://best-str.umn.cdn.united.cloud/stream?channel=novashd&p=n0v43!23t001&player=m3u8&sp=novas&stream=hp7000&u=novas",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "stream"
-    },
-    {
       "name": "Pannon RTV (648p)",
       "tvg_id": "PannonTV.rs@SD",
       "logo": "https://i.imgur.com/xQa2idL.png",
@@ -7949,21 +7919,6 @@
       "referer": "",
       "status": "online",
       "type": "hls"
-    },
-    {
-      "name": "IDJTV",
-      "tvg_id": "IDJTV.rs@SD",
-      "logo": "https://i.imgur.com/btvyrzr.png",
-      "group": "Undefined",
-      "language": "",
-      "country": "RS",
-      "source": "Serbia",
-      "source_id": "rs-country",
-      "url": "https://best-str.umn.cdn.united.cloud/stream?channel=idjhd&p=In$trum300na765ta&player=m3u8&sp=idjtv&stream=hp1400&u=idjtv",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "stream"
     },
     {
       "name": "like Gecko) Chrome/130.0.0.0 Safari/537.36\" group-title=\"Undefined\",Sci Fi",
@@ -8356,6 +8311,21 @@
       "type": "hls"
     },
     {
+      "name": "Persiana Turkiye",
+      "tvg_id": "PersianaTurkiye.fr@SD",
+      "logo": "",
+      "group": "Entertainment",
+      "language": "tur",
+      "country": "TR",
+      "source": "Turkey Backup",
+      "source_id": "tr-country",
+      "url": "https://turkhls.persiana.live/hls/stream.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
       "name": "A2TV (1080p)",
       "tvg_id": "A2TV.tr",
       "logo": "https://iatv.tmgrup.com.tr/site/v2/a2tv/i/a2tv-logo.png",
@@ -8710,21 +8680,6 @@
       "source": "Turkey Working",
       "source_id": "tr-dearbulut",
       "url": "https://edge1.socialsmart.tv/kanal32/bant1/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
-      "name": "Kanal 33 (1080p)",
-      "tvg_id": "Kanal33.tr",
-      "logo": "https://i.imgur.com/5WYaoFZ.png",
-      "group": "General",
-      "language": "tur",
-      "country": "TR",
-      "source": "Turkey Working",
-      "source_id": "tr-dearbulut",
-      "url": "https://edge1.socialsmart.tv/kanal33/bant1/playlist.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
