@@ -29,6 +29,10 @@ h1{font-size:34px;margin:0}
 .channels{display:none;margin-top:22px}
 .channels.show{display:block}
 .back{border:0;background:#102742;color:white;border-radius:14px;padding:11px 16px;font-weight:800;margin-bottom:12px}
+.cats{display:flex;gap:8px;overflow:auto;padding:2px 0 14px;margin-bottom:4px;scrollbar-width:none}
+.cats::-webkit-scrollbar{display:none}
+.cat{border:1px solid #29496f;background:#08182b;color:#dcecff;border-radius:999px;padding:10px 14px;white-space:nowrap;font-weight:800}
+.cat.active{background:#0e80ef;border-color:#0e80ef;color:#fff}
 .chgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
 .ch{background:#09182a;border:1px solid #24476d;border-radius:18px;padding:15px;min-height:86px;display:flex;justify-content:space-between;gap:10px;align-items:center}
 .ch b{font-size:15px}.ch small{display:block;color:#8093ad;margin-top:5px}
@@ -69,6 +73,7 @@ video{width:100%;max-height:75vh;background:#000}
   <div class="channels" id="channelsView">
     <button class="back" onclick="goHome()">← Shtetet</button>
     <div class="sectionHead"><h2 id="countryTitle">Kanale</h2><span id="countryCount"></span></div>
+    <div class="cats" id="cats"></div>
     <div class="chgrid" id="chgrid"></div>
   </div>
 </div>
@@ -92,38 +97,89 @@ video{width:100%;max-height:75vh;background:#000}
 const DATA_URL='data/channels.json';
 let all=[], current=null, tsPlayer=null;
 
-const COUNTRIES=[
- {id:'AL',name:'Shqipëri',flag:'🇦🇱'},
- {id:'XK',name:'Kosovë',flag:'🇽🇰'},
- {id:'MK',name:'Maqedoni',flag:'🇲🇰'},
- {id:'ME',name:'Mali i Zi',flag:'🇲🇪'},
- {id:'BA',name:'Bosna',flag:'🇧🇦'},
- {id:'HR',name:'Kroacia',flag:'🇭🇷'},
- {id:'RS',name:'Serbia',flag:'🇷🇸'},
- {id:'TR',name:'Turqia',flag:'🇹🇷'}
-];
+const COUNTRY_INFO={
+ AL:{name:'Shqipëri',flag:'🇦🇱'}, XK:{name:'Kosovë',flag:'🇽🇰'}, KS:{name:'Kosovë',flag:'🇽🇰'},
+ MK:{name:'Maqedoni',flag:'🇲🇰'}, ME:{name:'Mali i Zi',flag:'🇲🇪'}, BA:{name:'Bosna',flag:'🇧🇦'},
+ HR:{name:'Kroacia',flag:'🇭🇷'}, RS:{name:'Serbia',flag:'🇷🇸'}, TR:{name:'Turqia',flag:'🇹🇷'},
+ DE:{name:'Gjermania',flag:'🇩🇪'}, AT:{name:'Austria',flag:'🇦🇹'}, IT:{name:'Italia',flag:'🇮🇹'},
+ CH:{name:'Zvicra',flag:'🇨🇭'}, FR:{name:'Franca',flag:'🇫🇷'}, GB:{name:'Britania',flag:'🇬🇧'},
+ UK:{name:'Britania',flag:'🇬🇧'}, US:{name:'SHBA',flag:'🇺🇸'}, ES:{name:'Spanja',flag:'🇪🇸'},
+ NL:{name:'Holanda',flag:'🇳🇱'}, BE:{name:'Belgjika',flag:'🇧🇪'}, GR:{name:'Greqia',flag:'🇬🇷'},
+ BG:{name:'Bullgaria',flag:'🇧🇬'}, RO:{name:'Rumania',flag:'🇷🇴'}, PL:{name:'Polonia',flag:'🇵🇱'},
+ PT:{name:'Portugalia',flag:'🇵🇹'}, SE:{name:'Suedia',flag:'🇸🇪'}, NO:{name:'Norvegjia',flag:'🇳🇴'},
+ DK:{name:'Danimarka',flag:'🇩🇰'}, FI:{name:'Finlanda',flag:'🇫🇮'}, SI:{name:'Sllovenia',flag:'🇸🇮'}
+};
 
-function esc(v){return String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
-function channelsOf(id){return all.filter(c=>String(c.country||'').toUpperCase()===id)}
+let currentCountry=null;
+let currentCategory='ALL';
+
+function countryCode(c){
+ return String(c.country||'').trim().toUpperCase();
+}
+function countryInfo(id){
+ return COUNTRY_INFO[id] || {name:id||'Tjetër',flag:'🌐'};
+}
+function availableCountries(){
+ const counts={};
+ all.forEach(c=>{
+   const id=countryCode(c);
+   if(!id)return;
+   counts[id]=(counts[id]||0)+1;
+ });
+ return Object.keys(counts)
+   .map(id=>({id,...countryInfo(id),count:counts[id]}))
+   .sort((a,b)=>b.count-a.count || a.name.localeCompare(b.name,'sq'));
+}
+function channelsOf(id){
+ return all.filter(c=>countryCode(c)===id);
+}
 function renderCountries(){
-  countries.innerHTML=COUNTRIES.map(c=>{
-    const n=channelsOf(c.id).length;
-    return `<div class="country" onclick="${n?`openCountry('${c.id}')`:''}">
-      <div class="flag">${c.flag}</div><div><b>${c.name}</b><small>${n} kanale</small></div>
-    </div>`;
-  }).join('');
+ const list=availableCountries();
+ countries.innerHTML=list.map(c=>`
+   <div class="country" onclick="openCountry('${esc(c.id)}')">
+     <div class="flag">${c.flag}</div>
+     <div><b>${esc(c.name)}</b><small>${c.count} kanale</small></div>
+   </div>`).join('') || '<div>Nuk u gjet asnjë shtet në JSON.</div>';
+}
+function categoriesOf(rows){
+ const set=new Set();
+ rows.forEach(c=>{
+   const cat=String(c.category||c.group||'General').trim()||'General';
+   set.add(cat);
+ });
+ return [...set].sort((a,b)=>a.localeCompare(b,'sq'));
+}
+function renderCategoryBar(rows){
+ const list=categoriesOf(rows);
+ cats.innerHTML =
+   `<button class="cat ${currentCategory==='ALL'?'active':''}" onclick="selectCategory('ALL')">Të gjitha (${rows.length})</button>`+
+   list.map(cat=>{
+     const n=rows.filter(c=>String(c.category||c.group||'General').trim()===cat).length;
+     return `<button class="cat ${currentCategory===cat?'active':''}" onclick='selectCategory(${JSON.stringify(cat)})'>${esc(cat)} (${n})</button>`;
+   }).join('');
+}
+function selectCategory(cat){
+ currentCategory=cat;
+ const rows=channelsOf(currentCountry);
+ renderCategoryBar(rows);
+ const filtered=cat==='ALL'?rows:rows.filter(c=>String(c.category||c.group||'General').trim()===cat);
+ countryCount.textContent=filtered.length+' kanale';
+ renderChannels(filtered);
 }
 function openCountry(id){
-  const info=COUNTRIES.find(x=>x.id===id);
-  const rows=channelsOf(id);
-  home.style.display='none';
-  channelsView.classList.add('show');
-  countryTitle.textContent=(info?info.flag+' '+info.name:'Kanale');
-  countryCount.textContent=rows.length+' kanale';
-  renderChannels(rows);
-  scrollTo(0,0);
+ currentCountry=id;
+ currentCategory='ALL';
+ const info=countryInfo(id);
+ const rows=channelsOf(id);
+ home.style.display='none';
+ channelsView.classList.add('show');
+ countryTitle.textContent=info.flag+' '+info.name;
+ countryCount.textContent=rows.length+' kanale';
+ renderCategoryBar(rows);
+ renderChannels(rows);
+ scrollTo(0,0);
 }
-function goHome(){channelsView.classList.remove('show');home.style.display='block';q.value='';renderCountries();scrollTo(0,0)}
+function goHome(){currentCountry=null;currentCategory='ALL';channelsView.classList.remove('show');home.style.display='block';q.value='';cats.innerHTML='';renderCountries();scrollTo(0,0)}
 function renderChannels(rows){
  chgrid.innerHTML=rows.map((c,i)=>`<div class="ch">
    <div><b>${esc(c.name)}</b><small>${esc(c.category||c.group||'')}</small></div>
