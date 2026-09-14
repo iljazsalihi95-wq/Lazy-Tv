@@ -96,6 +96,12 @@ video{width:100%;max-height:75vh;background:#000}
 
 <script>
 const DATA_URL='data/channels.json';
+const STREAM_PROXY_BASE='https://lazy-morning-7b13.ionew.workers.dev/';
+function playableUrl(u){
+  u=String(u||'').trim();
+  if(/^http:\/\//i.test(u)) return STREAM_PROXY_BASE + u;
+  return u;
+}
 let all=[], current=null, tsPlayer=null, hlsPlayer=null;
 const total=document.getElementById('total');
 const q=document.getElementById('q');
@@ -217,7 +223,7 @@ function cleanupPlayer(){
 }
 function showMsg(html){msg.innerHTML=html;msg.classList.add('show')}
 function hideMsg(){msg.classList.remove('show');msg.innerHTML=''}
-function externalLinks(url){
+function externalLinks(originalUrl){
  const noScheme=url.replace(/^https?:\/\//,'');
  const intent=`intent://${noScheme}#Intent;scheme=http;type=video/mp2t;package=org.videolan.vlc;end`;
  return `<div class="actions">
@@ -234,26 +240,19 @@ function playChannel(i){
  const url=c.url;
  const mixed=(location.protocol==='https:' && /^http:\/\//i.test(url));
 
- if(mixed){
-   showMsg(`<b>Ky stream është HTTP, ndërsa GitHub Pages është HTTPS.</b><br>
-   Chrome e bllokon videon brenda faqes si “mixed content”. Tokeni është në link dhe ruhet i plotë.
-   ${externalLinks(url)}`);
-   return;
- }
-
  if(window.mpegts && mpegts.getFeatureList().mseLivePlayback){
    try{
      tsPlayer=mpegts.createPlayer({type:'mpegts',isLive:true,url:url},{enableWorker:true,liveBufferLatencyChasing:true});
      tsPlayer.attachMediaElement(video);
      tsPlayer.load();
      tsPlayer.play().catch(()=>{});
-     setTimeout(()=>{ if(video.readyState<2) showMsg('Stream-i nuk u nis brenda player-it.'+externalLinks(url)); },7000);
+     setTimeout(()=>{ if(video.readyState<2) showMsg('Stream-i nuk u nis brenda player-it.'+externalLinks(originalUrl)); },7000);
      return;
    }catch(e){}
  }
 
  video.src=url;
- video.play().catch(()=>{showMsg('Browseri nuk e luajti direkt këtë stream.'+externalLinks(url))});
+ video.play().catch(()=>{showMsg('Browseri nuk e luajti direkt këtë stream.'+externalLinks(originalUrl))});
 }
 function closePlayer(){cleanupPlayer();playerOverlay.classList.remove('show');hideMsg()}
 
