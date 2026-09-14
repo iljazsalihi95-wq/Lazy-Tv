@@ -96,6 +96,21 @@ video{width:100%;max-height:75vh;background:#000}
 <script>
 const DATA_URL='data/channels.json';
 let all=[], current=null, tsPlayer=null;
+const total=document.getElementById('total');
+const q=document.getElementById('q');
+const home=document.getElementById('home');
+const countries=document.getElementById('countries');
+const channelsView=document.getElementById('channelsView');
+const countryTitle=document.getElementById('countryTitle');
+const countryCount=document.getElementById('countryCount');
+const cats=document.getElementById('cats');
+const chgrid=document.getElementById('chgrid');
+const playerOverlay=document.getElementById('playerOverlay');
+const playing=document.getElementById('playing');
+const video=document.getElementById('video');
+const msg=document.getElementById('msg');
+
+function esc(v){return String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
 
 const COUNTRY_INFO={
  AL:{name:'Shqipëri',flag:'🇦🇱'}, XK:{name:'Kosovë',flag:'🇽🇰'}, KS:{name:'Kosovë',flag:'🇽🇰'},
