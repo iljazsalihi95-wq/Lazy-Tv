@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
 <title>LazyTV</title>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 <script src="https://cdn.jsdelivr.net/npm/mpegts.js@latest/dist/mpegts.min.js"></script>
 <style>
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
@@ -95,7 +96,7 @@ video{width:100%;max-height:75vh;background:#000}
 
 <script>
 const DATA_URL='data/channels.json';
-let all=[], current=null, tsPlayer=null;
+let all=[], current=null, tsPlayer=null, hlsPlayer=null;
 const total=document.getElementById('total');
 const q=document.getElementById('q');
 const home=document.getElementById('home');
