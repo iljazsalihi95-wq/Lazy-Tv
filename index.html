@@ -96,7 +96,7 @@ video{width:100%;max-height:75vh;background:#000}
 
 <script>
 const DATA_URL='data/channels.json';
-const STREAM_PROXY_BASE='https://lazy-morning-7b13.ionew.workers.dev/';
+const STREAM_PROXY_BASE='https://lazytv-proxy.lazisalihi.workers.dev/';
 function playableUrl(u){
   u=String(u||'').trim();
   if(/^http:\/\//i.test(u)) return STREAM_PROXY_BASE+'?url='+encodeURIComponent(u);
