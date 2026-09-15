@@ -1,276 +1,35 @@
 <!doctype html>
-<html lang="sq">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-<title>LazyTV</title>
-<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-<script src="https://cdn.jsdelivr.net/npm/mpegts.js@latest/dist/mpegts.min.js"></script>
+<html lang="sq"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LazyTV IPTV.org</title>
 <style>
-*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-:root{--bg:#020817;--panel:#071426;--panel2:#0b1d33;--line:#203b61;--blue:#1487ff;--muted:#8093ad}
-html,body{margin:0;background:var(--bg);color:white;font-family:Arial,sans-serif}
-body{padding-bottom:88px}
-.wrap{max-width:980px;margin:auto;padding:18px}
-.top{display:flex;align-items:center;justify-content:space-between;gap:15px;margin:8px 0 28px}
-.brand{display:flex;align-items:center;gap:16px}
-.logo{width:74px;height:74px;border-radius:22px;background:linear-gradient(135deg,#08a5ff,#0b78db);display:grid;place-items:center;font-size:34px;box-shadow:0 10px 35px #009cff33}
-h1{font-size:34px;margin:0}
-.counter{padding:13px 18px;border-radius:24px;background:#0a1830;border:1px solid #294b77;color:#d9e8ff;font-weight:800}
-.search{display:flex;align-items:center;background:#061225;border:1px solid #29496f;border-radius:28px;padding:0 18px;height:64px;margin-bottom:30px}
-.search input{width:100%;background:transparent;border:0;outline:0;color:white;font-size:21px}
-.search span{font-size:26px}
-.hero{background:linear-gradient(135deg,#0e8ef2,#06499b,#0a2042);border:1px solid #2487e9;border-radius:30px;padding:28px 34px;margin-bottom:30px}
-.hero b{font-size:31px}.hero p{margin:8px 0 0;color:#c6d8ed;font-size:18px}
-.sectionHead{display:flex;justify-content:space-between;align-items:end;margin:10px 4px 16px}
-.sectionHead h2{margin:0;font-size:27px}.sectionHead span{color:var(--muted)}
-.countries{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-.country{background:linear-gradient(145deg,#0a1a2d,#07111f);border:1px solid #27496e;border-radius:25px;padding:20px;min-height:120px;display:flex;align-items:center;gap:18px;cursor:pointer}
-.country .flag{font-size:42px}.country b{font-size:21px;display:block}.country small{color:#6f839e;font-size:14px}
-.channels{display:none;margin-top:22px}
-.channels.show{display:block}
-.back{border:0;background:#102742;color:white;border-radius:14px;padding:11px 16px;font-weight:800;margin-bottom:12px}
-.cats{display:flex;gap:8px;overflow:auto;padding:2px 0 14px;margin-bottom:4px;scrollbar-width:none}
-.cats::-webkit-scrollbar{display:none}
-.cat{border:1px solid #29496f;background:#08182b;color:#dcecff;border-radius:999px;padding:10px 14px;white-space:nowrap;font-weight:800}
-.cat.active{background:#0e80ef;border-color:#0e80ef;color:#fff}
-.chgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-.ch{background:#09182a;border:1px solid #24476d;border-radius:18px;padding:15px;min-height:86px;display:flex;justify-content:space-between;gap:10px;align-items:center}
-.ch b{font-size:15px}.ch small{display:block;color:#8093ad;margin-top:5px}
-.play{width:42px;height:42px;flex:0 0 42px;border-radius:50%;border:0;background:#0e80ef;color:white;font-size:18px}
-.playerOverlay{position:fixed;inset:0;background:#000;z-index:100;display:none;flex-direction:column}
-.playerOverlay.show{display:flex}
-.playerHead{height:86px;background:#061224;padding:16px 22px;display:flex;justify-content:space-between;align-items:center;gap:12px}
-.playerTitle{font-size:22px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.close{background:#e52935;color:#fff;border:0;border-radius:16px;padding:15px 19px;font-weight:900;font-size:17px}
-.videoWrap{flex:1;display:flex;align-items:center;justify-content:center;position:relative;background:#000}
-video{width:100%;max-height:75vh;background:#000}
-.msg{position:absolute;left:20px;right:20px;bottom:24px;background:#0a1525e8;border:1px solid #315071;border-radius:16px;padding:14px;display:none}
-.msg.show{display:block}
-.actions{display:flex;gap:9px;margin-top:10px;flex-wrap:wrap}
-.actions a,.actions button{background:#167ad4;color:white;border:0;text-decoration:none;border-radius:12px;padding:11px 14px;font-weight:800}
-.actions .secondary{background:#27374b}
-.bottom{position:fixed;z-index:50;left:0;right:0;bottom:0;height:76px;background:#061224;border-top:1px solid #122742;display:flex;justify-content:space-around;align-items:center}
-.nav{color:#8093ad;text-align:center;font-size:13px;font-weight:800}.nav span{font-size:27px;display:block;margin-bottom:4px}
-@media(min-width:700px){.countries{grid-template-columns:repeat(4,1fr)}.chgrid{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:520px){.wrap{padding:14px}.logo{width:62px;height:62px}.top{margin-bottom:22px}h1{font-size:30px}.counter{padding:11px 13px}.search{height:58px}.hero{padding:24px}.hero b{font-size:27px}.countries{gap:12px}.country{padding:16px;min-height:110px}.country .flag{font-size:35px}.country b{font-size:18px}.chgrid{grid-template-columns:1fr}}
-</style>
-</head>
-<body>
-<div class="wrap">
-  <div class="top">
-    <div class="brand"><div class="logo">▶</div><h1>LazyTV</h1></div>
-    <div class="counter">📡 <span id="total">0</span> kanale</div>
-  </div>
-
-  <div class="search"><input id="q" placeholder="Kërko kanal, film, serial..." oninput="globalSearch()"><span>🔎</span></div>
-  <div class="hero"><b>📡 LazyTV</b><p>Live TV • Filma • Seriale • Sport • Kids • Muzikë</p></div>
-
-  <div id="home">
-    <div class="sectionHead"><h2>🌍 Shtetet</h2><span>TV Live</span></div>
-    <div class="countries" id="countries"></div>
-  </div>
-
-  <div class="channels" id="channelsView">
-    <button class="back" onclick="goHome()">← Shtetet</button>
-    <div class="sectionHead"><h2 id="countryTitle">Kanale</h2><span id="countryCount"></span></div>
-    <div class="cats" id="cats"></div>
-    <div class="chgrid" id="chgrid"></div>
-  </div>
-</div>
-
-<div class="bottom">
-  <div class="nav"><span>🏠</span>Ballina</div>
-  <div class="nav"><span>⚽</span>Sport</div>
-  <div class="nav"><span>🎬</span>VOD</div>
-  <div class="nav"><span>🕌</span>Islame</div>
-</div>
-
-<div class="playerOverlay" id="playerOverlay">
-  <div class="playerHead"><div class="playerTitle" id="playing">LazyTV</div><button class="close" onclick="closePlayer()">✕ Mbyll</button></div>
-  <div class="videoWrap">
-    <video id="video" controls playsinline webkit-playsinline></video>
-    <div class="msg" id="msg"></div>
-  </div>
-</div>
-
+*{box-sizing:border-box}body{margin:0;background:#060a10;color:#fff;font-family:Arial,sans-serif;padding:14px}
+.wrap{max-width:900px;margin:auto}.hero{background:linear-gradient(135deg,#17283d,#09111b);padding:20px;border-radius:20px}
+select,input{width:100%;margin-top:10px;padding:13px;border-radius:13px;border:1px solid #2b4057;background:#0e1824;color:#fff}
+#status{padding:12px 2px;color:#aabbd0}.ch{padding:12px;margin:7px 0;border:1px solid #203247;border-radius:13px;background:#0d1621;cursor:pointer}
+.n{font-weight:800}.g{font-size:12px;color:#9db0c6;margin-top:4px}
+</style></head><body><div class="wrap"><div class="hero"><h1>LazyTV • IPTV.org</h1><div>Vetëm burimet publike GitHub / IPTV.org</div></div>
+<select id="s"></select><input id="q" placeholder="Kërko kanal..."><div id="status"></div><div id="list"></div></div>
 <script>
-const DATA_URL='data/channels.json';
-const STREAM_PROXY_BASE='https://lazytv-proxy.lazisalihi.workers.dev/';
-function playableUrl(u){
-  u=String(u||'').trim();
-  if(/^http:\/\//i.test(u)) return STREAM_PROXY_BASE+'?url='+encodeURIComponent(u);
-  return u;
-}
-let all=[], current=null, tsPlayer=null, hlsPlayer=null;
-const total=document.getElementById('total');
-const q=document.getElementById('q');
-const home=document.getElementById('home');
-const countries=document.getElementById('countries');
-const channelsView=document.getElementById('channelsView');
-const countryTitle=document.getElementById('countryTitle');
-const countryCount=document.getElementById('countryCount');
-const cats=document.getElementById('cats');
-const chgrid=document.getElementById('chgrid');
-const playerOverlay=document.getElementById('playerOverlay');
-const playing=document.getElementById('playing');
-const video=document.getElementById('video');
-const msg=document.getElementById('msg');
-
-function esc(v){return String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
-
-const COUNTRY_INFO={
- AL:{name:'Shqipëri',flag:'🇦🇱'}, XK:{name:'Kosovë',flag:'🇽🇰'}, KS:{name:'Kosovë',flag:'🇽🇰'},
- MK:{name:'Maqedoni',flag:'🇲🇰'}, ME:{name:'Mali i Zi',flag:'🇲🇪'}, BA:{name:'Bosna',flag:'🇧🇦'},
- HR:{name:'Kroacia',flag:'🇭🇷'}, RS:{name:'Serbia',flag:'🇷🇸'}, TR:{name:'Turqia',flag:'🇹🇷'},
- DE:{name:'Gjermania',flag:'🇩🇪'}, AT:{name:'Austria',flag:'🇦🇹'}, IT:{name:'Italia',flag:'🇮🇹'},
- CH:{name:'Zvicra',flag:'🇨🇭'}, FR:{name:'Franca',flag:'🇫🇷'}, GB:{name:'Britania',flag:'🇬🇧'},
- UK:{name:'Britania',flag:'🇬🇧'}, US:{name:'SHBA',flag:'🇺🇸'}, ES:{name:'Spanja',flag:'🇪🇸'},
- NL:{name:'Holanda',flag:'🇳🇱'}, BE:{name:'Belgjika',flag:'🇧🇪'}, GR:{name:'Greqia',flag:'🇬🇷'},
- BG:{name:'Bullgaria',flag:'🇧🇬'}, RO:{name:'Rumania',flag:'🇷🇴'}, PL:{name:'Polonia',flag:'🇵🇱'},
- PT:{name:'Portugalia',flag:'🇵🇹'}, SE:{name:'Suedia',flag:'🇸🇪'}, NO:{name:'Norvegjia',flag:'🇳🇴'},
- DK:{name:'Danimarka',flag:'🇩🇰'}, FI:{name:'Finlanda',flag:'🇫🇮'}, SI:{name:'Sllovenia',flag:'🇸🇮'}
-};
-
-let currentCountry=null;
-let currentCategory='ALL';
-
-function countryCode(c){
- return String(c.country||'').trim().toUpperCase();
-}
-function countryInfo(id){
- return COUNTRY_INFO[id] || {name:id||'Tjetër',flag:'🌐'};
-}
-function availableCountries(){
- const counts={};
- all.forEach(c=>{
-   const id=countryCode(c);
-   if(!id)return;
-   counts[id]=(counts[id]||0)+1;
- });
- return Object.keys(counts)
-   .map(id=>({id,...countryInfo(id),count:counts[id]}))
-   .sort((a,b)=>b.count-a.count || a.name.localeCompare(b.name,'sq'));
-}
-function channelsOf(id){
- return all.filter(c=>countryCode(c)===id);
-}
-function renderCountries(){
- const list=availableCountries();
- countries.innerHTML=list.map(c=>`
-   <div class="country" onclick="openCountry('${esc(c.id)}')">
-     <div class="flag">${c.flag}</div>
-     <div><b>${esc(c.name)}</b><small>${c.count} kanale</small></div>
-   </div>`).join('') || '<div>Nuk u gjet asnjë shtet në JSON.</div>';
-}
-function categoriesOf(rows){
- const set=new Set();
- rows.forEach(c=>{
-   const cat=String(c.category||c.group||'General').trim()||'General';
-   set.add(cat);
- });
- return [...set].sort((a,b)=>a.localeCompare(b,'sq'));
-}
-function renderCategoryBar(rows){
- const list=categoriesOf(rows);
- cats.innerHTML =
-   `<button class="cat ${currentCategory==='ALL'?'active':''}" onclick="selectCategory('ALL')">Të gjitha (${rows.length})</button>`+
-   list.map(cat=>{
-     const n=rows.filter(c=>String(c.category||c.group||'General').trim()===cat).length;
-     return `<button class="cat ${currentCategory===cat?'active':''}" onclick='selectCategory(${JSON.stringify(cat)})'>${esc(cat)} (${n})</button>`;
-   }).join('');
-}
-function selectCategory(cat){
- currentCategory=cat;
- const rows=channelsOf(currentCountry);
- renderCategoryBar(rows);
- const filtered=cat==='ALL'?rows:rows.filter(c=>String(c.category||c.group||'General').trim()===cat);
- countryCount.textContent=filtered.length+' kanale';
- renderChannels(filtered);
-}
-function openCountry(id){
- currentCountry=id;
- currentCategory='ALL';
- const info=countryInfo(id);
- const rows=channelsOf(id);
- home.style.display='none';
- channelsView.classList.add('show');
- countryTitle.textContent=info.flag+' '+info.name;
- countryCount.textContent=rows.length+' kanale';
- renderCategoryBar(rows);
- renderChannels(rows);
- scrollTo(0,0);
-}
-function goHome(){currentCountry=null;currentCategory='ALL';channelsView.classList.remove('show');home.style.display='block';q.value='';cats.innerHTML='';renderCountries();scrollTo(0,0)}
-function renderChannels(rows){
- chgrid.innerHTML=rows.map((c,i)=>`<div class="ch">
-   <div><b>${esc(c.name)}</b><small>${esc(c.category||c.group||'')}</small></div>
-   <button class="play" onclick="playChannel(${all.indexOf(c)})">▶</button>
- </div>`).join('') || '<div>Nuk ka kanale.</div>';
-}
-function globalSearch(){
- const term=q.value.trim().toLowerCase();
- if(!term){if(channelsView.classList.contains('show')) goHome(); return;}
- const rows=all.filter(c=>(`${c.name||''} ${c.group||''} ${c.category||''}`).toLowerCase().includes(term));
- home.style.display='none'; channelsView.classList.add('show');
- countryTitle.textContent='🔎 Rezultatet'; countryCount.textContent=rows.length+' kanale'; renderChannels(rows);
-}
-function cleanupPlayer(){
- const v=video;
- try{v.pause()}catch(e){}
- try{if(tsPlayer){tsPlayer.destroy();tsPlayer=null}}catch(e){}
- v.removeAttribute('src'); v.load();
-}
-function showMsg(html){msg.innerHTML=html;msg.classList.add('show')}
-function hideMsg(){msg.classList.remove('show');msg.innerHTML=''}
-function externalLinks(url){
- const noScheme=url.replace(/^https?:\/\//,'');
- const intent=`intent://${noScheme}#Intent;scheme=http;type=video/mp2t;package=org.videolan.vlc;end`;
- return `<div class="actions">
-   <a href="${esc(intent)}">▶ Hape me VLC</a>
-   <a class="secondary" href="${esc(url)}" target="_blank" rel="noopener">↗ Hape direkt</a>
- </div>`;
-}
-function playChannel(i){
- const c=all[i]; if(!c||!c.url)return;
- current=c; cleanupPlayer(); hideMsg();
- playing.textContent=c.name||'LazyTV';
- playerOverlay.classList.add('show');
-
- const originalUrl=c.url;
-  const url=playableUrl(originalUrl);
-
-
- if(window.mpegts && mpegts.getFeatureList().mseLivePlayback){
-   try{
-     tsPlayer=mpegts.createPlayer({type:'mpegts',isLive:true,url:url},{enableWorker:true,liveBufferLatencyChasing:true});
-     tsPlayer.attachMediaElement(video);
-     tsPlayer.load();
-     tsPlayer.play().catch(()=>{});
-     setTimeout(()=>{ if(video.readyState<2) showMsg('Stream-i nuk u nis brenda player-it.'+externalLinks(url)); },7000);
-     return;
-   }catch(e){}
- }
-
- video.src=url;
- video.play().catch(()=>{showMsg('Browseri nuk e luajti direkt këtë stream.'+externalLinks(url))});
-}
-function closePlayer(){cleanupPlayer();playerOverlay.classList.remove('show');hideMsg()}
-
-async function init(){
- try{
-   const r=await fetch(DATA_URL+'?v='+Date.now(),{cache:'no-store'});
-   if(!r.ok) throw new Error('HTTP '+r.status);
-   const d=await r.json();
-   all=Array.isArray(d)?d:(Array.isArray(d.channels)?d.channels:[]);
-   total.textContent=all.length;
-   renderCountries();
- }catch(e){
-   total.textContent='0';
-   home.innerHTML='<div style="padding:20px;background:#25101a;border-radius:15px">Gabim duke lexuar data/channels.json: '+esc(e.message)+'</div>';
- }
-}
-init();
-</script>
-</body>
-</html>
+const S=[
+["AL","Shqipëri","https://iptv-org.github.io/iptv/countries/al.m3u"],
+["XK","Kosovë","https://iptv-org.github.io/iptv/countries/xk.m3u"],
+["MK","Maqedoni e Veriut","https://iptv-org.github.io/iptv/countries/mk.m3u"],
+["ME","Mali i Zi","https://iptv-org.github.io/iptv/countries/me.m3u"],
+["RS","Serbi","https://iptv-org.github.io/iptv/countries/rs.m3u"],
+["BA","Bosnjë","https://iptv-org.github.io/iptv/countries/ba.m3u"],
+["HR","Kroaci","https://iptv-org.github.io/iptv/countries/hr.m3u"],
+["TR","Turqi","https://iptv-org.github.io/iptv/countries/tr.m3u"],
+["IT","Itali","https://iptv-org.github.io/iptv/countries/it.m3u"],
+["IT2","Itali Plus","https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u"],
+["DE","Gjermani","https://iptv-org.github.io/iptv/countries/de.m3u"]
+];
+let C=[];const se=document.querySelector("#s"),q=document.querySelector("#q"),ls=document.querySelector("#list"),st=document.querySelector("#status");
+S.forEach(x=>se.add(new Option(x[1]+" ("+x[0]+")",x[0])));
+const at=(l,k)=>((l.match(new RegExp(k+'="([^"]*)"','i'))||[])[1]||"");
+function parse(t,c){let a=[],L=t.replace(/\r/g,"").split("\n");for(let i=0;i<L.length;i++){let l=L[i].trim();if(!l.startsWith("#EXTINF"))continue;let j=i+1;while(j<L.length&&(!L[j].trim()||L[j].trim().startsWith("#")))j++;if(j>=L.length)continue;let u=L[j].trim();if(!/^https?:\/\//i.test(u))continue;let z=l.indexOf(",");a.push({n:(z>=0?l.slice(z+1):"Kanal").trim(),u,g:at(l,"group-title"),id:at(l,"tvg-id"),c});}return a}
+async function load(){let x=S.find(x=>x[0]==se.value);st.textContent="Duke ngarkuar "+x[1]+"...";ls.innerHTML="";try{let r=await fetch(x[2],{cache:"no-store"});if(!r.ok)throw Error("HTTP "+r.status);C=parse(await r.text(),x[0]);render()}catch(e){st.textContent="Gabim: "+e.message}}
+function e(v){return String(v||"").replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]))}
+function render(){let z=q.value.toLowerCase(),a=C.filter(x=>(x.n+" "+x.g).toLowerCase().includes(z));st.textContent=a.length+" kanale";ls.innerHTML=a.map((x,i)=>'<div class="ch" data-i="'+i+'"><div class="n">'+e(x.n)+'</div><div class="g">'+e(x.g||"GENERAL")+' • '+e(x.c)+'</div></div>').join("");[...ls.children].forEach((d,i)=>d.onclick=()=>play(a[i]))}
+function play(x){if(window.Android&&typeof Android.play==="function")Android.play(x.u,x.n,x.id||"","IPTV.ORG");else location.href=x.u}
+se.onchange=load;q.oninput=render;se.value="AL";load();
+</script></body></html>
