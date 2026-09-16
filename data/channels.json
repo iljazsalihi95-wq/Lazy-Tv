@@ -1,12 +1,12 @@
 {
   "version": 5,
-  "updated": "2026-09-16T16:01:40Z",
-  "total": 713,
+  "updated": "2026-09-16T20:48:51Z",
+  "total": 711,
   "checked": 1026,
   "countries": {
-    "AL": 9,
-    "DE": 248,
-    "IT": 251,
+    "AL": 10,
+    "DE": 246,
+    "IT": 250,
     "ME": 3,
     "MK": 15,
     "RS": 16,
@@ -15,6 +15,21 @@
     "XK": 7
   },
   "channels": [
+    {
+      "name": "Tropoja Televizion",
+      "tvg_id": "TropojaTelevizion.al@SD",
+      "logo": "https://i.imgur.com/D3hNOVS.png",
+      "group": "General",
+      "language": "sqi",
+      "country": "AL",
+      "source": "Albania",
+      "source_id": "al-country",
+      "url": "https://live.prostream.al/al/smil:tropojatv.smil/playlist.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
     {
       "name": "TV Johaniter (720p)",
       "tvg_id": "TVJohaniter.al@SD",
@@ -3361,21 +3376,6 @@
       "type": "hls"
     },
     {
-      "name": "labor14 (720p)",
-      "tvg_id": "labor14.de@HD",
-      "logo": "https://www.tlm.de/assets/uploads/general/Sonstiges/LogoExt/_500xAUTO_crop_center-center_none/21labor14.jpg",
-      "group": "Undefined",
-      "language": "deu",
-      "country": "DE",
-      "source": "Germany",
-      "source_id": "de-country",
-      "url": "https://5acade5fc0c29.streamlock.net/OKGera/tmbz_live_high.stream/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "Leipzig Fernsehen (1080p)",
       "tvg_id": "SachsenFernsehenLeipzig.de@SD",
       "logo": "https://i.imgur.com/easmJUw.png",
@@ -3745,21 +3745,6 @@
       "source": "Germany",
       "source_id": "de-country",
       "url": "https://tagesschau.akamaized.net/hls/live/2020115/tagesschau/tagesschau_1/master.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
-      "name": "teltOwkanal (1080p)",
-      "tvg_id": "teltOwkanal.de@SD",
-      "logo": "https://i.imgur.com/G0cImlU.png",
-      "group": "Undefined",
-      "language": "deu",
-      "country": "DE",
-      "source": "Germany",
-      "source_id": "de-country",
-      "url": "https://h056.video-stream-hosting.de/easycast8-live/_definst_/mp4:livestreamhd8/playlist.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -7036,6 +7021,21 @@
       "type": "hls"
     },
     {
+      "name": "Radio Iglesias Sardegna (576p) [Geo-blocked]",
+      "tvg_id": "RadioIglesiasSardegna.it@SD",
+      "logo": "https://i.imgur.com/KDtVpLl.png",
+      "group": "Undefined",
+      "language": "ita",
+      "country": "IT",
+      "source": "Italy Backup",
+      "source_id": "it-country",
+      "url": "https://59d7d6f47d7fc.streamlock.net/visualradio/visualradio/playlist.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
       "name": "Radio Number One (720p) [Not 24/7]",
       "tvg_id": "RadioNumberOne.it@SD",
       "logo": "https://i.imgur.com/8cpuaG5.png",
@@ -7516,21 +7516,6 @@
       "type": "hls"
     },
     {
-      "name": "TeleTusciaSabina 2000 (576p) [Not 24/7]",
-      "tvg_id": "TeleTusciaSabina2000.it@SD",
-      "logo": "https://i.imgur.com/cfexNL9.png",
-      "group": "Undefined",
-      "language": "ita",
-      "country": "IT",
-      "source": "Italy Backup",
-      "source_id": "it-country",
-      "url": "http://ts2000tv.streaming.nextware.it:8081/ts2000tv/ts2000tv/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "TV Prato (1080p)",
       "tvg_id": "TVPrato.it@SD",
       "logo": "https://i.imgur.com/72mAJtf.png",
@@ -7615,21 +7600,6 @@
       "source": "Italy Backup",
       "source_id": "it-country",
       "url": "https://stream6-rai-it.akamaized.net/live/uninettuno/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
-      "name": "Visual Radio (576p) [Not 24/7]",
-      "tvg_id": "VisualRadio.it@SD",
-      "logo": "https://i.imgur.com/ah14ah0.png",
-      "group": "Undefined",
-      "language": "ita",
-      "country": "IT",
-      "source": "Italy Backup",
-      "source_id": "it-country",
-      "url": "http://wms.shared.streamshow.it:1935/visualradio/visualradio/live.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -8611,6 +8581,21 @@
       "type": "hls"
     },
     {
+      "name": "ATV (1080p)",
+      "tvg_id": "ATV.tr@SD",
+      "logo": "https://i.imgur.com/HyVUwFC.png",
+      "group": "General",
+      "language": "tur",
+      "country": "TR",
+      "source": "Turkey Backup",
+      "source_id": "tr-country",
+      "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
       "name": "ATV (360p)",
       "tvg_id": "ATV.tr",
       "logo": "https://i.imgur.com/HyVUwFC.png",
@@ -9100,21 +9085,6 @@
       "source": "Turkey Working",
       "source_id": "tr-dearbulut",
       "url": "https://live.artidijitalmedya.com/artidijital_tivi6/tivi6/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
-      "name": "TRT Genc (1440p)",
-      "tvg_id": "TRTGenc.tr",
-      "logo": "https://i.imgur.com/fCHQYWS.png",
-      "group": "General",
-      "language": "tur",
-      "country": "TR",
-      "source": "Turkey Working",
-      "source_id": "tr-dearbulut",
-      "url": "https://tv-trtgenc.medya.trt.com.tr/master.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
