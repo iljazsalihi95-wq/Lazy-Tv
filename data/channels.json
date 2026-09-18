@@ -1,12 +1,12 @@
 {
   "version": 5,
-  "updated": "2026-09-18T15:44:00Z",
+  "updated": "2026-09-18T20:19:41Z",
   "total": 715,
   "checked": 1026,
   "countries": {
     "AL": 11,
-    "DE": 248,
-    "IT": 250,
+    "DE": 247,
+    "IT": 251,
     "ME": 3,
     "MK": 15,
     "RS": 16,
@@ -91,7 +91,7 @@
       "type": "hls"
     },
     {
-      "name": "AlbKanale Music TV (1080p)",
+      "name": "AlbKanale Music TV HD (1080p)",
       "tvg_id": "AlbKanaleMusicTV.al@HD",
       "logo": "https://i.imgur.com/JdKxscs.png",
       "group": "Music",
@@ -106,7 +106,7 @@
       "type": "hls"
     },
     {
-      "name": "CNA (1080p)",
+      "name": "CNA (Albania) (1080p)",
       "tvg_id": "CNA.al@SD",
       "logo": "https://codeit.al/wp-content/uploads/2020/08/cna.png",
       "group": "News",
@@ -121,7 +121,7 @@
       "type": "hls"
     },
     {
-      "name": "News 24 Albania (392p)",
+      "name": "News 24 (Albania) (392p)",
       "tvg_id": "News24.al@SD",
       "logo": "https://i.imgur.com/eG33jue.png",
       "group": "News",
@@ -181,7 +181,7 @@
       "type": "hls"
     },
     {
-      "name": "Naruto (720p)",
+      "name": "Naruto Germany (720p)",
       "tvg_id": "Naruto.us@Germany",
       "logo": "https://i.imgur.com/M8X3Kvc.png",
       "group": "Animation",
@@ -196,7 +196,7 @@
       "type": "hls"
     },
     {
-      "name": "Pluto TV Anime",
+      "name": "Pluto TV Anime (Germany)",
       "tvg_id": "PlutoTVAnime.de@DACH",
       "logo": "https://images.pluto.tv/channels/608181d420fc8500075f612a/colorLogoPNG_1747395463053.png",
       "group": "Animation",
@@ -226,7 +226,7 @@
       "type": "hls"
     },
     {
-      "name": "Comedy Central South Park",
+      "name": "Comedy Central South Park (Germany)",
       "tvg_id": "ComedyCentralSouthPark.de@DACH",
       "logo": "https://images.pluto.tv/channels/60c716084d842c00085f6e64/colorLogoPNG_1748434979824.png",
       "group": "Animation;Comedy",
@@ -256,7 +256,7 @@
       "type": "hls"
     },
     {
-      "name": "South Park: Butters Collection",
+      "name": "South Park: Butters Collection (Germany)",
       "tvg_id": "SouthParkButtersCollection.de@DACH",
       "logo": "https://images.pluto.tv/channels/646b14a0e94c3800082a8d3a/colorLogoPNG.png",
       "group": "Animation;Comedy",
@@ -271,7 +271,7 @@
       "type": "hls"
     },
     {
-      "name": "South Park: Cartman Collection",
+      "name": "South Park: Cartman Collection (Germany)",
       "tvg_id": "SouthParkCartmanCollection.de@DACH",
       "logo": "https://images.pluto.tv/channels/646b14747cb4b1000875724d/colorLogoPNG.png",
       "group": "Animation;Comedy",
@@ -286,7 +286,7 @@
       "type": "hls"
     },
     {
-      "name": "South Park: Kenny Collection",
+      "name": "South Park: Kenny Collection (Germany)",
       "tvg_id": "SouthParkKennyCollection.de@DACH",
       "logo": "https://images.pluto.tv/channels/646b1404ee6a2f00082b5d66/colorLogoPNG.png",
       "group": "Animation;Comedy",
@@ -301,7 +301,7 @@
       "type": "hls"
     },
     {
-      "name": "South Park: Kyle Collection",
+      "name": "South Park: Kyle Collection (Germany)",
       "tvg_id": "SouthParkKyleCollection.de@DACH",
       "logo": "https://images.pluto.tv/channels/646b14d0e1979c0008915a09/colorLogoPNG.png",
       "group": "Animation;Comedy",
@@ -331,7 +331,7 @@
       "type": "hls"
     },
     {
-      "name": "South Park: Stan Collection",
+      "name": "South Park: Stan Collection (Germany)",
       "tvg_id": "SouthParkStanCollection.de@DACH",
       "logo": "https://images.pluto.tv/channels/646b1438e94c3800082a8cff/colorLogoPNG.png",
       "group": "Animation;Comedy",
@@ -361,7 +361,7 @@
       "type": "hls"
     },
     {
-      "name": "Becker",
+      "name": "Becker (Germany)",
       "tvg_id": "Becker.de@DACH",
       "logo": "https://images.pluto.tv/channels/630348a54c48ce00077eb6c7/colorLogoPNG.png",
       "group": "Comedy",
@@ -391,7 +391,7 @@
       "type": "hls"
     },
     {
-      "name": "Cheers",
+      "name": "Cheers (Germany)",
       "tvg_id": "Cheers.de@DACH",
       "logo": "https://images.pluto.tv/channels/611e7f224676bf00076a4d8d/colorLogoPNG.png",
       "group": "Comedy",
@@ -406,7 +406,7 @@
       "type": "hls"
     },
     {
-      "name": "Comedy Central",
+      "name": "Comedy Central (Germany)",
       "tvg_id": "ComedyCentral.de@SD",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Comedy_Central_2018.svg/960px-Comedy_Central_2018.svg.png",
       "group": "Comedy",
@@ -421,7 +421,7 @@
       "type": "stream"
     },
     {
-      "name": "Frasier",
+      "name": "Frasier (Germany)",
       "tvg_id": "Frasier.de@DACH",
       "logo": "https://images.pluto.tv/channels/62cebf042ffc6d0007c4e59a/colorLogoPNG.png",
       "group": "Comedy",
@@ -451,7 +451,7 @@
       "type": "hls"
     },
     {
-      "name": "Sabrina Total verhext!",
+      "name": "Sabrina: Total verhext!",
       "tvg_id": "SabrinaTotalverhext.de@DACH",
       "logo": "https://images.pluto.tv/channels/622f40c901d4b70007ad7609/colorLogoPNG.png",
       "group": "Comedy",
@@ -661,7 +661,7 @@
       "type": "hls"
     },
     {
-      "name": "Pluto TV History",
+      "name": "Pluto TV History (Germany)",
       "tvg_id": "PlutoTVHistory.de@DACH",
       "logo": "https://images.pluto.tv/channels/5d767b1c126c65d0a307355f/colorLogoPNG.png",
       "group": "Documentary",
@@ -721,7 +721,7 @@
       "type": "hls"
     },
     {
-      "name": "Pluto TV Space",
+      "name": "Pluto TV Space (Germany)",
       "tvg_id": "PlutoTVSpace.de@DACH",
       "logo": "https://images.pluto.tv/channels/61409f8d6feb30000766b675/colorLogoPNG.png",
       "group": "Documentary",
@@ -751,7 +751,7 @@
       "type": "hls"
     },
     {
-      "name": "Pluto TV Science",
+      "name": "Pluto TV Science (Germany)",
       "tvg_id": "PlutoTVScience.de@DACH",
       "logo": "https://images.pluto.tv/channels/5d767b4889bca2ce7b73ef2e/colorLogoPNG.png",
       "group": "Documentary;Science",
@@ -766,7 +766,7 @@
       "type": "hls"
     },
     {
-      "name": "Pluto TV True Crime",
+      "name": "Pluto TV True Crime (Germany)",
       "tvg_id": "PlutoTVTrueCrime.de@DACH",
       "logo": "https://images.pluto.tv/channels/615333098185f00008715a56/colorLogoPNG.png",
       "group": "Documentary;Series",
@@ -790,6 +790,21 @@
       "source": "Germany",
       "source_id": "de-country",
       "url": "https://mcdn.br.de/br/fs/ard_alpha/hls/de/master.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
+      "name": "Curiosity Channel (720p)",
+      "tvg_id": "CuriosityChannel.de@SD",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Curiosity_Channel_Logo_2023.svg/960px-Curiosity_Channel_Logo_2023.svg.png",
+      "group": "Education",
+      "language": "deu",
+      "country": "DE",
+      "source": "Germany",
+      "source_id": "de-country",
+      "url": "https://jmp2.uk/plu-6576c20fb3801200084786c9.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -826,22 +841,7 @@
       "type": "hls"
     },
     {
-      "name": "SPIEGEL TV (720p)",
-      "tvg_id": "CuriosityChannel.de@SD",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Curiosity_Channel_Logo_2023.svg/960px-Curiosity_Channel_Logo_2023.svg.png",
-      "group": "Education",
-      "language": "deu",
-      "country": "DE",
-      "source": "Germany",
-      "source_id": "de-country",
-      "url": "https://jmp2.uk/plu-6576c20fb3801200084786c9.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
-      "name": "arte HD",
+      "name": "arte (Germany) HD",
       "tvg_id": "arte.de@HD",
       "logo": "https://i.imgur.com/ecXMjNl.png",
       "group": "Entertainment",
@@ -856,7 +856,7 @@
       "type": "hls"
     },
     {
-      "name": "Auction Hunters",
+      "name": "Auction Hunters (Germany)",
       "tvg_id": "AuctionHunters.de@DACH",
       "logo": "https://i.imgur.com/4SPOVN7.png",
       "group": "Entertainment",
@@ -931,7 +931,7 @@
       "type": "hls"
     },
     {
-      "name": "MTV",
+      "name": "MTV (Germany)",
       "tvg_id": "MTV.de@SD",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/MTV_2021_%28brand_version%29.svg/960px-MTV_2021_%28brand_version%29.svg.png",
       "group": "Entertainment",
@@ -946,7 +946,7 @@
       "type": "stream"
     },
     {
-      "name": "MTV Catfish TV Show (720p)",
+      "name": "MTV Catfish TV Show DACH (720p)",
       "tvg_id": "MTVCatfishTVShow.de@DACH",
       "logo": "https://images.pluto.tv/channels/6093f9ed2c75660007322bb7/colorLogoPNG_1750862971704.png",
       "group": "Entertainment",
@@ -961,7 +961,7 @@
       "type": "hls"
     },
     {
-      "name": "MTV Dating (720p)",
+      "name": "MTV Dating (Germany) (720p)",
       "tvg_id": "MTVDating.de@DACH",
       "logo": "https://images.pluto.tv/channels/5caf330ea5068259a32320fd/colorLogoPNG.png",
       "group": "Entertainment",
@@ -976,7 +976,7 @@
       "type": "hls"
     },
     {
-      "name": "MTV Pluto TV",
+      "name": "MTV Pluto TV (Germany)",
       "tvg_id": "MTVPlutoTV.de@DACH",
       "logo": "https://images.pluto.tv/channels/5caf325764025859afdd6c4d/colorLogoPNG.png",
       "group": "Entertainment",
@@ -991,7 +991,7 @@
       "type": "hls"
     },
     {
-      "name": "MTV Reality (720p)",
+      "name": "MTV Reality (Germany) (720p)",
       "tvg_id": "MTVReality.de@DACH",
       "logo": "https://images.pluto.tv/channels/685136fb33a52de120bbb086/colorLogoPNG_1780303948285.png",
       "group": "Entertainment",
@@ -1006,7 +1006,7 @@
       "type": "hls"
     },
     {
-      "name": "MTV Ridiculousness",
+      "name": "MTV Ridiculousness (Germany)",
       "tvg_id": "MTVRidiculousness.de@DACH",
       "logo": "https://images.pluto.tv/channels/5f9847fd513250000728a9a5/colorLogoPNG.png",
       "group": "Entertainment",
@@ -1021,7 +1021,7 @@
       "type": "hls"
     },
     {
-      "name": "MTV Teen Mom (720p)",
+      "name": "MTV Teen Mom (Germany) (720p)",
       "tvg_id": "MTVTeenMom.de@DACH",
       "logo": "https://images.pluto.tv/channels/5cffcf5686dfe15595fb3f56/colorLogoPNG_1750154727513.png",
       "group": "Entertainment",
@@ -1141,7 +1141,7 @@
       "type": "hls"
     },
     {
-      "name": "Allgäu TV (1080p)",
+      "name": "Allgau TV (1080p)",
       "tvg_id": "AllgauTV.de@SD",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Allg%C3%A4u_TV_Logo_%282021%29.svg/960px-Allg%C3%A4u_TV_Logo_%282021%29.svg.png",
       "group": "General",
@@ -1216,7 +1216,7 @@
       "type": "hls"
     },
     {
-      "name": "Franken Fernsehen (Nürnberg) (1080p) [Not 24/7]",
+      "name": "Franken Fernsehen (1080p) [Not 24/7]",
       "tvg_id": "FrankenFernsehen.de@SD",
       "logo": "https://i.imgur.com/3pGGLLD.png",
       "group": "General",
@@ -1291,7 +1291,7 @@
       "type": "hls"
     },
     {
-      "name": "München TV (1080p) [Not 24/7]",
+      "name": "Munchen TV (1080p) [Not 24/7]",
       "tvg_id": "MunchenTV.de@SD",
       "logo": "https://i.imgur.com/lt7xNWW.png",
       "group": "General",
@@ -1321,7 +1321,7 @@
       "type": "hls"
     },
     {
-      "name": "NDR Hamburg (720p)",
+      "name": "NDR Fernsehen (720p)",
       "tvg_id": "NDRFernsehen.de@Hamburg",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Logo_NDR_Fernsehen_2017.svg/960px-Logo_NDR_Fernsehen_2017.svg.png",
       "group": "General",
@@ -1336,7 +1336,7 @@
       "type": "hls"
     },
     {
-      "name": "NDR Mecklenburg-Vorpommern (720p)",
+      "name": "NDR Fernsehen Mecklenburg Vorpommern (720p)",
       "tvg_id": "NDRFernsehen.de@MecklenburgVorpommern",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Logo_NDR_Fernsehen_2017.svg/960px-Logo_NDR_Fernsehen_2017.svg.png",
       "group": "General",
@@ -1351,7 +1351,7 @@
       "type": "hls"
     },
     {
-      "name": "NDR Niedersachsen (720p)",
+      "name": "NDR Fernsehen Niedersachsen (720p)",
       "tvg_id": "NDRFernsehen.de@Niedersachsen",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Logo_NDR_Fernsehen_2017.svg/960px-Logo_NDR_Fernsehen_2017.svg.png",
       "group": "General",
@@ -1366,7 +1366,7 @@
       "type": "hls"
     },
     {
-      "name": "NDR Schleswig-Holstein (720p)",
+      "name": "NDR Fernsehen Schleswig Holstein (720p)",
       "tvg_id": "NDRFernsehen.de@SchleswigHolstein",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Logo_NDR_Fernsehen_2017.svg/960px-Logo_NDR_Fernsehen_2017.svg.png",
       "group": "General",
@@ -1441,7 +1441,7 @@
       "type": "hls"
     },
     {
-      "name": "Noa 4 Hamburg (1080p)",
+      "name": "noa4 Hamburg (1080p)",
       "tvg_id": "noa4Hamburg.de@SD",
       "logo": "https://i.imgur.com/7A2LRKI.png",
       "group": "General",
@@ -1456,7 +1456,7 @@
       "type": "hls"
     },
     {
-      "name": "Noa 4 Norderstedt (1080p)",
+      "name": "noa4 Norderstedt (1080p)",
       "tvg_id": "noa4Norderstedt.de@SD",
       "logo": "https://i.imgur.com/941nrGb.png",
       "group": "General",
@@ -1621,7 +1621,7 @@
       "type": "hls"
     },
     {
-      "name": "TV Oberfranken (TVO) (1080p) [Not 24/7]",
+      "name": "TV Oberfranken (1080p) [Not 24/7]",
       "tvg_id": "TVOberfranken.de@SD",
       "logo": "https://i.imgur.com/tjD9fX2.png",
       "group": "General",
@@ -1726,7 +1726,7 @@
       "type": "hls"
     },
     {
-      "name": "WDR Fernsehen Düsseldorf (720p) [Geo-blocked]",
+      "name": "WDR Fernsehen Dusseldorf (720p) [Geo-blocked]",
       "tvg_id": "WDRFernsehen.de@Dusseldorf",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/WDR_Fernsehen_Logo_2018.svg/960px-WDR_Fernsehen_Logo_2018.svg.png",
       "group": "General",
@@ -1756,7 +1756,7 @@
       "type": "hls"
     },
     {
-      "name": "WDR Fernsehen Münster (720p) [Geo-blocked]",
+      "name": "WDR Fernsehen Munster (720p) [Geo-blocked]",
       "tvg_id": "WDRFernsehen.de@Munster",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/WDR_Fernsehen_Logo_2018.svg/960px-WDR_Fernsehen_Logo_2018.svg.png",
       "group": "General",
@@ -1816,7 +1816,7 @@
       "type": "hls"
     },
     {
-      "name": "iCarly",
+      "name": "iCarly (Germany)",
       "tvg_id": "iCarly.de@DACH",
       "logo": "https://images.pluto.tv/channels/5e8b580a233dc90007f0cb9d/colorLogoPNG.png",
       "group": "Kids",
@@ -1861,7 +1861,7 @@
       "type": "hls"
     },
     {
-      "name": "Nick Jr. Club (720p)",
+      "name": "Nick Jr. Club (Germany) (720p)",
       "tvg_id": "NickJrClub.de@DACH",
       "logo": "https://images.pluto.tv/channels/67f3eb1c443f0671bc03ece8/colorLogoPNG_1748329104247.png",
       "group": "Kids",
@@ -1876,7 +1876,7 @@
       "type": "hls"
     },
     {
-      "name": "Nickelodeon",
+      "name": "Nickelodeon (Germany)",
       "tvg_id": "Nickelodeon.de@SD",
       "logo": "https://i.imgur.com/E84jnP8.png",
       "group": "Kids",
@@ -1906,7 +1906,7 @@
       "type": "hls"
     },
     {
-      "name": "Nickelodeon Teen (720p)",
+      "name": "Nickelodeon Teen (Germany) (720p)",
       "tvg_id": "NickelodeonTeen.de@DACH",
       "logo": "https://images.pluto.tv/channels/5f0d668b872e4400073acc68/colorLogoPNG_1750753617970.png",
       "group": "Kids",
@@ -1921,7 +1921,7 @@
       "type": "hls"
     },
     {
-      "name": "Nickelodeon Toons (720p)",
+      "name": "Nickelodeon Toons (Germany) (720p)",
       "tvg_id": "NickelodeonToons.de@DACH",
       "logo": "https://images.pluto.tv/channels/5ede448d3d50590007a4419e/colorLogoPNG_1750753703285.png",
       "group": "Kids",
@@ -1951,7 +1951,7 @@
       "type": "hls"
     },
     {
-      "name": "Totally Turtles (720p)",
+      "name": "Totally Turtles (Germany) (720p)",
       "tvg_id": "TotallyTurtles.de@DACH",
       "logo": "https://images.pluto.tv/channels/5d6792bd6be2998ad0ccce30/colorLogoPNG.png",
       "group": "Kids",
@@ -2026,7 +2026,7 @@
       "type": "hls"
     },
     {
-      "name": "MOVIEDOME (720p)",
+      "name": "Moviedome (720p)",
       "tvg_id": "Moviedome.us@Germany",
       "logo": "https://i.imgur.com/8c54ycg.png",
       "group": "Movies",
@@ -2056,7 +2056,7 @@
       "type": "hls"
     },
     {
-      "name": "Pluto TV Bud & Terence",
+      "name": "Pluto TV Bud & Terence (Germany)",
       "tvg_id": "PlutoTVBudTerence.de@DACH",
       "logo": "https://images.pluto.tv/channels/64be7398e4391c0008cdedfe/colorLogoPNG_1776936976930.png",
       "group": "Movies",
@@ -2101,7 +2101,7 @@
       "type": "hls"
     },
     {
-      "name": "Pluto TV Paranormal",
+      "name": "Pluto TV Paranormal (Germany)",
       "tvg_id": "PlutoTVParanormal.de@DACH",
       "logo": "https://images.pluto.tv/channels/5f98487036af340008da1e37/colorLogoPNG.png",
       "group": "Movies",
@@ -2206,7 +2206,7 @@
       "type": "hls"
     },
     {
-      "name": "Mission Impossible",
+      "name": "Mission Impossible (Germany)",
       "tvg_id": "MissionImpossible.de@DACH",
       "logo": "https://images.pluto.tv/channels/634fe5afece2e60007c9d8b8/colorLogoPNG.png",
       "group": "Movies;Series",
@@ -2221,7 +2221,7 @@
       "type": "hls"
     },
     {
-      "name": "Pluto TV Action",
+      "name": "Pluto TV Action (Germany)",
       "tvg_id": "PlutoTVAction.de@DACH",
       "logo": "https://images.pluto.tv/channels/65004605110545000842035d/colorLogoPNG_1751356419664.png",
       "group": "Movies;Series",
@@ -2251,7 +2251,7 @@
       "type": "hls"
     },
     {
-      "name": "Pluto TV Horror",
+      "name": "Pluto TV Horror (Germany)",
       "tvg_id": "PlutoTVHorror.de@DACH",
       "logo": "https://images.pluto.tv/channels/62f4f4b88157cf00075c22db/colorLogoPNG.png",
       "group": "Movies;Series",
@@ -2266,7 +2266,7 @@
       "type": "hls"
     },
     {
-      "name": "Pluto TV Romance",
+      "name": "Pluto TV Romance (Germany) DACH",
       "tvg_id": "PlutoTVRomance.de@DACH",
       "logo": "https://images.pluto.tv/channels/5dc287ce3086a20009f5024c/colorLogoPNG.png",
       "group": "Movies;Series",
@@ -2281,7 +2281,7 @@
       "type": "hls"
     },
     {
-      "name": "Pluto TV Sci-Fi",
+      "name": "Pluto TV Sci-Fi (Germany)",
       "tvg_id": "PlutoTVSciFi.de@DACH",
       "logo": "https://images.pluto.tv/channels/60ed498c4248a400077c0b9d/colorLogoPNG.png",
       "group": "Movies;Series",
@@ -2296,7 +2296,7 @@
       "type": "hls"
     },
     {
-      "name": "Pluto TV Star Trek",
+      "name": "Pluto TV Star Trek (Germany)",
       "tvg_id": "PlutoTVStarTrek.de@DACH",
       "logo": "https://images.pluto.tv/channels/6152ee71bf99590007893a11/colorLogoPNG.png",
       "group": "Movies;Series",
@@ -2311,7 +2311,7 @@
       "type": "hls"
     },
     {
-      "name": "Star Trek: The Next Generation",
+      "name": "Star Trek: The Next Generation (Germany)",
       "tvg_id": "StarTrekTheNextGeneration.de@DACH",
       "logo": "https://images.pluto.tv/channels/69776ce979545c21a1220bff/colorLogoPNG_1769434849537.png",
       "group": "Movies;Series",
@@ -2326,7 +2326,7 @@
       "type": "hls"
     },
     {
-      "name": "Star Trek: The Original Series",
+      "name": "Star Trek: The Original Series (Germany)",
       "tvg_id": "StarTrekTheOriginalSeries.de@DACH",
       "logo": "https://images.pluto.tv/channels/69776b58036e883f39e5ab8a/colorLogoPNG_1769434091096.png",
       "group": "Movies;Series",
@@ -2671,7 +2671,7 @@
       "type": "hls"
     },
     {
-      "name": "Die Neue Zeit (576p)",
+      "name": "Die Neue Zeit TV (576p)",
       "tvg_id": "DieNeueZeitTV.ch@SD",
       "logo": "https://i.imgur.com/K3lvrog.png",
       "group": "Religious",
@@ -2701,7 +2701,7 @@
       "type": "hls"
     },
     {
-      "name": "EWTN Germany (720p)",
+      "name": "EWTN (Germany) (720p)",
       "tvg_id": "EWTN.de@SD",
       "logo": "https://i.imgur.com/NXeygNk.png",
       "group": "Religious",
@@ -2731,7 +2731,7 @@
       "type": "hls"
     },
     {
-      "name": "Light Channel (576p) [Not 24/7]",
+      "name": "Light Channel (Germany) (576p) [Not 24/7]",
       "tvg_id": "LightChannel.de@SD",
       "logo": "https://i.imgur.com/0OmBlfE.png",
       "group": "Religious",
@@ -2746,7 +2746,7 @@
       "type": "hls"
     },
     {
-      "name": "Sophia TV (720p)",
+      "name": "Sophia TV (Germany) (720p)",
       "tvg_id": "SophiaTV.de@SD",
       "logo": "https://i.imgur.com/1hNgHbB.png",
       "group": "Religious",
@@ -2761,7 +2761,7 @@
       "type": "hls"
     },
     {
-      "name": "Sophia TV Français (720p)",
+      "name": "Sophia TV Francais (720p)",
       "tvg_id": "SophiaTVFrancais.de@SD",
       "logo": "https://i.imgur.com/T2JPCq2.png",
       "group": "Religious",
@@ -2791,7 +2791,7 @@
       "type": "hls"
     },
     {
-      "name": "Awkward",
+      "name": "Awkward (Germany)",
       "tvg_id": "Awkward.de@DACH",
       "logo": "https://images.pluto.tv/channels/62bc1784120ba80007935aaa/colorLogoPNG.png",
       "group": "Series",
@@ -2806,7 +2806,7 @@
       "type": "hls"
     },
     {
-      "name": "Beverly Hills 90210",
+      "name": "Beverly Hills 90210 (Germany)",
       "tvg_id": "BeverlyHills90210.de@DACH",
       "logo": "https://images.pluto.tv/channels/60afb576053df900076fa2f0/colorLogoPNG.png",
       "group": "Series",
@@ -2866,7 +2866,7 @@
       "type": "stream"
     },
     {
-      "name": "McLeods Töchter",
+      "name": "McLeods Tochter",
       "tvg_id": "McLeodsTochter.de@DACH",
       "logo": "https://images.pluto.tv/channels/66c6fcfc6838ee00085beb1a/colorLogoPNG.png",
       "group": "Series",
@@ -2881,7 +2881,7 @@
       "type": "hls"
     },
     {
-      "name": "Perry Mason",
+      "name": "Perry Mason (Germany)",
       "tvg_id": "PerryMason.de@DACH",
       "logo": "https://images.pluto.tv/channels/64eddc3485efec00085b0369/colorLogoPNG.png",
       "group": "Series",
@@ -3031,7 +3031,7 @@
       "type": "hls"
     },
     {
-      "name": "1-2-3 TV (270p)",
+      "name": "1-2-3.tv (270p)",
       "tvg_id": "123tv.de@SD",
       "logo": "https://i.imgur.com/slSUDNX.png",
       "group": "Shop",
@@ -3076,7 +3076,7 @@
       "type": "hls"
     },
     {
-      "name": "HSE24 Extra (1080p)",
+      "name": "HSE Extra (1080p)",
       "tvg_id": "HSEExtra.de@SD",
       "logo": "https://i.imgur.com/nvMpbip.png",
       "group": "Shop",
@@ -3091,7 +3091,7 @@
       "type": "hls"
     },
     {
-      "name": "HSE24 Trend (576p)",
+      "name": "HSE Trend (576p)",
       "tvg_id": "HSETrend.de@SD",
       "logo": "https://i.imgur.com/qwh2urX.png",
       "group": "Shop",
@@ -3106,7 +3106,7 @@
       "type": "hls"
     },
     {
-      "name": "Juwelo (720p)",
+      "name": "Juwelo (Germany) (720p)",
       "tvg_id": "Juwelo.de@SD",
       "logo": "https://i.imgur.com/vmX8Qin.png",
       "group": "Shop",
@@ -3136,22 +3136,7 @@
       "type": "hls"
     },
     {
-      "name": "QVC 2 Germany (540p)",
-      "tvg_id": "QVCZwei.de@SD",
-      "logo": "https://i.imgur.com/f94kPed.png",
-      "group": "Shop",
-      "language": "deu",
-      "country": "DE",
-      "source": "Germany",
-      "source_id": "de-country",
-      "url": "https://qvcde-live.akamaized.net/hls/live/2097104/qps/master.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
-      "name": "QVC Germany (720p)",
+      "name": "QVC (Germany) (720p)",
       "tvg_id": "QVC.de@SD",
       "logo": "https://i.imgur.com/EybRtsI.png",
       "group": "Shop",
@@ -3166,7 +3151,7 @@
       "type": "hls"
     },
     {
-      "name": "QVC Style Germany (540p)",
+      "name": "QVC Style (Germany) (540p)",
       "tvg_id": "QVCStyle.de@SD",
       "logo": "https://i.imgur.com/DwdkHGj.png",
       "group": "Shop",
@@ -3175,6 +3160,21 @@
       "source": "Germany",
       "source_id": "de-country",
       "url": "https://qvcde-live.akamaized.net/hls/live/2097104/qby/master.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
+      "name": "QVC Zwei (540p)",
+      "tvg_id": "QVCZwei.de@SD",
+      "logo": "https://i.imgur.com/f94kPed.png",
+      "group": "Shop",
+      "language": "deu",
+      "country": "DE",
+      "source": "Germany",
+      "source_id": "de-country",
+      "url": "https://qvcde-live.akamaized.net/hls/live/2097104/qps/master.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -3211,7 +3211,7 @@
       "type": "hls"
     },
     {
-      "name": "Pluto TV Snooker 900 (720p)",
+      "name": "Pluto TV Snooker 900 (Germany) (720p)",
       "tvg_id": "PlutoTVSnooker900.de@DACH",
       "logo": "https://images.pluto.tv/channels/68ac5543a1ac0c90f2c8943e/colorLogoPNG_1760517341343.png",
       "group": "Sports",
@@ -3226,7 +3226,7 @@
       "type": "hls"
     },
     {
-      "name": "Strongman Champions League (720p)",
+      "name": "Strongman (720p)",
       "tvg_id": "Strongman.us@Germany",
       "logo": "https://i.imgur.com/bVQBF6R.png",
       "group": "Sports",
@@ -3256,7 +3256,7 @@
       "type": "hls"
     },
     {
-      "name": "World Poker Tour",
+      "name": "World Poker Tour Germany",
       "tvg_id": "WorldPokerTour.us@Germany",
       "logo": "https://i.imgur.com/98kLMjj.png",
       "group": "Sports",
@@ -3316,7 +3316,7 @@
       "type": "hls"
     },
     {
-      "name": "BR Fernsehen Nord (720p)",
+      "name": "BR Fernsehen (720p)",
       "tvg_id": "BRFernsehen.de@Nord",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Logo_Bayerischer_Rundfunk_2024.svg/960px-Logo_Bayerischer_Rundfunk_2024.svg.png",
       "group": "Undefined",
@@ -3346,21 +3346,6 @@
       "type": "hls"
     },
     {
-      "name": "Chemnitz Fernsehen (1080p)",
-      "tvg_id": "SachsenFernsehenChemnitz.de@SD",
-      "logo": "https://i.imgur.com/4SEAbVf.png",
-      "group": "Undefined",
-      "language": "deu",
-      "country": "DE",
-      "source": "Germany",
-      "source_id": "de-country",
-      "url": "https://chemnitz.iptv-playoutcenter.de/chemnitz/chemnitzfernsehen.stream_1/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "Cira TV (1080p)",
       "tvg_id": "CiraTV.de@SD",
       "logo": "https://i.imgur.com/YFnmSLW.png",
@@ -3376,21 +3361,6 @@
       "type": "hls"
     },
     {
-      "name": "Dresden Fernsehen (1080p) [Not 24/7]",
-      "tvg_id": "SachsenFernsehenDresden.de@SD",
-      "logo": "https://i.imgur.com/rnvprGj.png",
-      "group": "Undefined",
-      "language": "deu",
-      "country": "DE",
-      "source": "Germany",
-      "source_id": "de-country",
-      "url": "https://dresden.iptv-playoutcenter.de/dresden/dresdenfernsehen.stream_1/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "labor14 (720p)",
       "tvg_id": "labor14.de@HD",
       "logo": "https://www.tlm.de/assets/uploads/general/Sonstiges/LogoExt/_500xAUTO_crop_center-center_none/21labor14.jpg",
@@ -3400,21 +3370,6 @@
       "source": "Germany",
       "source_id": "de-country",
       "url": "https://5acade5fc0c29.streamlock.net/OKGera/tmbz_live_high.stream/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
-      "name": "Leipzig Fernsehen (1080p)",
-      "tvg_id": "SachsenFernsehenLeipzig.de@SD",
-      "logo": "https://i.imgur.com/easmJUw.png",
-      "group": "Undefined",
-      "language": "deu",
-      "country": "DE",
-      "source": "Germany",
-      "source_id": "de-country",
-      "url": "https://leipzig.iptv-playoutcenter.de/leipzig/leipzigfernsehen.stream_1/playlist.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -3556,7 +3511,7 @@
       "type": "stream"
     },
     {
-      "name": "RTL",
+      "name": "RTL (Germany)",
       "tvg_id": "RTL.de@SD",
       "logo": "https://i.imgur.com/94K94k2.png",
       "group": "Undefined",
@@ -3625,6 +3580,51 @@
       "source": "Germany",
       "source_id": "de-country",
       "url": "https://sachsen1.iptv-playoutcenter.de/sachsen1/sachsen1.stream_1/playlist.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
+      "name": "Sachsen Fernsehen Chemnitz (1080p)",
+      "tvg_id": "SachsenFernsehenChemnitz.de@SD",
+      "logo": "https://i.imgur.com/4SEAbVf.png",
+      "group": "Undefined",
+      "language": "deu",
+      "country": "DE",
+      "source": "Germany",
+      "source_id": "de-country",
+      "url": "https://chemnitz.iptv-playoutcenter.de/chemnitz/chemnitzfernsehen.stream_1/playlist.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
+      "name": "Sachsen Fernsehen Dresden (1080p) [Not 24/7]",
+      "tvg_id": "SachsenFernsehenDresden.de@SD",
+      "logo": "https://i.imgur.com/rnvprGj.png",
+      "group": "Undefined",
+      "language": "deu",
+      "country": "DE",
+      "source": "Germany",
+      "source_id": "de-country",
+      "url": "https://dresden.iptv-playoutcenter.de/dresden/dresdenfernsehen.stream_1/playlist.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
+      "name": "Sachsen Fernsehen Leipzig (1080p)",
+      "tvg_id": "SachsenFernsehenLeipzig.de@SD",
+      "logo": "https://i.imgur.com/easmJUw.png",
+      "group": "Undefined",
+      "language": "deu",
+      "country": "DE",
+      "source": "Germany",
+      "source_id": "de-country",
+      "url": "https://leipzig.iptv-playoutcenter.de/leipzig/leipzigfernsehen.stream_1/playlist.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -3706,7 +3706,7 @@
       "type": "hls"
     },
     {
-      "name": "Sophia TV Español (720p)",
+      "name": "Sophia TV Espanol (720p)",
       "tvg_id": "SophiaTVEspanol.de@SD",
       "logo": "https://i.imgur.com/T2JPCq2.png",
       "group": "Undefined",
@@ -3766,7 +3766,7 @@
       "type": "hls"
     },
     {
-      "name": "Tagesschau 24 (720p)",
+      "name": "tagesschau24 (720p)",
       "tvg_id": "tagesschau24.de@SD",
       "logo": "https://i.imgur.com/LH0Gctv.png",
       "group": "Undefined",
@@ -3775,21 +3775,6 @@
       "source": "Germany",
       "source_id": "de-country",
       "url": "https://tagesschau.akamaized.net/hls/live/2020115/tagesschau/tagesschau_1/master.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
-      "name": "teltOwkanal (1080p)",
-      "tvg_id": "teltOwkanal.de@SD",
-      "logo": "https://i.imgur.com/G0cImlU.png",
-      "group": "Undefined",
-      "language": "deu",
-      "country": "DE",
-      "source": "Germany",
-      "source_id": "de-country",
-      "url": "https://h056.video-stream-hosting.de/easycast8-live/_definst_/mp4:livestreamhd8/playlist.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -3826,7 +3811,7 @@
       "type": "hls"
     },
     {
-      "name": "TV38 Südost-Niedersachen (1080p)",
+      "name": "TV38 Sudost-Niedersachen (1080p)",
       "tvg_id": "TV38SudostNiedersachen.de@SD",
       "logo": "https://i.imgur.com/ob9JJPU.png",
       "group": "Undefined",
@@ -3841,7 +3826,7 @@
       "type": "hls"
     },
     {
-      "name": "TVA (1080p) [Not 24/7]",
+      "name": "TVA (Germany) (1080p) [Not 24/7]",
       "tvg_id": "TVA.de@SD",
       "logo": "https://i.imgur.com/Gg6d4Jb.png",
       "group": "Undefined",
@@ -3976,7 +3961,7 @@
       "type": "hls"
     },
     {
-      "name": "Pluto TV Anime",
+      "name": "Pluto TV Anime (Germany) IT",
       "tvg_id": "PlutoTVAnime.de@IT",
       "logo": "https://images.pluto.tv/channels/608181d420fc8500075f612a/colorLogoPNG_1747395463053.png",
       "group": "Animation",
@@ -3991,7 +3976,7 @@
       "type": "hls"
     },
     {
-      "name": "South Park",
+      "name": "South Park (Germany) IT",
       "tvg_id": "SouthPark.de@IT",
       "logo": "https://images.pluto.tv/channels/628751bb7154a40007168843/colorLogoPNG_1748431640253.png",
       "group": "Animation;Comedy",
@@ -4006,7 +3991,7 @@
       "type": "hls"
     },
     {
-      "name": "Mr. Bean Anime Italy (1080p)",
+      "name": "Mr Bean Animated IT (1080p)",
       "tvg_id": "MrBeanAnimated.uk@IT",
       "logo": "https://static.wikia.nocookie.net/logopedia/images/2/25/Mr._Bean_Animated_Series_stacked_logo.png",
       "group": "Animation;Kids",
@@ -4066,7 +4051,7 @@
       "type": "hls"
     },
     {
-      "name": "Failarmy",
+      "name": "FailArmy Italy",
       "tvg_id": "FailArmy.us@Italy",
       "logo": "https://i.imgur.com/VIpQJxL.png",
       "group": "Comedy",
@@ -4096,7 +4081,7 @@
       "type": "hls"
     },
     {
-      "name": "Gambero Rosso (720p)",
+      "name": "Gambero Rosso Channel (720p)",
       "tvg_id": "GamberoRossoChannel.it@SD",
       "logo": "https://i.imgur.com/x5cwb1q.png",
       "group": "Cooking;Lifestyle",
@@ -4261,7 +4246,7 @@
       "type": "hls"
     },
     {
-      "name": "Pluto TV True Crime",
+      "name": "Pluto TV True Crime (Germany) IT",
       "tvg_id": "PlutoTVTrueCrime.de@IT",
       "logo": "https://images.pluto.tv/channels/615333098185f00008715a56/colorLogoPNG.png",
       "group": "Documentary;Series",
@@ -4321,21 +4306,6 @@
       "type": "hls"
     },
     {
-      "name": "Catfish",
-      "tvg_id": "MTVCatfishTVShow.de@IT",
-      "logo": "https://images.pluto.tv/channels/6093f9ed2c75660007322bb7/colorLogoPNG_1750862971704.png",
-      "group": "Entertainment",
-      "language": "ita",
-      "country": "IT",
-      "source": "Italy Backup",
-      "source_id": "it-country",
-      "url": "https://jmp2.uk/plu-6093f9ed2c75660007322bb7.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "CG Entertainment",
       "tvg_id": "CGEntertainment.it@SD",
       "logo": "https://i.imgur.com/XeWzy7e.png",
@@ -4351,7 +4321,7 @@
       "type": "hls"
     },
     {
-      "name": "Geordie Shore",
+      "name": "Geordie Shore (Germany)",
       "tvg_id": "GeordieShore.de@IT",
       "logo": "https://images.pluto.tv/channels/619263ee9541940007d20d60/colorLogoPNG.png",
       "group": "Entertainment",
@@ -4411,6 +4381,21 @@
       "type": "hls"
     },
     {
+      "name": "MTV Catfish TV Show",
+      "tvg_id": "MTVCatfishTVShow.de@IT",
+      "logo": "https://images.pluto.tv/channels/6093f9ed2c75660007322bb7/colorLogoPNG_1750862971704.png",
+      "group": "Entertainment",
+      "language": "ita",
+      "country": "IT",
+      "source": "Italy Backup",
+      "source_id": "it-country",
+      "url": "https://jmp2.uk/plu-6093f9ed2c75660007322bb7.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
       "name": "Pluto TV Shore",
       "tvg_id": "PlutoTVShore.de@IT",
       "logo": "https://images.pluto.tv/channels/67e3b0d2443f0671bc8a1297/colorLogoPNG_1747721158520.png",
@@ -4426,7 +4411,7 @@
       "type": "hls"
     },
     {
-      "name": "Teen Mom",
+      "name": "Teen Mom (Germany)",
       "tvg_id": "TeenMom.de@IT",
       "logo": "https://images.pluto.tv/channels/62e7fc8c0d061100083946a9/colorLogoPNG.png",
       "group": "Entertainment",
@@ -4441,7 +4426,7 @@
       "type": "hls"
     },
     {
-      "name": "The Pet Collective",
+      "name": "The Pet Collective Italy",
       "tvg_id": "ThePetCollective.us@Italy",
       "logo": "https://i.imgur.com/yH7n2dF.png",
       "group": "Family",
@@ -4531,7 +4516,7 @@
       "type": "hls"
     },
     {
-      "name": "Alto Adige TV (720p)",
+      "name": "AltoAdige TV (720p)",
       "tvg_id": "AltoAdigeTV.it@SD",
       "logo": "https://i.imgur.com/yt7JJrn.png",
       "group": "General",
@@ -4891,7 +4876,7 @@
       "type": "hls"
     },
     {
-      "name": "Onda TV (568p)",
+      "name": "Onda TV (Italy) (568p)",
       "tvg_id": "OndaTV.it@SD",
       "logo": "https://upload.wikimedia.org/wikipedia/it/thumb/9/99/Ondatv.jpg/512px-Ondatv.jpg",
       "group": "General",
@@ -4921,22 +4906,7 @@
       "type": "hls"
     },
     {
-      "name": "Prima TV Sicilia (720p)",
-      "tvg_id": "PrimaTV.it@SD",
-      "logo": "https://i.imgur.com/HE9c8Sk.png",
-      "group": "General",
-      "language": "ita",
-      "country": "IT",
-      "source": "Italy Backup",
-      "source_id": "it-country",
-      "url": "https://5db313b643fd8.streamlock.net/PrimaTV/PrimaTV/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
-      "name": "PrimaFree",
+      "name": "Prima Free",
       "tvg_id": "PrimaFree.it@SD",
       "logo": "https://irp.cdn-website.com/184bfd6a/MOBILE/jpg/477.jpg",
       "group": "General",
@@ -4945,6 +4915,21 @@
       "source": "Italy Backup",
       "source_id": "it-country",
       "url": "https://5f22d76e220e1.streamlock.net/primafree/primafree/playlist.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
+      "name": "Prima TV (Italy) (720p)",
+      "tvg_id": "PrimaTV.it@SD",
+      "logo": "https://i.imgur.com/HE9c8Sk.png",
+      "group": "General",
+      "language": "ita",
+      "country": "IT",
+      "source": "Italy Backup",
+      "source_id": "it-country",
+      "url": "https://5db313b643fd8.streamlock.net/PrimaTV/PrimaTV/playlist.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -5071,7 +5056,7 @@
       "type": "hls"
     },
     {
-      "name": "SuperSix Lombardia (720p)",
+      "name": "Super Six (720p)",
       "tvg_id": "SuperSix.it@SD",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/0/0a/SuperSix_TV_Logo.png",
       "group": "General",
@@ -5101,6 +5086,21 @@
       "type": "hls"
     },
     {
+      "name": "Tele Chiara (720p)",
+      "tvg_id": "TeleChiara.it@SD",
+      "logo": "https://i.imgur.com/LpXeY4v.png",
+      "group": "General",
+      "language": "ita",
+      "country": "IT",
+      "source": "Italy Backup",
+      "source_id": "it-country",
+      "url": "http://fms.tvavicenza.it:1935/telechiara/diretta/playlist.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
       "name": "Tele One 16",
       "tvg_id": "TeleOne16.it@SD",
       "logo": "",
@@ -5110,21 +5110,6 @@
       "source": "Italy Backup",
       "source_id": "it-country",
       "url": "https://648026e87a75e.streamlock.net/teleone/teleone/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
-      "name": "Telechiara (720p)",
-      "tvg_id": "TeleChiara.it@SD",
-      "logo": "https://i.imgur.com/LpXeY4v.png",
-      "group": "General",
-      "language": "ita",
-      "country": "IT",
-      "source": "Italy Backup",
-      "source_id": "it-country",
-      "url": "http://fms.tvavicenza.it:1935/telechiara/diretta/playlist.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -5251,7 +5236,7 @@
       "type": "hls"
     },
     {
-      "name": "Super TV (720p)",
+      "name": "Super TV (Italy) (720p)",
       "tvg_id": "SuperTV.it@SD",
       "logo": "https://i.imgur.com/hxF3yhw.png",
       "group": "General;Series",
@@ -5296,7 +5281,7 @@
       "type": "hls"
     },
     {
-      "name": "Nick Jr. (720p)",
+      "name": "Nick Jr. (Italy) (720p)",
       "tvg_id": "NickJr.it@SD",
       "logo": "https://i.imgur.com/6p3eFgf.png",
       "group": "Kids",
@@ -5311,7 +5296,7 @@
       "type": "hls"
     },
     {
-      "name": "Pluto TV Teen (720p)",
+      "name": "Pluto TV Teen IT (720p)",
       "tvg_id": "PlutoTVTeen.de@IT",
       "logo": "https://images.pluto.tv/channels/63eb944dc111bc0008fe7021/colorLogoPNG_1761820520562.png",
       "group": "Kids",
@@ -5386,7 +5371,7 @@
       "type": "hls"
     },
     {
-      "name": "Camera dei Deputati (via RR) (240p)",
+      "name": "Camera dei Deputati (240p)",
       "tvg_id": "CameradeiDeputati.it@SD",
       "logo": "https://i.imgur.com/hv4zi9N.png",
       "group": "Legislative",
@@ -5521,7 +5506,7 @@
       "type": "hls"
     },
     {
-      "name": "Pluto TV Film",
+      "name": "Pluto TV Film (Germany)",
       "tvg_id": "PlutoTVFilm.de@IT",
       "logo": "https://images.pluto.tv/channels/608aa17fb9f4490007e6419a/colorLogoPNG_1733013735186.png",
       "group": "Movies",
@@ -5536,7 +5521,7 @@
       "type": "hls"
     },
     {
-      "name": "Pluto TV Film Ancora Più Romantici",
+      "name": "Pluto TV Film Ancora Piu Romantici",
       "tvg_id": "PlutoTVFilmAncoraPiuRomantici.de@IT",
       "logo": "https://images.pluto.tv/channels/699d87093d5dba980705cca8/colorLogoPNG_1777274173528.png",
       "group": "Movies",
@@ -5686,7 +5671,7 @@
       "type": "hls"
     },
     {
-      "name": "Pluto TV Paranormal",
+      "name": "Pluto TV Paranormal (Germany) IT",
       "tvg_id": "PlutoTVParanormal.de@IT",
       "logo": "https://images.pluto.tv/channels/5f98487036af340008da1e37/colorLogoPNG.png",
       "group": "Movies",
@@ -5716,7 +5701,7 @@
       "type": "hls"
     },
     {
-      "name": "Pluto TV Totò",
+      "name": "Pluto TV Toto",
       "tvg_id": "PlutoTVToto.de@IT",
       "logo": "https://images.pluto.tv/channels/65253f9881f942000833ccd5/colorLogoPNG_1774617972809.png",
       "group": "Movies",
@@ -5731,7 +5716,7 @@
       "type": "hls"
     },
     {
-      "name": "Pluto TV Western",
+      "name": "Pluto TV Western IT",
       "tvg_id": "PlutoTVWestern.de@IT",
       "logo": "https://images.pluto.tv/channels/630dd3b2605f140007e002f5/colorLogoPNG_1732030684562.png",
       "group": "Movies",
@@ -5806,7 +5791,7 @@
       "type": "hls"
     },
     {
-      "name": "Mission Impossible",
+      "name": "Mission Impossible (Germany) IT",
       "tvg_id": "MissionImpossible.de@IT",
       "logo": "https://images.pluto.tv/channels/634fe5afece2e60007c9d8b8/colorLogoPNG.png",
       "group": "Movies;Series",
@@ -5821,7 +5806,7 @@
       "type": "hls"
     },
     {
-      "name": "Pluto TV Horror",
+      "name": "Pluto TV Horror (Germany) IT",
       "tvg_id": "PlutoTVHorror.de@IT",
       "logo": "https://images.pluto.tv/channels/62f4f4b88157cf00075c22db/colorLogoPNG.png",
       "group": "Movies;Series",
@@ -5836,7 +5821,7 @@
       "type": "hls"
     },
     {
-      "name": "Pluto TV Sci-Fi",
+      "name": "Pluto TV Sci-Fi (Germany) IT",
       "tvg_id": "PlutoTVSciFi.de@IT",
       "logo": "https://images.pluto.tv/channels/60ed498c4248a400077c0b9d/colorLogoPNG.png",
       "group": "Movies;Series",
@@ -5851,7 +5836,7 @@
       "type": "hls"
     },
     {
-      "name": "Star Trek: Voyager",
+      "name": "Star Trek: Voyager (Germany) IT",
       "tvg_id": "StarTrekVoyager.de@IT",
       "logo": "https://images.pluto.tv/channels/65787f2eb228b7000843fa5c/colorLogoPNG.png",
       "group": "Movies;Series",
@@ -5881,7 +5866,7 @@
       "type": "hls"
     },
     {
-      "name": "70-80 TV (1080P)",
+      "name": "70-80 TV",
       "tvg_id": "7080TV.it@SD",
       "logo": "https://i.imgur.com/y4kNV3Q.png",
       "group": "Music",
@@ -6031,7 +6016,7 @@
       "type": "hls"
     },
     {
-      "name": "RTL 102.5 Napulè (1080p)",
+      "name": "RTL 102.5 Napule (1080p)",
       "tvg_id": "RTL1025Napule.it@SD",
       "logo": "https://i.imgur.com/HFPw1YW.png",
       "group": "Music",
@@ -6070,6 +6055,36 @@
       "source": "Italy Backup",
       "source_id": "it-country",
       "url": "https://5db313b643fd8.streamlock.net/Etnachannelponte/Etnachannelponte/playlist.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
+      "name": "eTv Marche (720p)",
+      "tvg_id": "eTvMarche.it@SD",
+      "logo": "https://i.imgur.com/U6OW577.png",
+      "group": "News",
+      "language": "ita",
+      "country": "IT",
+      "source": "Italy Backup",
+      "source_id": "it-country",
+      "url": "https://live.ipstream.it/etvmarche/etvmarche.stream/playlist.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
+      "name": "eTv Rete 7 (720p)",
+      "tvg_id": "eTvRete7.it@SD",
+      "logo": "https://i.imgur.com/xYVI5OC.png",
+      "group": "News",
+      "language": "ita",
+      "country": "IT",
+      "source": "Italy Backup",
+      "source_id": "it-country",
+      "url": "https://live.ipstream.it/etv/etv.stream/playlist.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -6211,21 +6226,6 @@
       "type": "hls"
     },
     {
-      "name": "èTv Marche (720p)",
-      "tvg_id": "eTvMarche.it@SD",
-      "logo": "https://i.imgur.com/U6OW577.png",
-      "group": "News",
-      "language": "ita",
-      "country": "IT",
-      "source": "Italy Backup",
-      "source_id": "it-country",
-      "url": "https://live.ipstream.it/etvmarche/etvmarche.stream/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "Italian Fishing TV (1080p)",
       "tvg_id": "ItalianFishingTV.it@SD",
       "logo": "https://i.imgur.com/qrn6tUO.png",
@@ -6271,7 +6271,7 @@
       "type": "hls"
     },
     {
-      "name": "Peer TV Südtirol (1080p)",
+      "name": "Peer TV Sudtirol (1080p)",
       "tvg_id": "PeerTVSudtirol.it@SD",
       "logo": "https://www.peer.biz/peertv-iptv/peer-tv-suedtirol.png",
       "group": "Outdoor;Travel",
@@ -6511,7 +6511,7 @@
       "type": "hls"
     },
     {
-      "name": "Maria Vision (1080p)",
+      "name": "Maria Vision Italia (1080p)",
       "tvg_id": "MariaVisionItalia.it@SD",
       "logo": "https://i.imgur.com/gP3XAlV.jpeg",
       "group": "Religious",
@@ -6520,6 +6520,21 @@
       "source": "Italy Backup",
       "source_id": "it-country",
       "url": "https://1601580044.rsc.cdn77.org/live/_jcn_/amlst:CHANNEL_2/playlist.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
+      "name": "Medjugorje Italia TV (480p)",
+      "tvg_id": "MedjugorjeItaliaTV.it@SD",
+      "logo": "",
+      "group": "Religious",
+      "language": "ita",
+      "country": "IT",
+      "source": "Italy Backup",
+      "source_id": "it-country",
+      "url": "https://5f22d76e220e1.streamlock.net/medjugorjeitaliatv/medjugorjeitaliatv/playlist.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -6631,21 +6646,6 @@
       "type": "hls"
     },
     {
-      "name": "Pluto TV Serie",
-      "tvg_id": "PlutoTVSerie.de@IT",
-      "logo": "https://images.pluto.tv/channels/5dc190f7bfed110009d934c3/colorLogoPNG.png",
-      "group": "Series",
-      "language": "ita",
-      "country": "IT",
-      "source": "Italy Backup",
-      "source_id": "it-country",
-      "url": "https://jmp2.uk/plu-60b9ff2722bfa400072676ef.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "Pluto TV Serie Crime",
       "tvg_id": "PlutoTVSerieCrime.de@IT",
       "logo": "https://images.pluto.tv/channels/608aa777b907770007e5d05d/colorLogoPNG_1750402183051.png",
@@ -6655,6 +6655,21 @@
       "source": "Italy Backup",
       "source_id": "it-country",
       "url": "https://jmp2.uk/plu-608aa777b907770007e5d05d.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
+      "name": "Pluto TV Serie IT",
+      "tvg_id": "PlutoTVSerie.de@IT",
+      "logo": "https://images.pluto.tv/channels/5dc190f7bfed110009d934c3/colorLogoPNG.png",
+      "group": "Series",
+      "language": "ita",
+      "country": "IT",
+      "source": "Italy Backup",
+      "source_id": "it-country",
+      "url": "https://jmp2.uk/plu-60b9ff2722bfa400072676ef.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -6676,7 +6691,7 @@
       "type": "hls"
     },
     {
-      "name": "Juwelo Italia (480p)",
+      "name": "Juwelo (Italy) (480p)",
       "tvg_id": "Juwelo.it@SD",
       "logo": "https://i.imgur.com/T3r1khc.png",
       "group": "Shop",
@@ -6691,7 +6706,7 @@
       "type": "hls"
     },
     {
-      "name": "ACI Sport TV (1080p)",
+      "name": "ACI Sport TV SD (1080p)",
       "tvg_id": "ACISportTV.it@SD",
       "logo": "https://i.imgur.com/U8cHMOt.png",
       "group": "Sports",
@@ -6736,7 +6751,7 @@
       "type": "hls"
     },
     {
-      "name": "Inter TV (1080p)",
+      "name": "Inter TV (Italy) (1080p)",
       "tvg_id": "InterTV.it@SD",
       "logo": "https://i.imgur.com/FUTqh2L.png",
       "group": "Sports",
@@ -6781,7 +6796,7 @@
       "type": "hls"
     },
     {
-      "name": "Pluto TV Snooker 900 (720p)",
+      "name": "Pluto TV Snooker 900 (Germany) IT (720p)",
       "tvg_id": "PlutoTVSnooker900.de@IT",
       "logo": "https://images.pluto.tv/channels/68ac5543a1ac0c90f2c8943e/colorLogoPNG_1760517341343.png",
       "group": "Sports",
@@ -6796,7 +6811,7 @@
       "type": "hls"
     },
     {
-      "name": "Pluto TV Sport",
+      "name": "Pluto TV Sport (Germany)",
       "tvg_id": "PlutoTVSport.de@IT",
       "logo": "https://images.pluto.tv/channels/608030eff4b6f70007e1684c/colorLogoPNG_1746816937164.png",
       "group": "Sports",
@@ -6901,7 +6916,7 @@
       "type": "hls"
     },
     {
-      "name": "Euro TV (720p) [Not 24/7]",
+      "name": "Euro TV (Italy) (720p) [Not 24/7]",
       "tvg_id": "EuroTV.it@SD",
       "logo": "https://i.imgur.com/HFWWzKT.png",
       "group": "Undefined",
@@ -6916,7 +6931,7 @@
       "type": "hls"
     },
     {
-      "name": "Italia 2 TV (480p) [Geo-blocked]",
+      "name": "Italia2TV (480p) [Geo-blocked]",
       "tvg_id": "Italia2TV.it@SD",
       "logo": "https://i.imgur.com/TDSgG28.png",
       "group": "Undefined",
@@ -7030,21 +7045,6 @@
       "source": "Italy Backup",
       "source_id": "it-country",
       "url": "https://5929b138b139d.streamlock.net/RadioIbizaTV/livestream/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
-      "name": "Radio Iglesias Sardegna (576p) [Geo-blocked]",
-      "tvg_id": "RadioIglesiasSardegna.it@SD",
-      "logo": "https://i.imgur.com/KDtVpLl.png",
-      "group": "Undefined",
-      "language": "ita",
-      "country": "IT",
-      "source": "Italy Backup",
-      "source_id": "it-country",
-      "url": "https://59d7d6f47d7fc.streamlock.net/visualradio/visualradio/playlist.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -7246,7 +7246,7 @@
       "type": "hls"
     },
     {
-      "name": "RTP (404p)",
+      "name": "RTP (Italy) (404p)",
       "tvg_id": "RTP.it@SD",
       "logo": "https://upload.wikimedia.org/wikipedia/it/thumb/8/86/Logo_Radio_Televisione_Peloritana.svg/512px-Logo_Radio_Televisione_Peloritana.svg.png",
       "group": "Undefined",
@@ -7291,7 +7291,7 @@
       "type": "hls"
     },
     {
-      "name": "Sophia TV Italy (720p)",
+      "name": "Sophia TV (Italy) (720p)",
       "tvg_id": "SophiaTV.it@SD",
       "logo": "https://i.imgur.com/RPXusvS.png",
       "group": "Undefined",
@@ -7561,7 +7561,7 @@
       "type": "hls"
     },
     {
-      "name": "TV Qui (Modena) (480p)",
+      "name": "TV Qui Modena (480p)",
       "tvg_id": "TVQuiModena.it@SD",
       "logo": "https://i.imgur.com/YfMVNDE.png",
       "group": "Undefined",
@@ -7591,7 +7591,7 @@
       "type": "hls"
     },
     {
-      "name": "TVA (Vicenza) (720p)",
+      "name": "TVA Vicenza (720p)",
       "tvg_id": "TVAVicenza.it@SD",
       "logo": "https://upload.wikimedia.org/wikipedia/it/thumb/0/0f/TVA_Vicenza_-_Logo_2018.svg/512px-TVA_Vicenza_-_Logo_2018.svg.png",
       "group": "Undefined",
@@ -7696,7 +7696,7 @@
       "type": "hls"
     },
     {
-      "name": "like Gecko) Chrome/130.0.0.0 Safari/537.36 VLC/3.0.18 LibVLC/3.0.18\" group-title=\"Entertainment\",AXN Spin",
+      "name": "like Gecko) Chrome/130.0.0.0 Safari/537.36 VLC/3.0.18 LibVLC/3.0.18\" group-title=\"Entertainment\",AXN Spin (Hungary)",
       "tvg_id": "AXNSpin.hu@SD",
       "logo": "https://i.imgur.com/uVFenKm.png",
       "group": "Entertainment",
@@ -7741,7 +7741,7 @@
       "type": "hls"
     },
     {
-      "name": "Naša TV (1080p) [Not 24/7]",
+      "name": "Nasa TV (1080p) [Not 24/7]",
       "tvg_id": "NasaTV.mk@SD",
       "logo": "https://i.imgur.com/9rB4VZy.png",
       "group": "General",
@@ -7816,7 +7816,7 @@
       "type": "hls"
     },
     {
-      "name": "Folk Klub (720p)",
+      "name": "Folk Klub TV (720p)",
       "tvg_id": "FolkKlubTV.au@SD",
       "logo": "https://i.imgur.com/Seq7Od7.png",
       "group": "Music",
@@ -7861,7 +7861,7 @@
       "type": "hls"
     },
     {
-      "name": "Rock TV (1080p) [Not 24/7]",
+      "name": "Rock TV (North Macedonia) (1080p) [Not 24/7]",
       "tvg_id": "RockTV.mk@SD",
       "logo": "https://i.imgur.com/Y9miDQo.png",
       "group": "Music",
@@ -7921,7 +7921,7 @@
       "type": "hls"
     },
     {
-      "name": "Nova (1080p)",
+      "name": "Nova (Serbia) (1080p)",
       "tvg_id": "Nova.rs@SD",
       "logo": "https://i.imgur.com/sU8UPPY.png",
       "group": "General",
@@ -7936,7 +7936,7 @@
       "type": "stream"
     },
     {
-      "name": "Pannon RTV (648p)",
+      "name": "Pannon TV (648p)",
       "tvg_id": "PannonTV.rs@SD",
       "logo": "https://i.imgur.com/xQa2idL.png",
       "group": "General",
@@ -7996,7 +7996,7 @@
       "type": "hls"
     },
     {
-      "name": "Radio Lola (720p) [Not 24/7]",
+      "name": "Radio Lola TV (720p) [Not 24/7]",
       "tvg_id": "RadioLolaTV.rs@SD",
       "logo": "https://i.imgur.com/41eE8fl.png",
       "group": "Music",
@@ -8071,7 +8071,7 @@
       "type": "hls"
     },
     {
-      "name": "RTS 3 (720p)",
+      "name": "RTS 3 (Serbia) (720p)",
       "tvg_id": "RTS3.rs@SD",
       "logo": "https://i.imgur.com/gxuGB4J.png",
       "group": "Undefined",
@@ -8176,7 +8176,7 @@
       "type": "hls"
     },
     {
-      "name": "EBS Plus (1080p)",
+      "name": "EbS+ (1080p)",
       "tvg_id": "EbSPlus.be@SD",
       "logo": "https://i.imgur.com/7V012zQ.png",
       "group": "Legislative",
@@ -8635,21 +8635,6 @@
       "source": "Turkey Working",
       "source_id": "tr-dearbulut",
       "url": "http://1.rtmp.org/tv217/yayin.stream/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
-      "name": "ATV (1080p)",
-      "tvg_id": "ATV.tr@SD",
-      "logo": "https://i.imgur.com/HyVUwFC.png",
-      "group": "General",
-      "language": "tur",
-      "country": "TR",
-      "source": "Turkey Backup",
-      "source_id": "tr-country",
-      "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -9241,6 +9226,21 @@
       "type": "hls"
     },
     {
+      "name": "TRT Cocuk (1440p)",
+      "tvg_id": "TRTCocuk.tr",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/TRT_%C3%87ocuk_logo_%282021%29.svg/960px-TRT_%C3%87ocuk_logo_%282021%29.svg.png",
+      "group": "Kids",
+      "language": "tur",
+      "country": "TR",
+      "source": "Turkey Working",
+      "source_id": "tr-dearbulut",
+      "url": "https://tv-trtcocuk.medya.trt.com.tr/master.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
       "name": "TRT Diyanet Cocuk (1440p)",
       "tvg_id": "TRTDiyanetCocuk.tr",
       "logo": "https://i.imgur.com/8PmXz9t.png",
@@ -9601,6 +9601,21 @@
       "type": "hls"
     },
     {
+      "name": "24 TV (720p)",
+      "tvg_id": "24TV.tr@SD",
+      "logo": "https://i.imgur.com/8FO41es.png",
+      "group": "News",
+      "language": "tur",
+      "country": "TR",
+      "source": "Turkey Backup",
+      "source_id": "tr-country",
+      "url": "https://turkmedya-live.ercdn.net/tv24/tv24.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
       "name": "360 (720p)",
       "tvg_id": "360.tr",
       "logo": "https://i.imgur.com/agn47sQ.png",
@@ -9931,21 +9946,6 @@
       "type": "hls"
     },
     {
-      "name": "TV 24 (720p)",
-      "tvg_id": "24TV.tr@SD",
-      "logo": "https://i.imgur.com/8FO41es.png",
-      "group": "News",
-      "language": "tur",
-      "country": "TR",
-      "source": "Turkey Backup",
-      "source_id": "tr-country",
-      "url": "https://turkmedya-live.ercdn.net/tv24/tv24.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "Al-Zahra TV Turkic (720p)",
       "tvg_id": "AlZahraTVTurkic.tr",
       "logo": "https://i.imgur.com/QEHKGnG.png",
@@ -10045,21 +10045,6 @@
       "source": "Turkey Working",
       "source_id": "tr-dearbulut",
       "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
-      "name": "FB TV (720p)",
-      "tvg_id": "FBTV.tr",
-      "logo": "https://i.imgur.com/qBVqtYd.png",
-      "group": "Sports",
-      "language": "tur;eng",
-      "country": "TR",
-      "source": "Turkey Working",
-      "source_id": "tr-dearbulut",
-      "url": "http://1hskrdto.rocketcdn.com/fenerbahcetv.smil/playlist.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -10246,7 +10231,7 @@
       "type": "hls"
     },
     {
-      "name": "Power TV (1080p)",
+      "name": "Power TV (Turkiye) (1080p)",
       "tvg_id": "PowerTV.tr@SD",
       "logo": "https://i.imgur.com/XSL1gd7.png",
       "group": "Undefined",
@@ -10276,7 +10261,7 @@
       "type": "hls"
     },
     {
-      "name": "PowerTürk TV (720p)",
+      "name": "PowerTurk TV (720p)",
       "tvg_id": "PowerTurkTV.tr@SD",
       "logo": "https://i.imgur.com/9OPoXQG.png",
       "group": "Undefined",
@@ -10306,7 +10291,7 @@
       "type": "hls"
     },
     {
-      "name": "Sat7 Türk (1080p)",
+      "name": "Sat 7 Turk (1080p)",
       "tvg_id": "Sat7Turk.cy@SD",
       "logo": "https://i.imgur.com/cKQIK4i.png",
       "group": "Undefined",
@@ -10510,6 +10495,21 @@
       "source": "Turkey Working",
       "source_id": "tr-dearbulut",
       "url": "https://edge1.socialsmart.tv/tv1/bant1/playlist.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
+      "name": "TV 264 (1080p)",
+      "tvg_id": "TV264.tr",
+      "logo": "https://i.imgur.com/tudXdOZ.png",
+      "group": "Undefined",
+      "language": "tur",
+      "country": "TR",
+      "source": "Turkey Working",
+      "source_id": "tr-dearbulut",
+      "url": "https://b01c02nl.mediatriple.net/videoonlylive/mtdxkkitgbrckilive/broadcast_5ee244263fd6d.smil/playlist.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
