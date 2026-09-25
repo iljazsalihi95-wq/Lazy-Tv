@@ -1,20 +1,35 @@
 {
   "version": 5,
-  "updated": "2026-09-25T16:24:11Z",
-  "total": 681,
+  "updated": "2026-09-25T21:02:45Z",
+  "total": 686,
   "checked": 1005,
   "countries": {
-    "AL": 10,
-    "DE": 223,
-    "IT": 245,
+    "AL": 11,
+    "DE": 224,
+    "IT": 246,
     "ME": 3,
     "MK": 15,
     "RS": 16,
     "SHQIP": 3,
-    "TR": 159,
+    "TR": 161,
     "XK": 7
   },
   "channels": [
+    {
+      "name": "Fieri Tv (720p)",
+      "tvg_id": "FieriTv.al@HD",
+      "logo": "https://raw.githubusercontent.com/biptv/fieri-tv-logo/main/120.png",
+      "group": "General",
+      "language": "sqi",
+      "country": "AL",
+      "source": "Albania",
+      "source_id": "al-country",
+      "url": "http://valashop.online:8090/fieritv.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
     {
       "name": "Tropoja Televizion",
       "tvg_id": "TropojaTelevizion.al@SD",
@@ -2971,6 +2986,21 @@
       "type": "hls"
     },
     {
+      "name": "labor14 (720p)",
+      "tvg_id": "labor14.de@HD",
+      "logo": "https://www.tlm.de/assets/uploads/general/Sonstiges/LogoExt/_500xAUTO_crop_center-center_none/21labor14.jpg",
+      "group": "Undefined",
+      "language": "deu",
+      "country": "DE",
+      "source": "Germany",
+      "source_id": "de-country",
+      "url": "https://5acade5fc0c29.streamlock.net/OKGera/tmbz_live_high.stream/playlist.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
       "name": "like Gecko) Chrome/152.0.0.0 Safari/537.36\" group-title=\"Undefined\",RTL Super",
       "tvg_id": "RTLSuper.de@SD",
       "logo": "https://i.imgur.com/KbdK8t9.png",
@@ -4441,6 +4471,21 @@
       "type": "hls"
     },
     {
+      "name": "Odeon 24 (576p)",
+      "tvg_id": "Odeon24.it@SD",
+      "logo": "https://i.imgur.com/Ho7SdXY.png",
+      "group": "General",
+      "language": "ita",
+      "country": "IT",
+      "source": "Italy Backup",
+      "source_id": "it-country",
+      "url": "https://5f11919dca3bd.streamlock.net/odeonjump/_definst_/odeonjump/playlist.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "https://www.grupposciscione.it/odeon-2/#/?playlistId=0&videoId=0",
+      "status": "online",
+      "type": "hls"
+    },
+    {
       "name": "Onda Novara TV (720p) [Not 24/7]",
       "tvg_id": "OndaNovaraTV.it@SD",
       "logo": "https://i.imgur.com/DTxhOhT.png",
@@ -5005,21 +5050,6 @@
       "source": "Italy Backup",
       "source_id": "it-country",
       "url": "https://jmp2.uk/plu-63c923944207be0007fd0887.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
-      "name": "Horror Channel (1080p)",
-      "tvg_id": "HorrorChannel.it@SD",
-      "logo": "https://i.imgur.com/VvNflYm.png",
-      "group": "Movies",
-      "language": "ita",
-      "country": "IT",
-      "source": "Italy Backup",
-      "source_id": "it-country",
-      "url": "http://str2.iptvhd.ru:8080/Horror/index.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -6781,6 +6811,21 @@
       "type": "hls"
     },
     {
+      "name": "Rete Oro (720p) [Not 24/7]",
+      "tvg_id": "ReteOro.it@SD",
+      "logo": "https://i.imgur.com/3oYiBSz.png",
+      "group": "Undefined",
+      "language": "ita",
+      "country": "IT",
+      "source": "Italy Backup",
+      "source_id": "it-country",
+      "url": "https://5926fc9c7c5b2.streamlock.net/9094/9094/playlist.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
       "name": "Reteveneta (480p)",
       "tvg_id": "Reteveneta.it@SD",
       "logo": "https://upload.wikimedia.org/wikipedia/it/d/df/Logo_Rete_Veneta.png",
@@ -8176,6 +8221,21 @@
       "type": "hls"
     },
     {
+      "name": "ATV (1080p)",
+      "tvg_id": "ATV.tr",
+      "logo": "https://i.imgur.com/HyVUwFC.png",
+      "group": "General",
+      "language": "tur",
+      "country": "TR",
+      "source": "Turkey Working",
+      "source_id": "tr-dearbulut",
+      "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
       "name": "ATV Alanya (1080p)",
       "tvg_id": "ATVAlanya.tr",
       "logo": "https://i.imgur.com/bUwarR0.png",
@@ -9460,6 +9520,21 @@
       "source": "Turkey Working",
       "source_id": "tr-dearbulut",
       "url": "https://mumbai-edge.smartplaytv.in/TRTWorld/index.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
+      "name": "TurkHaber TV (1080p)",
+      "tvg_id": "TurkHaberTV.tr",
+      "logo": "https://i.imgur.com/2AcRKdL.png",
+      "group": "News",
+      "language": "tur",
+      "country": "TR",
+      "source": "Turkey Working",
+      "source_id": "tr-dearbulut",
+      "url": "https://edge1.socialsmart.tv/turkhaber/bant1/playlist.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
