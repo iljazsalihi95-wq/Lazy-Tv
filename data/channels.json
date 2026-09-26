@@ -1,12 +1,12 @@
 {
   "version": 5,
-  "updated": "2026-09-25T21:02:45Z",
-  "total": 686,
+  "updated": "2026-09-26T03:14:17Z",
+  "total": 683,
   "checked": 1005,
   "countries": {
     "AL": 11,
-    "DE": 224,
-    "IT": 246,
+    "DE": 223,
+    "IT": 244,
     "ME": 3,
     "MK": 15,
     "RS": 16,
@@ -2986,21 +2986,6 @@
       "type": "hls"
     },
     {
-      "name": "labor14 (720p)",
-      "tvg_id": "labor14.de@HD",
-      "logo": "https://www.tlm.de/assets/uploads/general/Sonstiges/LogoExt/_500xAUTO_crop_center-center_none/21labor14.jpg",
-      "group": "Undefined",
-      "language": "deu",
-      "country": "DE",
-      "source": "Germany",
-      "source_id": "de-country",
-      "url": "https://5acade5fc0c29.streamlock.net/OKGera/tmbz_live_high.stream/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "like Gecko) Chrome/152.0.0.0 Safari/537.36\" group-title=\"Undefined\",RTL Super",
       "tvg_id": "RTLSuper.de@SD",
       "logo": "https://i.imgur.com/KbdK8t9.png",
@@ -4111,21 +4096,6 @@
       "type": "hls"
     },
     {
-      "name": "50 Canale",
-      "tvg_id": "50Canale.it@SD",
-      "logo": "https://i.imgur.com/D3OTRzf.png",
-      "group": "General",
-      "language": "ita",
-      "country": "IT",
-      "source": "Italy Backup",
-      "source_id": "it-country",
-      "url": "https://load-balancer.azotosolutions.com/cdnedge37/canale50/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "A2i TV (1080p)",
       "tvg_id": "A2iTV.it@SD",
       "logo": "https://i.imgur.com/YlDFir7.jpg",
@@ -4720,21 +4690,6 @@
       "source": "Italy Backup",
       "source_id": "it-country",
       "url": "https://648026e87a75e.streamlock.net/teleone/teleone/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
-      "name": "Telecity Lombardia (1080p)",
-      "tvg_id": "TelecityLombardia.it@SD",
-      "logo": "https://i.imgur.com/TxApoQf.png",
-      "group": "General",
-      "language": "ita",
-      "country": "IT",
-      "source": "Italy Backup",
-      "source_id": "it-country",
-      "url": "https://64b16f23efbee.streamlock.net/telecitylombardia/telecitylombardia/playlist.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -5986,21 +5941,6 @@
       "type": "dash"
     },
     {
-      "name": "RADIO ZETA",
-      "tvg_id": "RadioZeta.it",
-      "logo": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/radiozetatv.png",
-      "group": "Radio",
-      "language": "ita",
-      "country": "IT",
-      "source": "IPTV Italia Plus",
-      "source_id": "it-tundrak",
-      "url": "https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S9346184/XEx1LqlYbNic/playlist_video.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "RADIOFRECCIA",
       "tvg_id": "RadioFrecciaTV.it",
       "logo": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/radiofrecciatv.png",
@@ -7111,6 +7051,21 @@
       "type": "hls"
     },
     {
+      "name": "TeleTusciaSabina 2000 (576p) [Not 24/7]",
+      "tvg_id": "TeleTusciaSabina2000.it@SD",
+      "logo": "https://i.imgur.com/cfexNL9.png",
+      "group": "Undefined",
+      "language": "ita",
+      "country": "IT",
+      "source": "Italy Backup",
+      "source_id": "it-country",
+      "url": "http://ts2000tv.streaming.nextware.it:8081/ts2000tv/ts2000tv/playlist.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
       "name": "TV Prato (1080p)",
       "tvg_id": "TVPrato.it@SD",
       "logo": "https://i.imgur.com/72mAJtf.png",
@@ -7809,7 +7764,7 @@
       "country": "TR",
       "source": "Turkey Working",
       "source_id": "tr-dearbulut",
-      "url": "https://tv.ensonhaber.com/bloomberght/bloomberght.m3u8",
+      "url": "https://mumbai-edge.smartplaytv.in/BloombergHT/index.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -8064,8 +8019,8 @@
       "country": "TR",
       "source": "Turkey Working",
       "source_id": "tr-dearbulut",
-      "url": "http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/KanalD.stream/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+      "url": "http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/KanalD_principal_SRT/playlist.m3u8",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
       "referer": "",
       "status": "online",
       "type": "hls"
@@ -8161,7 +8116,7 @@
       "type": "hls"
     },
     {
-      "name": "Alanya Posta TV (1080p)",
+      "name": "Alanya Posta TV (240p)",
       "tvg_id": "AlanyaPostaTV.tr",
       "logo": "https://i.imgur.com/a3w9eFe.png",
       "group": "General",
@@ -8206,7 +8161,7 @@
       "type": "hls"
     },
     {
-      "name": "Aras TV (720p)",
+      "name": "Aras TV (576p)",
       "tvg_id": "ArasTV.tr",
       "logo": "https://i.imgur.com/JsDCyWG.png",
       "group": "General",
