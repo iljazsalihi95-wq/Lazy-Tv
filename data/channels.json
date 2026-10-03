@@ -1,17 +1,17 @@
 {
   "version": 5,
-  "updated": "2026-10-03T15:38:13Z",
-  "total": 656,
+  "updated": "2026-10-03T20:32:41Z",
+  "total": 657,
   "checked": 1007,
   "countries": {
     "AL": 10,
-    "DE": 219,
+    "DE": 220,
     "IT": 239,
     "ME": 3,
-    "MK": 15,
-    "RS": 16,
+    "MK": 13,
+    "RS": 17,
     "SHQIP": 3,
-    "TR": 144,
+    "TR": 145,
     "XK": 7
   },
   "channels": [
@@ -2926,6 +2926,21 @@
       "type": "hls"
     },
     {
+      "name": "labor14 (720p)",
+      "tvg_id": "labor14.de@HD",
+      "logo": "https://www.tlm.de/assets/uploads/general/Sonstiges/LogoExt/_500xAUTO_crop_center-center_none/21labor14.jpg",
+      "group": "Undefined",
+      "language": "deu",
+      "country": "DE",
+      "source": "Germany",
+      "source_id": "de-country",
+      "url": "https://5acade5fc0c29.streamlock.net/OKGera/tmbz_live_high.stream/playlist.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
       "name": "like Gecko) Chrome/152.0.0.0 Safari/537.36\" group-title=\"Undefined\",RTL Super",
       "tvg_id": "RTLSuper.de@SD",
       "logo": "https://i.imgur.com/KbdK8t9.png",
@@ -4377,6 +4392,21 @@
       "url": "https://5db313b643fd8.streamlock.net/lmbiatv/lmbiatv/playlist.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
+      "name": "Odeon 24 (576p)",
+      "tvg_id": "Odeon24.it@SD",
+      "logo": "https://i.imgur.com/Ho7SdXY.png",
+      "group": "General",
+      "language": "ita",
+      "country": "IT",
+      "source": "Italy Backup",
+      "source_id": "it-country",
+      "url": "https://5f11919dca3bd.streamlock.net/odeonjump/_definst_/odeonjump/playlist.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "https://www.grupposciscione.it/odeon-2/#/?playlistId=0&videoId=0",
       "status": "online",
       "type": "hls"
     },
@@ -6061,21 +6091,6 @@
       "type": "hls"
     },
     {
-      "name": "Casa Italia 53 (720p)",
-      "tvg_id": "CasaItalia53.it@SD",
-      "logo": "https://i.imgur.com/X8BI1Md.png",
-      "group": "Shop",
-      "language": "ita",
-      "country": "IT",
-      "source": "Italy Backup",
-      "source_id": "it-country",
-      "url": "https://ovp-live.akamaized.net/ac115_live/canale3.smil/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "Juwelo (Italy) (480p)",
       "tvg_id": "Juwelo.it@SD",
       "logo": "https://i.imgur.com/T3r1khc.png",
@@ -7261,36 +7276,6 @@
       "type": "hls"
     },
     {
-      "name": "TopEstrada TV (720p)",
-      "tvg_id": "TopEstradaTV.mk@SD",
-      "logo": "https://i.imgur.com/0Dh1FJZ.png",
-      "group": "Music",
-      "language": "",
-      "country": "MK",
-      "source": "North Macedonia",
-      "source_id": "mk-country",
-      "url": "http://live.topestrada.com/live/topestrada/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
-      "name": "like Gecko) Chrome/149.0.0.0 Safari/537.36\" group-title=\"Sports\",Arena Sport Premium M3",
-      "tvg_id": "ArenaSportPremiumM3.mk@SD",
-      "logo": "https://tvarenasport.mk/wp-content/themes/tvarenasport-mk/assets/channels/arena-m3.png",
-      "group": "Sports",
-      "language": "",
-      "country": "MK",
-      "source": "North Macedonia",
-      "source_id": "mk-country",
-      "url": "https://racitonsen.s.gy/AM3P",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "stream"
-    },
-    {
       "name": "M-Net Sport (720p)",
       "tvg_id": "MNetSport.mk@SD",
       "logo": "https://i.imgur.com/7k8ar1Z.png",
@@ -7319,6 +7304,21 @@
       "referer": "",
       "status": "online",
       "type": "stream"
+    },
+    {
+      "name": "Pannon TV (648p)",
+      "tvg_id": "PannonTV.rs@SD",
+      "logo": "https://i.imgur.com/xQa2idL.png",
+      "group": "General",
+      "language": "",
+      "country": "RS",
+      "source": "Serbia",
+      "source_id": "rs-country",
+      "url": "https://stream.nmih.hu:4102/live.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
     },
     {
       "name": "Radio Hit FM TV (720p)",
@@ -7856,6 +7856,21 @@
       "source_id": "tr-country",
       "url": "http://88.212.15.29/live/bbc_first/index.m3u8",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
+      "name": "NOW TV (720p)",
+      "tvg_id": "NOWTV.tr",
+      "logo": "https://i.imgur.com/5EYjWK7.png",
+      "group": "Entertainment",
+      "language": "tur",
+      "country": "TR",
+      "source": "Turkey Working",
+      "source_id": "tr-dearbulut",
+      "url": "https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
       "type": "hls"
