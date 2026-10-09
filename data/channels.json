@@ -1,17 +1,17 @@
 {
   "version": 5,
-  "updated": "2026-10-09T04:19:08Z",
-  "total": 553,
+  "updated": "2026-10-09T12:30:05Z",
+  "total": 548,
   "checked": 993,
   "countries": {
     "AL": 10,
-    "DE": 165,
-    "IT": 199,
+    "DE": 164,
+    "IT": 195,
     "ME": 3,
     "MK": 13,
-    "RS": 15,
+    "RS": 14,
     "SHQIP": 4,
-    "TR": 136,
+    "TR": 137,
     "XK": 8
   },
   "channels": [
@@ -464,6 +464,21 @@
       "referer": "",
       "status": "online",
       "type": "hls"
+    },
+    {
+      "name": "TNT International (480p)",
+      "tvg_id": "TNTInternational.ru@Europe",
+      "logo": "https://i.imgur.com/l0RGbRI.png",
+      "group": "Entertainment",
+      "language": "deu",
+      "country": "DE",
+      "source": "Germany",
+      "source_id": "de-country",
+      "url": "http://91.228.35.249:8001/1:0:1:6a7:3138:13e:820000:0:0:0:",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "stream"
     },
     {
       "name": "WDR 1 Live (720p)",
@@ -1516,21 +1531,6 @@
       "type": "hls"
     },
     {
-      "name": "Lausitzwelle (1080p)",
-      "tvg_id": "Lausitzwelle.de@SD",
-      "logo": "https://i.imgur.com/4kYF4bK.png",
-      "group": "Music",
-      "language": "deu",
-      "country": "DE",
-      "source": "Germany",
-      "source_id": "de-country",
-      "url": "https://h056.video-stream-hosting.de/easycast11-live/_definst_/mp4:livestreamhd2/playlist.m3u8?ref=",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "Radio Weser TV Bremen (576p)",
       "tvg_id": "RadioWeserTVBremen.de@SD",
       "logo": "",
@@ -2095,21 +2095,6 @@
       "source": "Germany",
       "source_id": "de-country",
       "url": "https://hlspackager.akamaized.net/live/DB/CIRA_TV/HLS/CIRA_TV.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
-      "name": "labor14 (720p)",
-      "tvg_id": "labor14.de@HD",
-      "logo": "https://www.tlm.de/assets/uploads/general/Sonstiges/LogoExt/_500xAUTO_crop_center-center_none/21labor14.jpg",
-      "group": "Undefined",
-      "language": "deu",
-      "country": "DE",
-      "source": "Germany",
-      "source_id": "de-country",
-      "url": "https://5acade5fc0c29.streamlock.net/OKGera/tmbz_live_high.stream/playlist.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -3346,21 +3331,6 @@
       "type": "hls"
     },
     {
-      "name": "Odeon 24 (576p)",
-      "tvg_id": "Odeon24.it@SD",
-      "logo": "https://i.imgur.com/Ho7SdXY.png",
-      "group": "General",
-      "language": "ita",
-      "country": "IT",
-      "source": "Italy Backup",
-      "source_id": "it-country",
-      "url": "https://5f11919dca3bd.streamlock.net/odeonjump/_definst_/odeonjump/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "https://www.grupposciscione.it/odeon-2/#/?playlistId=0&videoId=0",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "Onda Novara TV (720p) [Not 24/7]",
       "tvg_id": "OndaNovaraTV.it@SD",
       "logo": "https://i.imgur.com/DTxhOhT.png",
@@ -3415,21 +3385,6 @@
       "source": "Italy Backup",
       "source_id": "it-country",
       "url": "https://5f22d76e220e1.streamlock.net/primafree/primafree/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
-      "name": "Prima TV (Italy) (720p)",
-      "tvg_id": "PrimaTV.it@SD",
-      "logo": "https://i.imgur.com/HE9c8Sk.png",
-      "group": "General",
-      "language": "ita",
-      "country": "IT",
-      "source": "Italy Backup",
-      "source_id": "it-country",
-      "url": "https://5db313b643fd8.streamlock.net/PrimaTV/PrimaTV/playlist.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -4261,6 +4216,21 @@
       "type": "hls"
     },
     {
+      "name": "Telegela 647",
+      "tvg_id": "Telegela647.it@SD",
+      "logo": "https://i.imgur.com/ppkX45f.png",
+      "group": "News",
+      "language": "ita",
+      "country": "IT",
+      "source": "Italy Backup",
+      "source_id": "it-country",
+      "url": "https://64b16f23efbee.streamlock.net/telegela/telegela/playlist.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
       "name": "TGCom24 (720p)",
       "tvg_id": "TGCom24.it@SD",
       "logo": "https://i.imgur.com/fPmvbGH.png",
@@ -5026,36 +4996,6 @@
       "type": "hls"
     },
     {
-      "name": "Radio Iglesias (576p) [Geo-blocked]",
-      "tvg_id": "RadioIglesias.it@SD",
-      "logo": "https://i.imgur.com/2OXQpZM.png",
-      "group": "Undefined",
-      "language": "ita",
-      "country": "IT",
-      "source": "Italy Backup",
-      "source_id": "it-country",
-      "url": "http://wms.shared.streamshow.it/visualradio/mp4:visualradio/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
-      "name": "Radio Iglesias Sardegna (576p) [Geo-blocked]",
-      "tvg_id": "RadioIglesiasSardegna.it@SD",
-      "logo": "https://i.imgur.com/KDtVpLl.png",
-      "group": "Undefined",
-      "language": "ita",
-      "country": "IT",
-      "source": "Italy Backup",
-      "source_id": "it-country",
-      "url": "https://59d7d6f47d7fc.streamlock.net/visualradio/visualradio/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "Radio Number One (720p) [Not 24/7]",
       "tvg_id": "RadioNumberOne.it@SD",
       "logo": "https://i.imgur.com/8cpuaG5.png",
@@ -5611,21 +5551,6 @@
       "type": "hls"
     },
     {
-      "name": "Visual Radio (576p) [Not 24/7]",
-      "tvg_id": "VisualRadio.it@SD",
-      "logo": "https://i.imgur.com/ah14ah0.png",
-      "group": "Undefined",
-      "language": "ita",
-      "country": "IT",
-      "source": "Italy Backup",
-      "source_id": "it-country",
-      "url": "http://wms.shared.streamshow.it:1935/visualradio/visualradio/live.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "TV Teuta",
       "tvg_id": "TVTeuta.me@SD",
       "logo": "https://i.imgur.com/sWVqBuW.png",
@@ -5879,21 +5804,6 @@
       "referer": "",
       "status": "online",
       "type": "stream"
-    },
-    {
-      "name": "Pannon TV (648p)",
-      "tvg_id": "PannonTV.rs@SD",
-      "logo": "https://i.imgur.com/xQa2idL.png",
-      "group": "General",
-      "language": "",
-      "country": "RS",
-      "source": "Serbia",
-      "source_id": "rs-country",
-      "url": "https://stream.nmih.hu:4102/live.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
     },
     {
       "name": "Radio Hit FM TV (720p)",
@@ -6910,6 +6820,21 @@
       "source": "Turkey Working",
       "source_id": "tr-dearbulut",
       "url": "https://live.artidijitalmedya.com/artidijital_tivi6/tivi6/playlist.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
+      "name": "TRT Genc (1440p)",
+      "tvg_id": "TRTGenc.tr",
+      "logo": "https://i.imgur.com/fCHQYWS.png",
+      "group": "General",
+      "language": "tur",
+      "country": "TR",
+      "source": "Turkey Working",
+      "source_id": "tr-dearbulut",
+      "url": "https://tv-trtgenc.medya.trt.com.tr/master.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
