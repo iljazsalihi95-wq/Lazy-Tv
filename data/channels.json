@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "updated": "2026-10-10T04:03:56Z",
-  "total": 548,
+  "updated": "2026-10-10T11:49:05Z",
+  "total": 549,
   "checked": 995,
   "countries": {
     "AL": 10,
@@ -9,7 +9,7 @@
     "IT": 197,
     "ME": 3,
     "MK": 13,
-    "RS": 14,
+    "RS": 15,
     "SHQIP": 4,
     "TR": 136,
     "XK": 8
@@ -2956,21 +2956,6 @@
       "type": "hls"
     },
     {
-      "name": "50 Canale",
-      "tvg_id": "50Canale.it@SD",
-      "logo": "https://i.imgur.com/D3OTRzf.png",
-      "group": "General",
-      "language": "ita",
-      "country": "IT",
-      "source": "Italy Backup",
-      "source_id": "it-country",
-      "url": "https://load-balancer.azotosolutions.com/cdnedge37/canale50/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "A2i TV (1080p)",
       "tvg_id": "A2iTV.it@SD",
       "logo": "https://i.imgur.com/YlDFir7.jpg",
@@ -3151,6 +3136,21 @@
       "type": "hls"
     },
     {
+      "name": "Entella TV (720p) [Not 24/7]",
+      "tvg_id": "EntellaTV.it@SD",
+      "logo": "https://i.imgur.com/pGJcMmB.png",
+      "group": "General",
+      "language": "ita",
+      "country": "IT",
+      "source": "Italy Backup",
+      "source_id": "it-country",
+      "url": "https://5f22d76e220e1.streamlock.net/EntellaTV/EntellaTV/playlist.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
       "name": "Espansione TV (576p)",
       "tvg_id": "EspansioneTV.it@SD",
       "logo": "https://i.imgur.com/NZJi7mm.png",
@@ -3316,21 +3316,6 @@
       "type": "hls"
     },
     {
-      "name": "Odeon 24 (576p)",
-      "tvg_id": "Odeon24.it@SD",
-      "logo": "https://i.imgur.com/Ho7SdXY.png",
-      "group": "General",
-      "language": "ita",
-      "country": "IT",
-      "source": "Italy Backup",
-      "source_id": "it-country",
-      "url": "https://5f11919dca3bd.streamlock.net/odeonjump/_definst_/odeonjump/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "https://www.grupposciscione.it/odeon-2/#/?playlistId=0&videoId=0",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "Onda Novara TV (720p) [Not 24/7]",
       "tvg_id": "OndaNovaraTV.it@SD",
       "logo": "https://i.imgur.com/DTxhOhT.png",
@@ -3385,6 +3370,21 @@
       "source": "Italy Backup",
       "source_id": "it-country",
       "url": "https://5f22d76e220e1.streamlock.net/primafree/primafree/playlist.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
+      "name": "Promovideo TV (486p)",
+      "tvg_id": "PromovideoTV.it@SD",
+      "logo": "https://i.imgur.com/eKpS5Ck.png",
+      "group": "General",
+      "language": "ita",
+      "country": "IT",
+      "source": "Italy Backup",
+      "source_id": "it-country",
+      "url": "https://media2021.rtvweb.com/promovideo_web/promovideo/playlist.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -3719,21 +3719,6 @@
       "referer": "",
       "status": "online",
       "type": "hls"
-    },
-    {
-      "name": "Nickelodeon (Italy)",
-      "tvg_id": "Nickelodeon.it@SD",
-      "logo": "https://i.imgur.com/E84jnP8.png",
-      "group": "Kids",
-      "language": "ita",
-      "country": "IT",
-      "source": "Italy Backup",
-      "source_id": "it-country",
-      "url": "https://zg9mhld.s.gy/HD-NICK-IT.ts",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "stream"
     },
     {
       "name": "Super!",
@@ -5146,6 +5131,21 @@
       "type": "hls"
     },
     {
+      "name": "Rete 55",
+      "tvg_id": "Rete55.it@SD",
+      "logo": "https://i.imgur.com/UtS9YLc.png",
+      "group": "Undefined",
+      "language": "ita",
+      "country": "IT",
+      "source": "Italy Backup",
+      "source_id": "it-country",
+      "url": "https://live1.giocabet.tv/stream/6/index.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
       "name": "Rete Biella TV (720p) [Not 24/7]",
       "tvg_id": "ReteBiellaTV.it@SD",
       "logo": "https://i.imgur.com/I4OVxIb.png",
@@ -5890,6 +5890,21 @@
       "source": "Serbia",
       "source_id": "rs-country",
       "url": "https://peer2.tdiradio.com/static/streaming-playlists/hls/8f5d84ce-e8ac-4109-9975-9665f5605557/master.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
+      "name": "ZICO TV (720p)",
+      "tvg_id": "ZICOTV.rs@SD",
+      "logo": "https://i.imgur.com/8wbTnNW.png",
+      "group": "Music",
+      "language": "",
+      "country": "RS",
+      "source": "Serbia",
+      "source_id": "rs-country",
+      "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live/j3a-n14-2pf-g3s/index.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
