@@ -1,17 +1,17 @@
 {
   "version": 5,
-  "updated": "2026-10-11T03:39:27Z",
-  "total": 556,
-  "checked": 996,
+  "updated": "2026-10-11T12:01:17Z",
+  "total": 554,
+  "checked": 995,
   "countries": {
     "AL": 10,
-    "DE": 166,
+    "DE": 165,
     "IT": 200,
     "ME": 3,
-    "MK": 14,
-    "RS": 15,
+    "MK": 13,
+    "RS": 14,
     "SHQIP": 4,
-    "TR": 136,
+    "TR": 137,
     "XK": 8
   },
   "channels": [
@@ -464,21 +464,6 @@
       "referer": "",
       "status": "online",
       "type": "hls"
-    },
-    {
-      "name": "TNT International (480p)",
-      "tvg_id": "TNTInternational.ru@Europe",
-      "logo": "https://i.imgur.com/l0RGbRI.png",
-      "group": "Entertainment",
-      "language": "deu",
-      "country": "DE",
-      "source": "Germany",
-      "source_id": "de-country",
-      "url": "http://91.228.35.249:8001/1:0:1:6a7:3138:13e:820000:0:0:0:",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "stream"
     },
     {
       "name": "WDR 1 Live (720p)",
@@ -3001,21 +2986,6 @@
       "type": "hls"
     },
     {
-      "name": "50 Canale",
-      "tvg_id": "50Canale.it@SD",
-      "logo": "https://i.imgur.com/D3OTRzf.png",
-      "group": "General",
-      "language": "ita",
-      "country": "IT",
-      "source": "Italy Backup",
-      "source_id": "it-country",
-      "url": "https://load-balancer.azotosolutions.com/cdnedge37/canale50/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "A2i TV (1080p)",
       "tvg_id": "A2iTV.it@SD",
       "logo": "https://i.imgur.com/YlDFir7.jpg",
@@ -3809,6 +3779,21 @@
       "referer": "",
       "status": "online",
       "type": "hls"
+    },
+    {
+      "name": "Nickelodeon (Italy)",
+      "tvg_id": "Nickelodeon.it@SD",
+      "logo": "https://i.imgur.com/E84jnP8.png",
+      "group": "Kids",
+      "language": "ita",
+      "country": "IT",
+      "source": "Italy Backup",
+      "source_id": "it-country",
+      "url": "https://zg9mhld.s.gy/HD-NICK-IT.ts",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "stream"
     },
     {
       "name": "Super!",
@@ -5086,6 +5071,21 @@
       "type": "hls"
     },
     {
+      "name": "Radio Iglesias (576p) [Geo-blocked]",
+      "tvg_id": "RadioIglesias.it@SD",
+      "logo": "https://i.imgur.com/2OXQpZM.png",
+      "group": "Undefined",
+      "language": "ita",
+      "country": "IT",
+      "source": "Italy Backup",
+      "source_id": "it-country",
+      "url": "http://wms.shared.streamshow.it/visualradio/mp4:visualradio/playlist.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
       "name": "Radio Iglesias Sardegna (576p) [Geo-blocked]",
       "tvg_id": "RadioIglesiasSardegna.it@SD",
       "logo": "https://i.imgur.com/KDtVpLl.png",
@@ -5536,21 +5536,6 @@
       "type": "hls"
     },
     {
-      "name": "TeleTusciaSabina 2000 (576p) [Not 24/7]",
-      "tvg_id": "TeleTusciaSabina2000.it@SD",
-      "logo": "https://i.imgur.com/cfexNL9.png",
-      "group": "Undefined",
-      "language": "ita",
-      "country": "IT",
-      "source": "Italy Backup",
-      "source_id": "it-country",
-      "url": "http://ts2000tv.streaming.nextware.it:8081/ts2000tv/ts2000tv/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "TV Prato (1080p)",
       "tvg_id": "TVPrato.it@SD",
       "logo": "https://i.imgur.com/72mAJtf.png",
@@ -5881,21 +5866,6 @@
       "type": "hls"
     },
     {
-      "name": "TopEstrada TV (720p)",
-      "tvg_id": "TopEstradaTV.mk@SD",
-      "logo": "https://i.imgur.com/0Dh1FJZ.png",
-      "group": "Music",
-      "language": "",
-      "country": "MK",
-      "source": "North Macedonia",
-      "source_id": "mk-country",
-      "url": "http://live.topestrada.com/live/topestrada/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "M-Net Sport (720p)",
       "tvg_id": "MNetSport.mk@SD",
       "logo": "https://i.imgur.com/7k8ar1Z.png",
@@ -6100,21 +6070,6 @@
       "source": "Serbia",
       "source_id": "rs-country",
       "url": "https://vod1.laki.eu/live/hram/index.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
-      "name": "TV Panon",
-      "tvg_id": "TVPanon.rs@SD",
-      "logo": "https://i.imgur.com/9ZKA4Gx.png",
-      "group": "Undefined",
-      "language": "",
-      "country": "RS",
-      "source": "Serbia",
-      "source_id": "rs-country",
-      "url": "https://stream2.nmih.hu:4102/live.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -8035,6 +7990,21 @@
       "source": "Turkey Working",
       "source_id": "tr-dearbulut",
       "url": "https://meclistv-live.ercdn.net/meclistv/meclistv.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
+      "name": "Tele 1 (1080p)",
+      "tvg_id": "Tele1.tr",
+      "logo": "https://upload.wikimedia.org/wikipedia/tr/4/43/Tele1_logosu.png",
+      "group": "Undefined",
+      "language": "tur",
+      "country": "TR",
+      "source": "Turkey Working",
+      "source_id": "tr-dearbulut",
+      "url": "https://tele1-live.ercdn.net/tele1/tele1.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
