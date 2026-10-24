@@ -1,18 +1,18 @@
 {
   "version": 5,
-  "updated": "2026-10-24T03:03:17Z",
-  "total": 666,
+  "updated": "2026-10-24T10:12:01Z",
+  "total": 663,
   "checked": 1013,
   "countries": {
     "AL": 11,
-    "DE": 219,
-    "IT": 258,
+    "DE": 218,
+    "IT": 255,
     "ME": 3,
     "MK": 16,
     "RS": 16,
     "SHQIP": 4,
     "TR": 133,
-    "XK": 6
+    "XK": 7
   },
   "channels": [
     {
@@ -775,21 +775,6 @@
       "source": "Germany",
       "source_id": "de-country",
       "url": "https://jmp2.uk/plu-663e09e4b18d700008e48dcf.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
-      "name": "Germany Shore",
-      "tvg_id": "GermanyShore.de@DACH",
-      "logo": "https://images.pluto.tv/channels/6447dea7e94c380008dba94c/colorLogoPNG.png",
-      "group": "Entertainment",
-      "language": "deu",
-      "country": "DE",
-      "source": "Germany",
-      "source_id": "de-country",
-      "url": "https://jmp2.uk/plu-6447dea7e94c380008dba94c.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -4021,21 +4006,6 @@
       "type": "hls"
     },
     {
-      "name": "Italia 2 (480p) [Geo-blocked]",
-      "tvg_id": "Italia2.it@SD",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Logo_Italia2.svg/960px-Logo_Italia2.svg.png",
-      "group": "Entertainment",
-      "language": "ita",
-      "country": "IT",
-      "source": "Italy Backup",
-      "source_id": "it-country",
-      "url": "https://59d7d6f47d7fc.streamlock.net/italia2/italia2/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "Pluto TV Shore",
       "tvg_id": "PlutoTVShore.de@IT",
       "logo": "https://images.pluto.tv/channels/67e3b0d2443f0671bc8a1297/colorLogoPNG_1747721158520.png",
@@ -4120,21 +4090,6 @@
       "source": "Italy Backup",
       "source_id": "it-country",
       "url": "https://5929b138b139d.streamlock.net/12TVParma/livestream/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
-      "name": "50 Canale",
-      "tvg_id": "50Canale.it@SD",
-      "logo": "https://i.imgur.com/D3OTRzf.png",
-      "group": "General",
-      "language": "ita",
-      "country": "IT",
-      "source": "Italy Backup",
-      "source_id": "it-country",
-      "url": "https://load-balancer.azotosolutions.com/cdnedge37/canale50/playlist.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -6541,21 +6496,6 @@
       "type": "hls"
     },
     {
-      "name": "Italia2TV (480p) [Geo-blocked]",
-      "tvg_id": "Italia2TV.it@SD",
-      "logo": "https://i.imgur.com/TDSgG28.png",
-      "group": "Undefined",
-      "language": "ita",
-      "country": "IT",
-      "source": "Italy Backup",
-      "source_id": "it-country",
-      "url": "http://wms.shared.streamshow.it/italia2/mp4:italia2/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "La7 Cinema (720p)",
       "tvg_id": "La7Cinema.it@HD",
       "logo": "https://i.imgur.com/khPweok.png",
@@ -8221,21 +8161,6 @@
       "type": "hls"
     },
     {
-      "name": "ATV (Turkiye) (1080p)",
-      "tvg_id": "ATV.tr@SD",
-      "logo": "https://i.imgur.com/HyVUwFC.png",
-      "group": "General",
-      "language": "tur",
-      "country": "TR",
-      "source": "Turkey Backup",
-      "source_id": "tr-country",
-      "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "ATV Alanya (1080p)",
       "tvg_id": "ATVAlanya.tr",
       "logo": "https://i.imgur.com/bUwarR0.png",
@@ -9481,6 +9406,21 @@
       "type": "hls"
     },
     {
+      "name": "Bir TV (720p)",
+      "tvg_id": "BirTV.tr",
+      "logo": "https://birtv.tv/assets/upload/637f83951df60.png",
+      "group": "Undefined",
+      "language": "tur",
+      "country": "TR",
+      "source": "Turkey Working",
+      "source_id": "tr-dearbulut",
+      "url": "https://edge.taksimbilisim.com/birtv/bant1/playlist.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
       "name": "Bric ve Satranc TV (480p)",
       "tvg_id": "BricveSatrancTV.tr",
       "logo": "https://i.imgur.com/TXDV1ty.png",
@@ -9691,21 +9631,6 @@
       "type": "hls"
     },
     {
-      "name": "Tele 1 (1080p)",
-      "tvg_id": "Tele1.tr",
-      "logo": "https://upload.wikimedia.org/wikipedia/tr/4/43/Tele1_logosu.png",
-      "group": "Undefined",
-      "language": "tur",
-      "country": "TR",
-      "source": "Turkey Working",
-      "source_id": "tr-dearbulut",
-      "url": "https://tele1-live.ercdn.net/tele1/tele1.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "Tempo TV (720p)",
       "tvg_id": "TempoTV.tr",
       "logo": "https://i.imgur.com/tZpx32y.png",
@@ -9745,6 +9670,21 @@
       "source": "Turkey Working",
       "source_id": "tr-dearbulut",
       "url": "https://tv-trt1.medya.trt.com.tr/master.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
+      "name": "TRT 2 (1440p)",
+      "tvg_id": "TRT2.tr",
+      "logo": "https://i.imgur.com/iOCQdyD.png",
+      "group": "Undefined",
+      "language": "tur",
+      "country": "TR",
+      "source": "Turkey Working",
+      "source_id": "tr-dearbulut",
+      "url": "https://tv-trt2.medya.trt.com.tr/master.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -9940,6 +9880,21 @@
       "source": "Kosovo",
       "source_id": "xk-country",
       "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live/mps-vgx-u9p-qv1/index.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
+      "name": "RTK 3 (1080p)",
+      "tvg_id": "RTK3.xk@SD",
+      "logo": "https://i.imgur.com/Ut9VcT3.png",
+      "group": "Undefined",
+      "language": "sqi",
+      "country": "XK",
+      "source": "Kosovo",
+      "source_id": "xk-country",
+      "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-livestream/rtk3/index.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
