@@ -1,18 +1,18 @@
 {
   "version": 5,
-  "updated": "2026-10-23T20:55:56Z",
-  "total": 668,
-  "checked": 1014,
+  "updated": "2026-10-24T03:03:17Z",
+  "total": 666,
+  "checked": 1013,
   "countries": {
     "AL": 11,
     "DE": 219,
-    "IT": 257,
+    "IT": 258,
     "ME": 3,
-    "MK": 17,
+    "MK": 16,
     "RS": 16,
     "SHQIP": 4,
     "TR": 133,
-    "XK": 8
+    "XK": 6
   },
   "channels": [
     {
@@ -2896,6 +2896,21 @@
       "type": "hls"
     },
     {
+      "name": "labor14 (720p)",
+      "tvg_id": "labor14.de@HD",
+      "logo": "https://www.tlm.de/assets/uploads/general/Sonstiges/LogoExt/_500xAUTO_crop_center-center_none/21labor14.jpg",
+      "group": "Undefined",
+      "language": "deu",
+      "country": "DE",
+      "source": "Germany",
+      "source_id": "de-country",
+      "url": "https://5acade5fc0c29.streamlock.net/OKGera/tmbz_live_high.stream/playlist.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
       "name": "like Gecko) Chrome/152.0.0.0 Safari/537.36\" group-title=\"Undefined\",RTL Super",
       "tvg_id": "RTLSuper.de@SD",
       "logo": "https://i.imgur.com/KbdK8t9.png",
@@ -3325,21 +3340,6 @@
       "source": "Germany",
       "source_id": "de-country",
       "url": "https://s6.hopslan.com/tele5X/index.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
-      "name": "teltOwkanal (1080p)",
-      "tvg_id": "teltOwkanal.de@SD",
-      "logo": "https://i.imgur.com/G0cImlU.png",
-      "group": "Undefined",
-      "language": "deu",
-      "country": "DE",
-      "source": "Germany",
-      "source_id": "de-country",
-      "url": "https://h056.video-stream-hosting.de/easycast8-live/_definst_/mp4:livestreamhd8/playlist.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -4512,6 +4512,21 @@
       "url": "https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/NOVE/CMAF/index.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
+      "name": "Odeon 24 (576p)",
+      "tvg_id": "Odeon24.it@SD",
+      "logo": "https://i.imgur.com/Ho7SdXY.png",
+      "group": "General",
+      "language": "ita",
+      "country": "IT",
+      "source": "Italy Backup",
+      "source_id": "it-country",
+      "url": "https://5f11919dca3bd.streamlock.net/odeonjump/_definst_/odeonjump/playlist.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "https://www.grupposciscione.it/odeon-2/#/?playlistId=0&videoId=0",
       "status": "online",
       "type": "hls"
     },
@@ -6811,7 +6826,7 @@
       "type": "hls"
     },
     {
-      "name": "Rai Gulp (576p)",
+      "name": "Rai Gulp (1080p)",
       "tvg_id": "RaiGulp.it@SD",
       "logo": "https://i.imgur.com/irAhPJM.png",
       "group": "Undefined",
@@ -6819,11 +6834,11 @@
       "country": "IT",
       "source": "Italy Backup",
       "source_id": "it-country",
-      "url": "https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746953",
+      "url": "http://5.180.164.197:8080/RAIGULP/index.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
-      "type": "stream"
+      "type": "hls"
     },
     {
       "name": "RDS Social TV (720p)",
@@ -7546,21 +7561,6 @@
       "type": "hls"
     },
     {
-      "name": "TopEstrada TV (720p)",
-      "tvg_id": "TopEstradaTV.mk@SD",
-      "logo": "https://i.imgur.com/0Dh1FJZ.png",
-      "group": "Music",
-      "language": "",
-      "country": "MK",
-      "source": "North Macedonia",
-      "source_id": "mk-country",
-      "url": "http://live.topestrada.com/live/topestrada/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "Arena Sport Premium M1",
       "tvg_id": "ArenaSportPremiumM1.mk@SD",
       "logo": "https://tvarenasport.mk/wp-content/themes/tvarenasport-mk/assets/channels/arena-m1.png",
@@ -7944,7 +7944,7 @@
       "country": "TR",
       "source": "Turkey Working",
       "source_id": "tr-dearbulut",
-      "url": "https://tv.ensonhaber.com/bloomberght/bloomberght.m3u8",
+      "url": "https://mumbai-edge.smartplaytv.in/BloombergHT/index.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -8191,7 +8191,7 @@
       "type": "hls"
     },
     {
-      "name": "Aras TV (576p)",
+      "name": "Aras TV (720p)",
       "tvg_id": "ArasTV.tr",
       "logo": "https://i.imgur.com/JsDCyWG.png",
       "group": "General",
@@ -8266,7 +8266,7 @@
       "type": "hls"
     },
     {
-      "name": "Deniz Postasi TV (720p)",
+      "name": "Deniz Postasi TV (480p)",
       "tvg_id": "DenizPostasiTV.tr",
       "logo": "https://i.imgur.com/Mm8hdfx.png",
       "group": "General",
@@ -9174,21 +9174,6 @@
       "country": "TR",
       "source": "Turkey Working",
       "source_id": "tr-dearbulut",
-      "url": "https://win8.yayin.com.tr/haber61tv/smil:haber61tv.smil/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
-      "name": "Haber61 TV (720p) [Not 24/7]",
-      "tvg_id": "Haber61TV.tr@SD",
-      "logo": "https://i.imgur.com/2a2XUKl.png",
-      "group": "News",
-      "language": "tur",
-      "country": "TR",
-      "source": "Turkey Backup",
-      "source_id": "tr-country",
       "url": "https://cdn-haber61tv.yayin.com.tr/haber61tv/smil:haber61tv.smil/index.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
@@ -9706,6 +9691,21 @@
       "type": "hls"
     },
     {
+      "name": "Tele 1 (1080p)",
+      "tvg_id": "Tele1.tr",
+      "logo": "https://upload.wikimedia.org/wikipedia/tr/4/43/Tele1_logosu.png",
+      "group": "Undefined",
+      "language": "tur",
+      "country": "TR",
+      "source": "Turkey Working",
+      "source_id": "tr-dearbulut",
+      "url": "https://tele1-live.ercdn.net/tele1/tele1.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
       "name": "Tempo TV (720p)",
       "tvg_id": "TempoTV.tr",
       "logo": "https://i.imgur.com/tZpx32y.png",
@@ -9946,21 +9946,6 @@
       "type": "hls"
     },
     {
-      "name": "RTK 3 (1080p)",
-      "tvg_id": "RTK3.xk@SD",
-      "logo": "https://i.imgur.com/Ut9VcT3.png",
-      "group": "Undefined",
-      "language": "sqi",
-      "country": "XK",
-      "source": "Kosovo",
-      "source_id": "xk-country",
-      "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-livestream/rtk3/index.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "RTV21",
       "tvg_id": "RTV21.xk@SD",
       "logo": "https://i.imgur.com/AqQltGh.png",
@@ -9970,21 +9955,6 @@
       "source": "Kosovo",
       "source_id": "xk-country",
       "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live/2cz-npl-jfn-9he/tracks-v2a1/mono.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
-      "name": "T7 (720p)",
-      "tvg_id": "T7.xk@SD",
-      "logo": "https://i.imgur.com/b7FvSJj.png",
-      "group": "Undefined",
-      "language": "sqi",
-      "country": "XK",
-      "source": "Kosovo",
-      "source_id": "xk-country",
-      "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-livestream-specific/1z8-byc-4ee-lc9/index.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
