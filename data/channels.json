@@ -1,17 +1,17 @@
 {
   "version": 5,
-  "updated": "2026-11-22T23:10:03Z",
-  "total": 704,
-  "checked": 1046,
+  "updated": "2026-11-23T05:28:32Z",
+  "total": 707,
+  "checked": 1047,
   "countries": {
-    "AL": 10,
+    "AL": 9,
     "DE": 226,
-    "IT": 269,
+    "IT": 272,
     "ME": 4,
-    "MK": 16,
-    "RS": 30,
+    "MK": 15,
+    "RS": 28,
     "SHQIP": 4,
-    "TR": 138,
+    "TR": 142,
     "XK": 7
   },
   "channels": [
@@ -25,21 +25,6 @@
       "source": "Albania",
       "source_id": "al-country",
       "url": "https://live.prostream.al/al/smil:tropojatv.smil/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
-      "name": "TV Johaniter (720p)",
-      "tvg_id": "TVJohaniter.al@SD",
-      "logo": "https://i.imgur.com/Zo9lJgP.png",
-      "group": "General",
-      "language": "sqi",
-      "country": "AL",
-      "source": "Albania",
-      "source_id": "al-country",
-      "url": "https://protokolldns.xyz/johaniterweb44547dsd/index.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -4666,6 +4651,21 @@
       "type": "hls"
     },
     {
+      "name": "Odeon 24 (576p)",
+      "tvg_id": "Odeon24.it@SD",
+      "logo": "https://i.imgur.com/Ho7SdXY.png",
+      "group": "General",
+      "language": "ita",
+      "country": "IT",
+      "source": "Italy Backup",
+      "source_id": "it-country",
+      "url": "https://5f11919dca3bd.streamlock.net/odeonjump/_definst_/odeonjump/playlist.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "https://www.grupposciscione.it/odeon-2/#/?playlistId=0&videoId=0",
+      "status": "online",
+      "type": "hls"
+    },
+    {
       "name": "Onda Novara TV (720p) [Not 24/7]",
       "tvg_id": "OndaNovaraTV.it@SD",
       "logo": "https://i.imgur.com/DTxhOhT.png",
@@ -4720,6 +4720,21 @@
       "source": "Italy Backup",
       "source_id": "it-country",
       "url": "https://5db313b643fd8.streamlock.net/PrimaTV/PrimaTV/playlist.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
+      "name": "Quarto Canale Flegreo (720p)",
+      "tvg_id": "QuartoCanaleFlegreo.it@SD",
+      "logo": "https://i.imgur.com/XfNSWp0.png",
+      "group": "General",
+      "language": "ita",
+      "country": "IT",
+      "source": "Italy Backup",
+      "source_id": "it-country",
+      "url": "https://live.mariatvcdn.com/dialogos/171e41deedf405f10c7dd6311387fb43.sdp/playlist.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -5821,7 +5836,7 @@
       "type": "hls"
     },
     {
-      "name": "Lira TV",
+      "name": "Lira TV (1080p)",
       "tvg_id": "LiraTV.it@SD",
       "logo": "https://i.imgur.com/sC9ELuY.jpg",
       "group": "News",
@@ -6421,7 +6436,7 @@
       "type": "hls"
     },
     {
-      "name": "Eurosport 1 Italy",
+      "name": "Eurosport 1 Italy (720p)",
       "tvg_id": "Eurosport1.fr@Italy",
       "logo": "https://i.imgur.com/olQJgm7.png",
       "group": "Sports",
@@ -6584,6 +6599,21 @@
       "referer": "",
       "status": "online",
       "type": "hls"
+    },
+    {
+      "name": "Sky Sport F1 (Italy)",
+      "tvg_id": "SkySportF1.it@SD",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Sky_Sport_F1_-_Logo_2020.svg/960px-Sky_Sport_F1_-_Logo_2020.svg.png",
+      "group": "Sports",
+      "language": "ita",
+      "country": "IT",
+      "source": "Italy Backup",
+      "source_id": "it-country",
+      "url": "https://vuvuu-geil-m3u8.yaskar661.workers.dev/?url=https%3A%2F%2Fvavoo.to%2Fvavoo-iptv%2Fplay%2F22890389722acc4573933d",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "stream"
     },
     {
       "name": "Sportitalia Solocalcio (1080p)",
@@ -7861,21 +7891,6 @@
       "type": "hls"
     },
     {
-      "name": "TopEstrada TV (720p)",
-      "tvg_id": "TopEstradaTV.mk@SD",
-      "logo": "https://i.imgur.com/0Dh1FJZ.png",
-      "group": "Music",
-      "language": "",
-      "country": "MK",
-      "source": "North Macedonia",
-      "source_id": "mk-country",
-      "url": "http://live.topestrada.com/live/topestrada/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "M-Net Sport (720p)",
       "tvg_id": "MNetSport.mk@SD",
       "logo": "https://i.imgur.com/7k8ar1Z.png",
@@ -8056,21 +8071,6 @@
       "type": "hls"
     },
     {
-      "name": "Super TV Smederevo (360p)",
-      "tvg_id": "SuperTVSmederevo.rs@SD",
-      "logo": "https://i.imgur.com/IPe4ZdL.png",
-      "group": "General",
-      "language": "",
-      "country": "RS",
-      "source": "Serbia",
-      "source_id": "rs-country",
-      "url": "https://183.giatvcdn.com/ssh101/ssh101/televizijasuper/playlist.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
       "name": "TV AS (Serbia) (576p)",
       "tvg_id": "TVAS.rs@SD",
       "logo": "https://i.imgur.com/LIUtEgD.png",
@@ -8230,21 +8230,6 @@
       "source": "Serbia",
       "source_id": "rs-country",
       "url": "https://peer2.tdiradio.com/static/streaming-playlists/hls/8f5d84ce-e8ac-4109-9975-9665f5605557/master.m3u8",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
-      "referer": "",
-      "status": "online",
-      "type": "hls"
-    },
-    {
-      "name": "TV Duga+ (720p) [Not 24/7]",
-      "tvg_id": "TVDugaPlus.rs@SD",
-      "logo": "https://i.imgur.com/qZV3JW5.png",
-      "group": "Music",
-      "language": "",
-      "country": "RS",
-      "source": "Serbia",
-      "source_id": "rs-country",
-      "url": "http://135.125.238.20:8080/memfs/6c06b323-a7db-443a-a75f-b745da6ca308.m3u8",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
@@ -9526,6 +9511,21 @@
       "type": "hls"
     },
     {
+      "name": "TRT Muzik (1080p)",
+      "tvg_id": "TRTMuzik.tr@SD",
+      "logo": "https://i.imgur.com/JgUzRH8.png",
+      "group": "Music",
+      "language": "tur",
+      "country": "TR",
+      "source": "Turkey Backup",
+      "source_id": "tr-country",
+      "url": "https://stream8.cinerama.uz/1208/tracks-v1a1/mono.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
       "name": "TRT Muzik (1440p)",
       "tvg_id": "TRTMuzik.tr",
       "logo": "https://i.imgur.com/JgUzRH8.png",
@@ -9976,6 +9976,36 @@
       "type": "hls"
     },
     {
+      "name": "beIN Sports 1 Turk (1080p)",
+      "tvg_id": "beINSports1Turk.tr",
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/2/27/BeinSports1.svg/revision/latest?cb=20230910184457",
+      "group": "Sports",
+      "language": "tur",
+      "country": "TR",
+      "source": "Turkey Working",
+      "source_id": "tr-dearbulut",
+      "url": "https://vuvuu-geil-m3u8.yaskar661.workers.dev/?url=https%3A%2F%2Fvavoo.to%2Fvavoo-iptv%2Fplay%2F300113394ceebba66c8ad",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "stream"
+    },
+    {
+      "name": "Eurosport 1 Turkiye (1080p)",
+      "tvg_id": "Eurosport1.fr@Turkiye",
+      "logo": "https://i.imgur.com/olQJgm7.png",
+      "group": "Sports",
+      "language": "tur",
+      "country": "TR",
+      "source": "Turkey Backup",
+      "source_id": "tr-country",
+      "url": "https://vavoo.alwaysdata.net/resolver.php?url=https%3A%2F%2Fvavoo.to%2Fvavoo-iptv%2Fplay%2F207886293750ec015d3e85",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "stream"
+    },
+    {
       "name": "FB TV (720p)",
       "tvg_id": "FBTV.tr",
       "logo": "https://i.imgur.com/qBVqtYd.png",
@@ -10261,6 +10291,21 @@
       "type": "hls"
     },
     {
+      "name": "Tele 1 (1080p)",
+      "tvg_id": "Tele1.tr",
+      "logo": "https://upload.wikimedia.org/wikipedia/tr/4/43/Tele1_logosu.png",
+      "group": "Undefined",
+      "language": "tur",
+      "country": "TR",
+      "source": "Turkey Working",
+      "source_id": "tr-dearbulut",
+      "url": "https://tele1-live.ercdn.net/tele1/tele1.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+      "referer": "",
+      "status": "online",
+      "type": "hls"
+    },
+    {
       "name": "Tempo TV (720p)",
       "tvg_id": "TempoTV.tr",
       "logo": "https://i.imgur.com/tZpx32y.png",
@@ -10306,19 +10351,19 @@
       "type": "hls"
     },
     {
-      "name": "TRT 2 (1440p)",
-      "tvg_id": "TRT2.tr",
-      "logo": "https://i.imgur.com/iOCQdyD.png",
+      "name": "TRT 3 (1080p)",
+      "tvg_id": "TRT3.tr",
+      "logo": "https://i.imgur.com/JrWFwBd.png",
       "group": "Undefined",
       "language": "tur",
       "country": "TR",
       "source": "Turkey Working",
       "source_id": "tr-dearbulut",
-      "url": "https://tv-trt2.medya.trt.com.tr/master.m3u8",
+      "url": "https://vuvuu-geil-m3u8.yaskar661.workers.dev/?url=https%3A%2F%2Fvavoo.to%2Fvavoo-iptv%2Fplay%2F418740351278f04c94b243",
       "user_agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
       "referer": "",
       "status": "online",
-      "type": "hls"
+      "type": "stream"
     },
     {
       "name": "TRT Avaz (1440p)",
